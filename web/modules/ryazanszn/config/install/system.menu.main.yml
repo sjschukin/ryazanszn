@@ -1,0 +1,7 @@
+langcode: ru
+status: true
+dependencies: {  }
+id: main
+label: 'Главное меню'
+description: 'Ссылки разделов сайта'
+locked: true

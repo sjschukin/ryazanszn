@@ -1,0 +1,69 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.document.field_doc_description
+    - field.field.node.document.field_doc_file
+    - field.field.node.document.field_doc_type
+    - field.field.node.document.field_doc_url
+    - field.field.node.document.field_sort
+    - node.type.document
+  module:
+    - file
+    - link
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  field_doc_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_doc_file:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_doc_type:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_doc_url:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sort:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

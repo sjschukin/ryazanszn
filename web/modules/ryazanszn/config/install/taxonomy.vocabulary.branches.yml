@@ -1,0 +1,8 @@
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Структурные подразделения'
+vid: branches
+description: 'Наименования структурных подразделений учреждения. Указываются с учетом действующей структуры с указанием зависимостей.'
+hierarchy: 1
+weight: 0

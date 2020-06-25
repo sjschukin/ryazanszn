@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+version: '0.5.3-dev'
+base theme: bootstrap
+
+name: 'BlondyTan2'
+description: 'Тема разработана специально для портала ryazanszn'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  footer: 'Footer'
+  footer_left: 'Footer left'
+  footer_middle: 'Footer middle'
+  footer_right: 'Footer right'
+
+libraries:
+  - 'blondytan2/global-styling'

@@ -1,0 +1,43 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.rewarding.field_ref_employee
+    - field.field.node.rewarding.field_sort
+    - node.type.rewarding
+id: node.rewarding.default
+targetEntityType: node
+bundle: rewarding
+mode: default
+content:
+  field_ref_employee:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_sort:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

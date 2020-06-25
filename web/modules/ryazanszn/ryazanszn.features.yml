@@ -1,0 +1,3 @@
+excluded:
+  - block.block.lastnews_block
+required: true
