@@ -294,12 +294,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* marketing content */
 
-/* center align the text within the three columns below the carousel */
-.marketing {
-  margin-bottom: 20px;
-}
+/* center align the text within banner columns */
 .marketing {
   text-align: center;
+}
+.marketing .row {
+  margin-bottom: 40px;
 }
 .marketing h2 {
   font-weight: normal;
@@ -310,7 +310,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* banners-block content */
-
 .block-banners {
   padding-top: 30px;
   background-color: #95a5a6;
