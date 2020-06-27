@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .marketing {
   text-align: center;
 }
-.marketing .row {
+.marketing .row > div {
   margin-bottom: 40px;
 }
 .marketing h2 {
