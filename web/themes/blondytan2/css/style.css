@@ -294,23 +294,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* marketing content */
 
-/* center align the text within the three columns below the carousel */
-.marketing .col-lg-4, .marketing .col-lg-12 {
-  margin-bottom: 20px;
-}
-.marketing .col-lg-4 {
+/* center align the text within banner columns */
+.marketing {
   text-align: center;
+}
+.marketing .row > div {
+  margin-bottom: 40px;
 }
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.marketing p {
   margin-right: 10px;
   margin-left: 10px;
 }
 
 /* banners-block content */
-
 .block-banners {
   padding-top: 30px;
   background-color: #95a5a6;
