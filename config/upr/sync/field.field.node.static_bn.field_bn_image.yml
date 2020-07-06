@@ -1,0 +1,38 @@
+uuid: 2591fcba-6606-4117-9a78-f8370a89aef0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bn_image
+    - node.type.static_bn
+  module:
+    - image
+id: node.static_bn.field_bn_image
+field_name: field_bn_image
+entity_type: node
+bundle: static_bn
+label: 'Изображение баннера'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: bns
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

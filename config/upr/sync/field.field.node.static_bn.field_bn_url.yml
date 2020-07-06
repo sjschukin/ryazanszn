@@ -1,0 +1,23 @@
+uuid: 44b54ed3-d48e-47e3-b405-ff1a1b0d2fa0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bn_url
+    - node.type.static_bn
+  module:
+    - link
+id: node.static_bn.field_bn_url
+field_name: field_bn_url
+entity_type: node
+bundle: static_bn
+label: Ссылка
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

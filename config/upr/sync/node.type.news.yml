@@ -1,0 +1,17 @@
+uuid: 7b7f86d1-94c3-4f29-a7cc-28e5f1cbd490
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Новость
+type: news
+description: 'Используйте <em>Новости</em> для добавления материалов, отображаемых в порядке зависимом от времени публикации.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

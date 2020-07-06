@@ -1,0 +1,25 @@
+uuid: f585b201-c328-4993-9df9-80b8cc59eb79
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort
+    - node.type.static_bn
+id: node.static_bn.field_sort
+field_name: field_sort
+entity_type: node
+bundle: static_bn
+label: Сортировка
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

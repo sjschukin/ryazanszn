@@ -1,0 +1,8 @@
+uuid: d72d34db-e62c-4fc7-96c9-66c55eb1cab6
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории социального навигатора'
+vid: social_navigator_categories
+description: ''
+weight: -9

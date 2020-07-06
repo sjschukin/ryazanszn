@@ -1,0 +1,17 @@
+uuid: 069657e1-5f0d-48e3-a6b5-cf1c1e10e8a3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Государственная услуга'
+type: public_service
+description: 'Государственная услуга, предоставляемыя учреждением.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

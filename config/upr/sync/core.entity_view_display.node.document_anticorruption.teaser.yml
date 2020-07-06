@@ -1,0 +1,29 @@
+uuid: 278af5ce-fc5b-4c91-9e73-3c4ac8c6d780
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.document_anticorruption.field_doc_description
+    - field.field.node.document_anticorruption.field_doc_file
+    - field.field.node.document_anticorruption.field_doc_url
+    - field.field.node.document_anticorruption.field_sort
+    - node.type.document_anticorruption
+  module:
+    - user
+id: node.document_anticorruption.teaser
+targetEntityType: node
+bundle: document_anticorruption
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_doc_description: true
+  field_doc_file: true
+  field_doc_url: true
+  field_sort: true
+  langcode: true

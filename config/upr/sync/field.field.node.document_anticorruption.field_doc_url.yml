@@ -1,0 +1,23 @@
+uuid: 80fe8357-3ec3-4d0d-a144-fd1f6b3a80ec
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_url
+    - node.type.document_anticorruption
+  module:
+    - link
+id: node.document_anticorruption.field_doc_url
+field_name: field_doc_url
+entity_type: node
+bundle: document_anticorruption
+label: 'Ссылка на документ'
+description: 'Ссылка на внешние источники. Например /sites/default/files/file.pdf, или http://docs.cntd.ru/document/420236901'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

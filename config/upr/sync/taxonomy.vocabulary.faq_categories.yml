@@ -1,0 +1,8 @@
+uuid: 1276d421-4e0b-45e5-a27e-912b8a3e6bb4
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории вопросов'
+vid: faq_categories
+description: ''
+weight: 0

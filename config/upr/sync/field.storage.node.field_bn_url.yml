@@ -1,0 +1,19 @@
+uuid: 0096cede-2caf-45e3-8c6f-216a933b3239
+langcode: ru
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_bn_url
+field_name: field_bn_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

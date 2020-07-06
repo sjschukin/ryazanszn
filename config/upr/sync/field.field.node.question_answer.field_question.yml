@@ -1,0 +1,19 @@
+uuid: af1de295-fe0c-4d36-ab65-18ec955b372b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_question
+    - node.type.question_answer
+id: node.question_answer.field_question
+field_name: field_question
+entity_type: node
+bundle: question_answer
+label: Вопрос
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

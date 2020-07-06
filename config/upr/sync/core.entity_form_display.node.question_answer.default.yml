@@ -1,0 +1,64 @@
+uuid: 172367b4-bb35-4c62-91d4-559244a85a3d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.question_answer.field_answer
+    - field.field.node.question_answer.field_faq_category
+    - field.field.node.question_answer.field_question
+    - node.type.question_answer
+  module:
+    - text
+id: node.question_answer.default
+targetEntityType: node
+bundle: question_answer
+mode: default
+content:
+  field_answer:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_faq_category:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_question:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

@@ -1,0 +1,25 @@
+uuid: d2976c7d-cf39-4789-8892-fa6a4f152bbf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - blondytan2
+id: main_menu
+theme: blondytan2
+region: footer_left
+weight: -11
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Главное меню'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

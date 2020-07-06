@@ -1,0 +1,23 @@
+uuid: 0fb87462-b699-454b-90ca-7d50964bc15f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_doc_file
+field_name: field_doc_file
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

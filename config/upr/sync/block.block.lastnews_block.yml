@@ -1,0 +1,30 @@
+uuid: 553b2637-532e-40e7-a358-2743742b99fd
+langcode: ru
+status: false
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - blondytan2
+id: lastnews_block
+theme: blondytan2
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

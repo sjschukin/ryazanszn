@@ -1,0 +1,19 @@
+uuid: bc43955a-e7fb-4419-a81f-fbf0460d5688
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_script
+    - node.type.organization
+id: node.organization.field_map_script
+field_name: field_map_script
+entity_type: node
+bundle: organization
+label: Карта
+description: 'Указывается скрипт карты, например код из Yandex.Maps'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

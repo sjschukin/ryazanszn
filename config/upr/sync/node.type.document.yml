@@ -1,0 +1,17 @@
+uuid: f3679e31-ea65-40db-8a00-c2b1de2b7650
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Документ
+type: document
+description: 'Документы отображаются в одной из вкладок с набором документов. Одна запись содержит в себе один документ, либо ссылку на него из существующего источника.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

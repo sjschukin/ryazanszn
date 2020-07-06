@@ -1,0 +1,35 @@
+uuid: 81e14bd3-3e17-4243-abeb-b700af2224ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.public_service.body
+    - field.field.node.public_service.field_description
+    - field.field.node.public_service.field_doc_file
+    - field.field.node.public_service.field_fullname
+    - field.field.node.public_service.field_public_services_categories
+    - field.field.node.public_service.field_social_nav_categories
+    - field.field.node.public_service.field_sort
+    - node.type.public_service
+  module:
+    - user
+id: node.public_service.teaser
+targetEntityType: node
+bundle: public_service
+mode: teaser
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_description: true
+  field_doc_file: true
+  field_fullname: true
+  field_public_services_categories: true
+  field_social_nav_categories: true
+  field_sort: true
+  langcode: true

@@ -1,0 +1,17 @@
+uuid: 035b7a11-e5de-4282-8504-b393712c1a0d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Вопрос-ответ
+type: question_answer
+description: 'Отображается на странице с часто задаваемыми вопросами.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

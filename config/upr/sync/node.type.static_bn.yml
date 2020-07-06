@@ -1,0 +1,17 @@
+uuid: 668e5adf-1e45-4626-a74b-2e8ad392ab4d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Статический баннер'
+type: static_bn
+description: 'Статический элемент, содержащий гиперссылку на сайт или страницу с дополнительной информацией.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

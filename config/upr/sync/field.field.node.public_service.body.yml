@@ -1,0 +1,23 @@
+uuid: 5916383f-2790-4501-a6c3-36325b1ee0c7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.public_service
+  module:
+    - text
+id: node.public_service.body
+field_name: body
+entity_type: node
+bundle: public_service
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
