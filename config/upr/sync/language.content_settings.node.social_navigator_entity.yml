@@ -1,0 +1,11 @@
+uuid: 00f22f21-f109-4ccc-9953-80b729c537fa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.social_navigator_entity
+id: node.social_navigator_entity
+target_entity_type_id: node
+target_bundle: social_navigator_entity
+default_langcode: site_default
+language_alterable: false

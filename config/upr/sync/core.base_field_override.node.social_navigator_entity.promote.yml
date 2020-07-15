@@ -1,0 +1,22 @@
+uuid: e9f0a1ac-d17f-42e8-ba4a-ab873b177347
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.social_navigator_entity
+id: node.social_navigator_entity.promote
+field_name: promote
+entity_type: node
+bundle: social_navigator_entity
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

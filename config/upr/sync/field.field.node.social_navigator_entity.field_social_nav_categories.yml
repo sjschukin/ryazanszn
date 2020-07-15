@@ -1,19 +1,19 @@
-uuid: 3f9ae57f-44c9-4e72-adaf-6deec4c04b19
+uuid: 008fdd15-d7e9-4b79-8caa-390498f69aa8
 langcode: ru
 status: true
 dependencies:
   config:
     - field.storage.node.field_social_nav_categories
-    - node.type.public_service
+    - node.type.social_navigator_entity
     - taxonomy.vocabulary.social_navigator_categories
-id: node.public_service.field_social_nav_categories
+id: node.social_navigator_entity.field_social_nav_categories
 field_name: field_social_nav_categories
 entity_type: node
-bundle: public_service
-label: 'Категории социального навигатора'
-description: 'Принадлежность услуги к категории в социальном навигаторе. Можно выбрать несколько категорий.'
-required: false
-translatable: false
+bundle: social_navigator_entity
+label: Категория
+description: ''
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

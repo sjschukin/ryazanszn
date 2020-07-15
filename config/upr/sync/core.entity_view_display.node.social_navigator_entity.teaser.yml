@@ -1,0 +1,29 @@
+uuid: e0102d69-88e1-4170-8454-03f442893d07
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_navigator_entity.field_description
+    - field.field.node.social_navigator_entity.field_public_service
+    - field.field.node.social_navigator_entity.field_social_nav_categories
+    - field.field.node.social_navigator_entity.field_sort
+    - node.type.social_navigator_entity
+  module:
+    - user
+id: node.social_navigator_entity.teaser
+targetEntityType: node
+bundle: social_navigator_entity
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_description: true
+  field_public_service: true
+  field_social_nav_categories: true
+  field_sort: true
+  langcode: true

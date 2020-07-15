@@ -1,0 +1,25 @@
+uuid: 8a728f4e-0be1-47cd-802f-9ad2f1abe46c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort
+    - node.type.social_navigator_entity
+id: node.social_navigator_entity.field_sort
+field_name: field_sort
+entity_type: node
+bundle: social_navigator_entity
+label: Сортировка
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

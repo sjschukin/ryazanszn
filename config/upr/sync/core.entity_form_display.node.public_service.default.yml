@@ -4,11 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.public_service.body
-    - field.field.node.public_service.field_description
     - field.field.node.public_service.field_doc_file
-    - field.field.node.public_service.field_fullname
     - field.field.node.public_service.field_public_services_categories
-    - field.field.node.public_service.field_social_nav_categories
     - field.field.node.public_service.field_sort
     - node.type.public_service
   module:
@@ -29,38 +26,12 @@ content:
       show_summary: false
     third_party_settings: {  }
     region: content
-  field_description:
-    weight: 5
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_doc_file:
     weight: 3
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: content
-  field_fullname:
-    weight: 1
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_social_nav_categories:
-    weight: 4
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_sort:
     weight: 7

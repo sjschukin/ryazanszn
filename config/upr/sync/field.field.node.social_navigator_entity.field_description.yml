@@ -1,0 +1,21 @@
+uuid: b5595bf4-df89-40d0-afae-c75091e0019f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.social_navigator_entity
+  module:
+    - text
+id: node.social_navigator_entity.field_description
+field_name: field_description
+entity_type: node
+bundle: social_navigator_entity
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

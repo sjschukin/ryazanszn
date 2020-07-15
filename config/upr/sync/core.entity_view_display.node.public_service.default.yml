@@ -4,11 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.public_service.body
-    - field.field.node.public_service.field_description
     - field.field.node.public_service.field_doc_file
-    - field.field.node.public_service.field_fullname
     - field.field.node.public_service.field_public_services_categories
-    - field.field.node.public_service.field_social_nav_categories
     - field.field.node.public_service.field_sort
     - node.type.public_service
   module:
@@ -35,21 +32,12 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
-  field_fullname:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_description: true
   field_public_services_categories: true
-  field_social_nav_categories: true
   field_sort: true
   langcode: true
