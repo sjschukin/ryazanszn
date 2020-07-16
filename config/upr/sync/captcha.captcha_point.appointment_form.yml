@@ -4,4 +4,4 @@ status: true
 dependencies: {  }
 formId: appointment_form
 captchaType: recaptcha/reCAPTCHA
-label: appointment
+label: contact_message_appointment_form
