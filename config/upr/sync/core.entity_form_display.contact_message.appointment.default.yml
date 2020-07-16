@@ -1,0 +1,73 @@
+uuid: 7771ddb7-ab3b-479e-afd0-2658f5f46f78
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.appointment
+    - field.field.contact_message.appointment.field_date
+    - field.field.contact_message.appointment.field_organization
+    - field.field.contact_message.appointment.field_phone_number
+  module:
+    - datetime
+id: contact_message.appointment.default
+targetEntityType: contact_message
+bundle: appointment
+mode: default
+content:
+  field_date:
+    weight: 6
+    settings:
+      date_order: DMY
+      time_type: '24'
+      increment: 30
+    third_party_settings: {  }
+    type: datetime_datelist
+    region: content
+  field_organization:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_phone_number:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  preview: true

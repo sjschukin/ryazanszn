@@ -1,0 +1,7 @@
+uuid: 26378ee1-40a0-4c8d-944a-6ff6bf0c3c68
+langcode: ru
+status: true
+dependencies: {  }
+formId: appointment_form
+captchaType: recaptcha/reCAPTCHA
+label: appointment

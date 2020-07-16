@@ -1,0 +1,24 @@
+uuid: 564d9296-58f1-4dea-96fd-2325afdcaa81
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.appointment
+    - field.storage.contact_message.field_date
+  module:
+    - datetime
+id: contact_message.appointment.field_date
+field_name: field_date
+entity_type: contact_message
+bundle: appointment
+label: 'Дата и время'
+description: 'Укажите жалаемое время приёма'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: 'next Monday'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

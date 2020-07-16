@@ -1,0 +1,29 @@
+uuid: 86973aec-cb99-44e5-926c-efba174ab07d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.appointment
+    - field.storage.contact_message.field_organization
+    - node.type.organization
+id: contact_message.appointment.field_organization
+field_name: field_organization
+entity_type: contact_message
+bundle: appointment
+label: Район
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

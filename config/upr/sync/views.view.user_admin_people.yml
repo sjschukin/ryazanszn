@@ -898,14 +898,14 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Страница
+    display_title: Page
     position: 1
     display_options:
       path: admin/people/list
       show_admin_links: false
       menu:
         type: 'default tab'
-        title: Список
+        title: List
         description: 'Поиск и управление людьми, взаимодействующих с вашим сайтом.'
         menu_name: admin
         weight: -10

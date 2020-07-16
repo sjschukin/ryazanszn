@@ -1,4 +1,4 @@
-uuid: 5f95ab52-3967-4aa0-8a1d-cb714d0bfbfa
+uuid: 1cb3dc5a-4e40-4509-8224-39748f629203
 langcode: ru
 status: true
 dependencies:
@@ -11,14 +11,11 @@ third_party_settings:
     disabled_form_message: 'Данный функционал временно недоступен.'
     maximum_submissions_user: 0
     page_autoreply_format: plain_text
-_core:
-  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
-id: feedback
-label: 'Обратная связь'
+id: appointment
+label: 'Запись на прием'
 recipients:
-  - mainpost@uprsznro.ru
-  - feedback@ryazanszn.ru
+  - s.j.schukin@yandex.ru
 reply: ''
-weight: 0
+weight: 5
 message: 'Ваше сообщение отправлено.'
 redirect: /contacts

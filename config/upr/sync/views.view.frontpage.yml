@@ -65,7 +65,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Применить
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -301,7 +301,7 @@ display:
         enabled: true
         expanded: false
     display_plugin: page
-    display_title: Страница
+    display_title: Page
     id: page_1
     position: 1
     cache_metadata:
