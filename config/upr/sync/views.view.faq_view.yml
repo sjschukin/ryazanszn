@@ -478,6 +478,8 @@ display:
         pager: false
         title: false
         header: false
+        filters: false
+        filter_groups: false
       fields:
         field_faq_category:
           id: field_faq_category
@@ -667,10 +669,10 @@ display:
           field_api_classes: false
           plugin_id: field
       arguments:
-        field_faq_category_target_id:
-          id: field_faq_category_target_id
-          table: node__field_faq_category
-          field: field_faq_category_target_id
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
           relationship: reverse__node__field_faq_category
           group_type: group
           admin_label: ''
@@ -699,9 +701,11 @@ display:
             type: none
             fail: 'not found'
           validate_options: {  }
+          depth: 1
           break_phrase: false
-          not: false
-          plugin_id: numeric
+          use_taxonomy_term_path: false
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
       pager:
         type: full
         options:
@@ -738,6 +742,36 @@ display:
             value: '<h1>{{ field_faq_category }}</h1>'
             format: full_html
           plugin_id: text
+      filters:
+        status:
+          value: '1'
+          table: taxonomy_term_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: taxonomy_term
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          value:
+            faq_categories: faq_categories
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

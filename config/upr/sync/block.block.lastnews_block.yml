@@ -12,7 +12,7 @@ dependencies:
 id: lastnews_block
 theme: blondytan2
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: 'views_block:news-block_1'
 settings:

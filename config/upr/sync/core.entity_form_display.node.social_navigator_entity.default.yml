@@ -35,9 +35,13 @@ content:
     region: content
   field_social_nav_categories:
     weight: 1
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 80
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_sort:
     weight: 26
