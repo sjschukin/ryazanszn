@@ -1,7 +1,7 @@
 {
   "name": "ryazanszn",
   "version": "1.0.0",
-  "description": "Drupal 9 site for ryazanszn.ru",
+  "description": "Drupal 8 site for ryazanszn.ru",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/sjschukin/ryazanszn#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.10",
     "gulp": "^4.0.2",
     "gulp-beautify": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
