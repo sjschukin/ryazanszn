@@ -1,0 +1,475 @@
+/******* blind panel *******/
+
+.css-blind {
+  .blind-panel {
+    display: inherit;
+    max-width: 1140px;
+    font: bold 20px/1.5 Arial, Helvetica sans-serif;
+  }
+
+  &.color-white .blind-panel {
+    background: #e1e1e1;
+    color: #000;
+  }
+
+  &.color-black .blind-panel {
+    color: #fff;
+    background: #000;
+  }
+
+  &.color-blue .blind-panel {
+    background: #9dd1ff;
+    color: #063462;
+  }
+}
+
+/******* toggle version panel *******/
+
+.css-blind {
+  #to-blind-version {
+    display: none;
+  }
+
+  .to-main-version {
+    display: inline-block;
+    vertical-align: middle;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+
+    span {
+      display: inline-block;
+      width: 75px;
+      height: 47px;
+    }
+  }
+
+  &.color-white .to-main-version span {
+    background: transparent url(../../images/sprite-blind.png) 0 -80px no-repeat;
+  }
+
+  &.color-black .to-main-version span {
+    background: transparent url(../../images/sprite-blind.png) 0 -133px no-repeat;
+  }
+
+  &.color-blue .to-main-version span {
+    background: transparent url(../../images/sprite-blind.png) 0 -184px no-repeat;
+  }
+}
+
+/******* font toggle widget *******/
+
+.css-blind {
+  .font-toggle {
+    width: 140px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 35px;
+
+    span {
+      display: inline-block;
+      vertical-align: baseline;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 0 5px;
+
+      &:hover, &.selected {
+        text-decoration: underline;
+      }
+    }
+
+    .a-small {
+      font: bold 30px/1 Arial, Helvetica sans-serif;
+    }
+
+    .a-normal {
+      font: bold 45px/1 Arial, Helvetica sans-serif;
+    }
+
+    .a-big {
+      font: bold 60px/1 Arial, Helvetica sans-serif;
+    }
+  }
+}
+
+/******* background toggle widget *******/
+
+.css-blind {
+  .color-toggle {
+    display: inline-block;
+    vertical-align: middle;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 71px;
+      height: 71px;
+      cursor: pointer;
+      margin: 0 3px;
+      position: relative;
+
+      &:hover:after, &.selected:after {
+        content: '\25B2';
+        position: absolute;
+        top: 70px;
+        left: 25px;
+      }
+    }
+
+    .white {
+      background: transparent url(../../images/sprite-blind.png) 0 0 no-repeat;
+    }
+
+    .black {
+      background: transparent url(../../images/sprite-blind.png) -77px 0 no-repeat;
+    }
+
+    .blue {
+      background: transparent url(../../images/sprite-blind.png) -155px 0 no-repeat;
+    }
+  }
+}
+
+/******* images toggle widget *******/
+
+.css-blind {
+  .image-toggle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    margin: 0 35px;
+    text-align: center;
+
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+        width: 42px;
+        height: 42px;
+        margin: 5px auto;
+      }
+    }
+  }
+
+  &.color-white .image-toggle div span {
+    background: transparent url(../../images/sprite-blind.png) -85px -80px no-repeat;
+  }
+
+  &.color-white .image-toggle div.selected span {
+    background: transparent url(../../images/sprite-blind.png) -133px -80px no-repeat;
+  }
+
+  &.color-black .image-toggle div span {
+    background: transparent url(../../images/sprite-blind.png) -85px -132px no-repeat;
+  }
+
+  &.color-black .image-toggle div.selected span {
+    background: transparent url(../../images/sprite-blind.png) -133px -132px no-repeat;
+  }
+
+  &.color-blue .image-toggle div span {
+    background: transparent url(../../images/sprite-blind.png) -85px -185px no-repeat;
+  }
+
+  &.color-blue .image-toggle div.selected span {
+    background: transparent url(../../images/sprite-blind.png) -133px -185px no-repeat;
+  }
+}
+
+/******* global *******/
+
+/* fonts */
+
+body.css-blind {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* white backgroung */
+
+.color-white {
+  background-color: #fff;
+}
+
+.color-white.css-blind {
+  color: #000;
+}
+
+.color-white.css-blind a,
+.color-white.css-blind a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.color-white.css-blind p.navbar-text {
+  color: #000;
+}
+
+.color-white.css-blind #navbar .navbar-nav > li > a,
+.color-white.css-blind #navbar .navbar-nav > li > a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* black backgroung */
+
+.color-black {
+  background-color: #000;
+}
+
+.color-black.css-blind {
+  color: #fff;
+}
+
+.color-black.css-blind a,
+.color-black.css-blind a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.color-black.css-blind p.navbar-text {
+  color: #fff;
+}
+
+.color-black.css-blind #navbar .navbar-nav > li > a,
+.color-black.css-blind #navbar .navbar-nav > li > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* blue backgroung */
+
+body.color-blue {
+  background-color: #9dd1ff;
+}
+
+.color-blue.css-blind {
+  color: #063462;
+}
+
+.color-blue.css-blind a,
+.color-blue.css-blind a:hover {
+  color: #063462;
+  text-decoration: underline;
+}
+
+.color-blue.css-blind p.navbar-text {
+  color: #063462;
+}
+
+.color-blue.css-blind #navbar .navbar-nav > li > a,
+.color-blue.css-blind #navbar .navbar-nav > li > a:hover {
+  color: #063462;
+  text-decoration: underline;
+}
+
+/* font sizes */
+
+.fontsize-small.css-blind .region-content {
+  font-size: 110%; /*18px;*/
+}
+
+.fontsize-middle.css-blind .region-content {
+  font-size: 130%; /*21px;*/
+}
+
+.fontsize-big.css-blind .region-content {
+  font-size: 140%; /*24px;*/
+}
+
+/* images */
+
+.image-off.css-blind .region-content img {
+  display: none;
+}
+
+/******* site elements *******/
+
+/* navbar */
+
+.css-blind {
+  .navbar-wrapper {
+    position: static;
+    margin-top: 0;
+  }
+
+  #navbar {
+    background: transparent;
+
+    .nav {
+      text-align: center;
+      font-size: 19px;
+
+      > li {
+        display: inline-block;
+      }
+    }
+
+    .navbar-nav {
+      > li {
+        float: none;
+
+        &.active > a {
+          background-color: transparent;
+          border: 2px solid;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+
+  a.navbar-brand {
+    margin: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 39px;
+  }
+
+  p.navbar-text {
+    margin: 0 15px 15px;
+    font-size: 26px;
+  }
+}
+
+/* breadcrumb, well */
+
+.css-blind {
+  .breadcrumb, .well {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 19px;
+  }
+}
+
+/* side menu */
+
+.css-blind {
+  .side-menu-wrapper .list-group-item, .side-menu-wrapper .list-group-item:hover {
+    background-color: transparent;
+    font-size: 19px;
+  }
+
+  &.color-white .side-menu-wrapper .list-group-item:hover {
+    color: #000;
+  }
+
+  &.color-black .side-menu-wrapper .list-group-item:hover {
+    color: #fff;
+  }
+
+  &.color-blue .side-menu-wrapper .list-group-item:hover {
+    color: #063462;
+  }
+
+  .list-group.list-group-root .list-group-item.active {
+    background-color: transparent;
+  }
+
+  &.color-white .list-group.list-group-root .list-group-item.active {
+    color: #000;
+  }
+
+  &.color-black .list-group.list-group-root .list-group-item.active {
+    color: #fff;
+  }
+
+  &.color-blue .list-group.list-group-root .list-group-item.active {
+    color: #063462;
+  }
+}
+
+.color-white.css-blind .list-group.list-group-root > .list-group > .list-group-item,
+.color-blue.css-blind .list-group.list-group-root > .list-group > .list-group-item {
+  background-image: url("../../images/menu_arrow_dark.png");
+}
+
+.color-black.css-blind .list-group.list-group-root > .list-group > .list-group-item {
+  background-image: url("../../images/menu_arrow_light.png");
+}
+
+/* footer */
+
+.css-blind {
+  .footer-wrapper {
+    background-color: transparent;
+  }
+
+  .footer {
+    background: transparent;
+    border-style: solid;
+    border-width: 3px;
+
+    .menu {
+      font-size: 19px;
+    }
+
+    h2, #block-szn-logo, .copyright {
+     display: none;
+   }
+  }
+}
+
+.color-white.css-blind .footer {
+  border-color: #000;
+}
+
+.color-black.css-blind .footer {
+  border-color: #fff;
+}
+
+.color-blue.css-blind .footer {
+  border-color: #063462;
+}
+
+/* banner right */
+
+.color-white.css-blind #block-static-bns-block-right .views-field-field-bn-url a {
+  border-color: #000;
+}
+
+.color-black.css-blind #block-static-bns-block-right .views-field-field-bn-url a {
+  border-color: #fff;
+}
+
+.color-blue.css-blind #block-static-bns-block-right .views-field-field-bn-url a {
+  border-color: #063462;
+}
+
+/* structure */
+
+.css-blind .view-structure .views-field:hover {
+  background-color: transparent;
+}
+
+.color-white.css-blind .view-structure .views-field {
+  border-color: #000;
+}
+
+.color-black.css-blind .view-structure .views-field {
+  border-color: #fff;
+}
+
+.color-blue.css-blind .view-structure .views-field {
+  border-color: #063462;
+}
+
+/* carousel, map, frontpage banner */
+
+.css-blind {
+  .carousel, #block-map-block, #frontpage-banner {
+    display: none;
+  }
+}
+
+/* button */
+.css-blind .btn {
+  background-color: transparent;
+}

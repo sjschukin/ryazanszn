@@ -1,0 +1,241 @@
+.main-container {
+  padding-bottom: 21px;
+}
+
+.content img {
+  background-color: #ecf0f1;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 0 15px 15px 0;
+}
+
+.content figure img {
+  float: none;
+}
+
+.content figcaption {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.field-top-padding {
+  padding-top: 21px;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/******* news *******/
+
+.news.teaser {
+  &.is-sticky {
+    background-color: #ecf0f1;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+ .content {
+    img {
+      float: left;
+    }
+
+    .field--name-field-image-news .field--item {
+      float: left;
+    }
+ }
+}
+
+/******* feed *******/
+
+.feed-icons {
+  padding-top: 21px;
+}
+
+/******* employees *******/
+
+.employee {
+  .field {
+    margin-bottom: 15px;
+  }
+
+  .field--name-field-branch {
+    font-size: 22.5px;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+
+  .field--name-field-emp-jobtitle {
+    font-size: 22.5px;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+
+  .field--name-field-emp-photo img {
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+  }
+}
+
+/******* photoalbums *******/
+
+.photoalbum {
+  &.teaser {
+    text-align: center;
+  }
+
+  &.full img {
+    float: left;
+    margin: 15px 15px 15px 0;
+  }
+}
+
+/******* documents *******/
+.document {
+  h4 {
+    margin-top: 0;
+  }
+
+  .content {
+    padding-left: 75px;
+    background: url("../../images/file-img.png") top left no-repeat;
+    min-height: 65px;
+  }
+}
+
+/******* inspections *******/
+
+.inspection {
+  h2 {
+    margin-top: 0;
+  }
+
+  .content {
+    padding-left: 75px;
+    background: url("../../images/inspect-img.png") top left no-repeat;
+    min-height: 75px;
+  }
+}
+
+/******* custom blocks *******/
+
+#block-szn-logo {
+  margin-bottom: 5px;
+
+  .sprite {
+    float: left;
+  }
+
+  .bn-text-wrapper {
+    position: relative;
+    height: 64px;
+
+    a {
+      position: absolute;
+      top: 50%;
+      padding: 0 10px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/******* right banners *******/
+
+#block-static-bns-block-right {
+  .views-row {
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  .views-field-field-bn-image {
+    padding: 8px;
+  }
+
+  .views-field-field-bn-url a {
+    border: 1px solid #18bc9c;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/******* structure *******/
+.view-structure {
+  ul {
+    padding-left: 0;
+
+    ul {
+      padding-left: 3em;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .views-field {
+    min-height: 20px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 2px solid #dce4ec;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  .views-field:hover {
+    background-color: #ecf0f1;
+  }
+}
+
+/******* side panel *******/
+
+#side-float-panel {
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  background-color: #ecf0f1;
+}
+
+/******* blind version panel *******/
+
+#to-blind-version {
+  display: block;
+  float: right;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 3px 10px;
+}
+
+.blind-panel {
+  display: none;
+}
+
+/******* to top navigation button *******/
+
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 3%;
+  border: 2px solid #18bc9c;
+  border-radius: 4px;
+
+  a {
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+}

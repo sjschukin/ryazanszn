@@ -1,0 +1,76 @@
+.sprite {
+  background-image: url("../../images/sprite.png");
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .sprite {
+    background-image: url("../../images/sprite2x.png");
+    background-size: 959px 556px;
+  }
+}
+
+.sprite-case {
+  width: 64px;
+  height: 64px;
+  background-position: 0 0;
+}
+
+.sprite-coat-ro {
+  width: 64px;
+  height: 64px;
+  background-position: -64px -64px;
+}
+
+.sprite-feed {
+  width: 64px;
+  height: 64px;
+  background-position: -128px -128px;
+}
+
+.sprite-globe {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -192px;
+}
+
+.sprite-hands {
+  width: 64px;
+  height: 64px;
+  background-position: -224px -224px;
+}
+
+.sprite-inspection {
+  width: 64px;
+  height: 64px;
+  background-position: -288px -288px;
+}
+
+.sprite-menu-arrow-dark {
+  width: 16px;
+  height: 17px;
+  background-position: -352px -352px;
+}
+
+.sprite-menu-arrow-light {
+  width: 16px;
+  height: 17px;
+  background-position: -368px -369px;
+}
+
+.sprite-menu-arrow-selected {
+  width: 16px;
+  height: 17px;
+  background-position: -384px -386px;
+}
+
+.sprite-notepad {
+  width: 64px;
+  height: 64px;
+  background-position: -400px -403px;
+}
+
+.sprite-people-bg {
+  width: 495px;
+  height: 89px;
+  background-position: -464px -467px;
+}

@@ -1,9 +1,9 @@
 global-styling:
   css:
     theme:
-      css/overrides.min.css: {}
-      css/style.css: {}
-      css/blind.css: {}
+      styles/css/overrides.min.css: {}
+      styles/css/style.css: {}
+      styles/css/blind.css: {}
   js:
     js/global.js: {}
     js/sputnik.js: {}

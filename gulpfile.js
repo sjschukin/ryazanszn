@@ -3,15 +3,15 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create();
 
-var themeRoot = "web/themes/richtan/";
+var themeRoot = "web/themes/blondytan2/";
 
 gulp.task('sass', function(done) {
-    gulp.src(themeRoot + "scss/**/*.scss")
+    gulp.src(themeRoot + "styles/scss/**/*.scss")
         .pipe(sourcemaps.init())
         .pipe(sass())
         .on('error', sass.logError)
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(themeRoot + 'css'))
+        .pipe(gulp.dest(themeRoot + 'styles/css'))
         .pipe(browserSync.reload({stream: true}));
 
     done();
@@ -20,14 +20,14 @@ gulp.task('sass', function(done) {
 gulp.task('browser-sync', function(done) {
     //watch files
     var files = [
-        themeRoot + "css/*.css",
+        themeRoot + "styles/css/*.css",
         themeRoot + "js/*.js",
         themeRoot + "images/**/*",
         themeRoot + "templates/**/*.twig"
     ];
     //initialize browsersync
     browserSync.init(files, {
-        proxy: "dev.ryazanszn.ru"
+        proxy: "dev.upr.ryazanszn.ru"
     });
 
     //browserSync.watch("web/").on('change', reload);
@@ -36,8 +36,7 @@ gulp.task('browser-sync', function(done) {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(themeRoot + "scss/**/*.scss", gulp.series('sass'));
+    gulp.watch(themeRoot + "styles/scss/**/*.scss", gulp.series('sass'));
 });
 
-//gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
 gulp.task('default', gulp.parallel('browser-sync', 'watch'));

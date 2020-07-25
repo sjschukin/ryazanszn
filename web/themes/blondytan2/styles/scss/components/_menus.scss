@@ -1,0 +1,58 @@
+/******* main menu *******/
+
+.menu a.is-active {
+  text-decoration: underline;
+}
+
+/******* nested side menu *******/
+// http://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap
+.list-group.list-group-root {
+  padding: 0;
+
+  .list-group {
+    margin-bottom: 0;
+  }
+
+  .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+
+    &.active {
+      font-weight: bold;
+      color: #18bc9c;
+      background-color: #ffffff;
+      z-index: 0;
+    }
+
+    &:hover {
+      background-color: #2c3e50;
+      color: #ffffff
+    }
+  }
+
+  > .list-group-item:first-child {
+    border-top-width: 0;
+  }
+
+  > .list-group
+  {
+    > .list-group-item {
+      padding-left: 30px;
+      background-image: url("../../images/menu_arrow_dark.png");
+      background-repeat: no-repeat;
+      background-position: 12px center;
+
+      &:hover {
+        background-image: url("../../images/menu_arrow_light.png");
+      }
+
+      &.active {
+        background-image: url("../../images/menu_arrow_sel.png");
+      }
+    }
+
+    .list-group > .list-group-item {
+      padding-left: 45px;
+    }
+  }
+}

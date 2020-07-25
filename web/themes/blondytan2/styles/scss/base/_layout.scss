@@ -1,0 +1,128 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  position: static;
+  margin-top: 0;
+  /* Margin bottom by footer height */
+  margin-bottom: 270px;
+}
+
+/******* header *******/
+
+.navbar-header{
+  float: none;
+}
+
+.region-navigation {
+  margin: 9px 0 0 0;
+
+  .logo {
+    float: left;
+    display: block;
+  }
+
+  .name {
+    float: none;
+    padding: 0;
+    margin: 0 0 0 65px;
+    display: block;
+    height: auto;
+  }
+}
+
+.navbar-default {
+  background: #2c3e50 url("../../images/header-bg.png") no-repeat;
+  background-position: 641px 42px;
+
+  .navbar-text {
+    float: none;
+    font-size: 85%;
+    margin: 5px 0 0 65px;
+    display: block;
+    color: #949ea0;
+  }
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .navbar-default {
+    background: #2c3e50 url("../../images/header-bg2x.png") right bottom no-repeat;
+    background-size: 495px 89px;
+  }
+}
+
+.navbar-nav {
+  float: none;
+
+  .to-portal {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+/******* footer *******/
+
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 270px;
+}
+
+.footer {
+  margin-top: 0;
+  padding-bottom: 10px;
+  background-color: #2c3e50;
+  color: #e5e5e5;
+  font-size: 85%;
+  border-top: none;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  /* Set the fixed height of the footer here */
+  min-height: 270px;
+
+  a {
+    color: #e5e5e5;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 19px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+  }
+
+  .region {
+    margin-bottom: 21px;
+
+    ul.menu {
+      padding-left: 0;
+
+      li {
+        list-style-type: none;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  .region-footer {
+    margin: 0;
+  }
+
+  &.container {
+    max-width: 1140px;
+  }
+}
+
+.path-frontpage .footer-wrapper {
+  background-color: #2c3e50;
+  position: static;
+  height: auto;
+
+  .footer {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,147 @@
+body.path-frontpage {
+  margin-bottom: 0;
+}
+
+.dotted-overlay {
+  background: transparent url("../../images/gridtile.png") repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+}
+
+.carousel {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.carousel .item {
+  height: 500px;
+}
+
+.carousel-caption {
+  z-index: 9;
+}
+
+@media (min-width: 768px) {
+  /* Increase size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+/******* frontpage banner *******/
+
+#frontpage-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #808080;
+  height: 400px;
+  position: relative;
+  margin-bottom: 60px;
+
+  .caption {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 40px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  img {
+    margin: 0 20px 0 0;
+    float: left;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #frontpage-banner img {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  #frontpage-banner .caption {
+    left: 20%;
+    right: 20%;
+  }
+
+  #frontpage-banner .caption h1 {
+    font-size: 48px;
+  }
+}
+
+/******* featurettes *******/
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+/******* marketing content *******/
+
+/* align center of text within banner columns */
+.marketing {
+  text-align: center;
+
+  .row > div {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-weight: normal;
+  }
+
+  p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/******* banners-block content *******/
+
+.block-banners {
+  padding-top: 30px;
+  background-color: #95a5a6;
+
+  .col-md-3 {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
