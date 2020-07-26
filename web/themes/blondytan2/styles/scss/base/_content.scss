@@ -3,10 +3,10 @@
 }
 
 .content img {
-  background-color: #ecf0f1;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  padding: 15px;
+  // background-color: #ecf0f1;
+  // border: 1px solid transparent;
+  // border-radius: 6px;
+  // padding: 15px;
   margin: 0 15px 15px 0;
 }
 
@@ -30,7 +30,7 @@
 
 /******* news *******/
 
-.news.teaser {
+.view-news {
   &.is-sticky {
     background-color: #ecf0f1;
     border: 1px solid transparent;
@@ -41,13 +41,41 @@
 
  .content {
     img {
-      float: left;
-    }
+      padding: 4px;
+      background-color: #ffffff;
+      border: 1px solid #ecf0f1;
+      border-radius: 4px;
+      transition: all .2s ease-in-out;
+      display: inline-block;
+      max-width: 100%;
 
-    .field--name-field-image-news .field--item {
-      float: left;
+      &:hover {
+        padding: 0;
+      }
     }
  }
+}
+
+.news {
+  .field--name-field-image-news {
+    .field--item {
+      float: left;
+
+      img {
+        padding: 4px;
+        background-color: #ffffff;
+        border: 1px solid #ecf0f1;
+        border-radius: 4px;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        max-width: 100%;
+
+        &:hover {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
 /******* feed *******/

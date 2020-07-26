@@ -99,6 +99,8 @@
         }
     },
     "require-dev": {
-        "drupal/twig_xdebug": "^1.2"
+        "drupal/devel": "^4.0",
+        "drupal/twig_xdebug": "^1.2",
+        "kint-php/kint": "^3.3"
     }
 }

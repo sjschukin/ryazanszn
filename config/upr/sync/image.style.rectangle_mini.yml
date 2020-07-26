@@ -3,7 +3,7 @@ langcode: ru
 status: true
 dependencies: {  }
 name: rectangle_mini
-label: 'Прямоугольный мини (188x140)'
+label: 'Rectangle mini with clipping (188x140)'
 effects:
   a2429968-d4e1-4f1c-95cd-7387e716a79a:
     uuid: a2429968-d4e1-4f1c-95cd-7387e716a79a

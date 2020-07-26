@@ -134,7 +134,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'With selection'
+          action_title: 'С выделенным'
           include_exclude: exclude
           selected_actions: {  }
           entity_type: contact_message
@@ -211,7 +211,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Sender''s name'
+          label: 'Имя отправителя'
           exclude: false
           alter:
             alter_text: false
@@ -495,7 +495,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'There is no Contact message yet.'
+          content: 'Нет контактных сообщений.'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }

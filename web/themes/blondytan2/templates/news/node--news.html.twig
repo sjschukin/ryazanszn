@@ -64,8 +64,6 @@
  */
 #}
 
-{# Новость #}
-
 {%
   set classes = [
     node.bundle|clean_class,
@@ -90,15 +88,9 @@
     {{ metadata }}
   </footer>
   <div{{ content_attributes.addClass('content') }}>
-    {% if teaser %}
-      {{ content.field_image_news[0] }}
       {{ content.body }}
-    {% else %}
       <div class="clearfix">
         {{ content.field_image_news }}
       </div>
-      {{ content.body }}
-    {% endif %}
-
   </div>
 </article>

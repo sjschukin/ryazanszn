@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.body
-    - field.storage.node.field_image_news
+    - field.storage.node.field_image
     - image.style.rectangle_mini
     - node.type.news
     - system.menu.main
@@ -60,6 +60,9 @@ display:
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Элементов на страницу'
@@ -68,9 +71,6 @@ display:
             items_per_page_options_all_label: '- Все -'
             offset: false
             offset_label: Пропустить
-          tags:
-            previous: ‹‹
-            next: ››
       style:
         type: default
         options:
@@ -435,10 +435,10 @@ display:
       row:
         type: fields
         options:
+          default_field_elements: true
           inline: {  }
           separator: ''
           hide_empty: false
-          default_field_elements: true
       fields:
         title:
           id: title
@@ -572,10 +572,10 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
-        field_image_news:
-          id: field_image_news
-          table: node__field_image_news
-          field: field_image_news
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -583,7 +583,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '<img src="{{ field_image__target_id }}" class="img-thumbnail" alt="{{ field_image__title }}" typeof="foaf:Image" width="{{ field_image__width }}" height="{{ field_image__height }}">'
             make_link: false
             path: ''
             absolute: false
@@ -628,7 +628,7 @@ display:
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: 1
+          delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -709,4 +709,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image_news'
+        - 'config:field.storage.node.field_image'

@@ -1,0 +1,15 @@
+uuid: 9fd49414-e652-495e-8749-dedea60b0d3c
+langcode: ru
+status: true
+dependencies: {  }
+name: rectangle_mini_aspect_ratio
+label: 'Rectangle mini with aspect ratio (188x140)'
+effects:
+  97a3a2cf-cc22-4467-9290-b9f95ca74d52:
+    uuid: 97a3a2cf-cc22-4467-9290-b9f95ca74d52
+    id: image_scale
+    weight: 1
+    data:
+      width: 188
+      height: 140
+      upscale: true
