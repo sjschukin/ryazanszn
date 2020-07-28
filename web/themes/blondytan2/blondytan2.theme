@@ -6,6 +6,46 @@
  * Place your custom PHP code in this file.
  */
 
+
+// function blondytan2_preprocess_node(&$variables) {
+//   //dpm($variables['elements']['field_image_news']);
+// }
+
+// function blondytan2_preprocess(&$variables, $hook) {
+//   if ($hook == 'image') {
+//     $variables['attributes']['class'][] = 'qqq';
+//     var_dump($variables);
+//   }
+// }
+
+// function blondytan2_preprocess_views_view_field(&$variables) {
+//   $view = $variables['view'];
+//   $field = $variables['field'];
+//   $row = $variables['row'];
+
+//   if ($view->id() == 'news') {
+//     if ($field->field == 'field_image') {
+//       //  foreach($field->items as $key => $item) {
+//       //    $field['items'][$key]['attributes']['class'][] = 'qqq';
+//       //  }
+
+//       // foreach($field->getItems($variables['row']) as $key => $item) {
+//       //   $item['raw']->set('class', 'qqq');
+//       // }
+
+
+//       //dpm($field->getValue($row));
+//       //debug(array_keys($variables['row']));
+//       //$field['attributes']['class'][] = 'qqq';
+//       //var_dump($view);
+//     }
+//   }
+//   //var_dump($variables['field_name']);
+//   // if ($variables['field']['element']['#name'] == 'news') {
+//   //   var_dump($variables['view']);
+//   // }
+// }
+
 /**
  * Implements hook_preprocess_block().
  */
@@ -26,11 +66,31 @@ function blondytan2_theme_suggestions_menu_alter(array &$suggestions, array $var
   }
 }
 
+/**
+ * Implements hook_theme_suggestions_alter().
+ */
+function blondytan2_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if ($hook == 'views_tree') {
+    $suggestions[] = 'views__tree__'.$variables['view']->id();
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function blondytan2_page_attachments_alter(&$page){
+  $path = $current_path = \Drupal::service('path.current')->getPath();
+
+  if($path == '/activities/social-navigator') {
+    $page['#attached']['library'][] = 'blondytan2/social-navigator-library';
+  }
+}
+
 function blondytan2_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
   if (isset($form_id)) {
     return;
   }
-  
+
   $form['second_text'] = array(
     '#type'           => 'textfield',
     '#title'          => 'Дополнительный текст',

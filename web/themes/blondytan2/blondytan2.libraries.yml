@@ -10,3 +10,6 @@ global-styling:
     - core/jquery
     - core/jquery.once
     - core/jquery.cookie
+social-navigator-library:
+  js:
+    js/social-navigator.js: {}
