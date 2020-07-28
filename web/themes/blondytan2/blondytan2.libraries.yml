@@ -6,7 +6,6 @@ global-styling:
       styles/css/blind.css: {}
   js:
     js/global.js: {}
-    js/sputnik.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
