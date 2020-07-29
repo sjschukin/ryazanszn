@@ -7,42 +7,6 @@ _core:
 langcode: ru
 include_css: false
 plugins:
-  frontpage:
-    enabled: false
-    weight: -50
-    settings:
-      title: 'Front page'
-      rss: /rss.xml
-  'menu:main':
-    enabled: true
-    weight: -50
-    settings:
-      title: 'Главное меню'
-      show_disabled: false
-  'menu:account':
-    enabled: false
-    weight: -50
-    settings:
-      title: 'User account menu'
-      show_disabled: false
-  'menu:admin':
-    enabled: false
-    weight: -50
-    settings:
-      title: Администрирование
-      show_disabled: false
-  'menu:footer':
-    enabled: false
-    weight: -50
-    settings:
-      title: Подвал
-      show_disabled: false
-  'menu:tools':
-    enabled: false
-    weight: -50
-    settings:
-      title: Tools
-      show_disabled: false
   'vocabulary:branches':
     enabled: false
     weight: -50
@@ -52,9 +16,9 @@ plugins:
       show_count: true
       term_depth: 9
       term_count_threshold: 0
-      customize_link: null
+      customize_link: false
       term_link: entity.taxonomy_term.canonical|taxonomy_term
-      always_link: null
+      always_link: false
       enable_rss: true
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
@@ -67,9 +31,54 @@ plugins:
       show_count: true
       term_depth: 9
       term_count_threshold: 0
-      customize_link: null
+      customize_link: false
       term_link: entity.taxonomy_term.canonical|taxonomy_term
-      always_link: null
+      always_link: false
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:faq_categories':
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Типы документов'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:public_services_categories':
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Типы документов'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:social_navigator_categories':
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Типы документов'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
       enable_rss: true
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
@@ -82,9 +91,81 @@ plugins:
       show_count: true
       term_depth: 9
       term_count_threshold: 0
-      customize_link: null
+      customize_link: false
       term_link: entity.taxonomy_term.canonical|taxonomy_term
-      always_link: null
+      always_link: false
       enable_rss: true
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
+  'menu:account':
+    enabled: false
+    weight: -50
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:admin':
+    enabled: false
+    weight: -50
+    settings:
+      title: Администрирование
+      show_disabled: false
+  'menu:devel':
+    enabled: false
+    weight: -50
+    settings:
+      title: Администрирование
+      show_disabled: false
+  'menu:extra-menu':
+    enabled: false
+    weight: -50
+    settings:
+      title: Администрирование
+      show_disabled: false
+  'menu:footer':
+    enabled: false
+    weight: -50
+    settings:
+      title: Подвал
+      show_disabled: false
+  'menu:main':
+    enabled: true
+    weight: -50
+    settings:
+      title: 'Главное меню'
+      show_disabled: false
+  'menu:tools':
+    enabled: false
+    weight: -50
+    settings:
+      title: Tools
+      show_disabled: false
+  frontpage:
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+  book:
+    enabled: false
+    weight: -50
+  'vocabulary:banner_types':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Типы баннеров'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+plugin_settings__active_tab: edit-plugins-menumain-settings
+submit: 'Сохранить конфигурацию'
+form_build_id: form-16ccCMSu4FYwt0U4abizgeJQJTLnUquWYO6FCdnrM40
+form_token: JLJRJAm4RctrrZJ8JX1EWjtW27VEIGFs9BTg3zWhSbI
+form_id: sitemap_settings
+op: 'Сохранить конфигурацию'

@@ -65,9 +65,14 @@ display:
           type: ul
           main_field: tid
           parent_field: tid_1
-          collapsible_tree: '0'
+          collapsible_tree: collapsed
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         name:
           id: name
@@ -382,7 +387,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
