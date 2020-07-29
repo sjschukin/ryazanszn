@@ -267,3 +267,34 @@
     display: block;
   }
 }
+
+/******* social navigator *******/
+
+.view-social-navigator-view {
+  ul {
+    list-style-type: none;
+
+    li {
+      .views_tree_link {
+        width: 25px;
+        height: 100%;
+        clear: both;
+        float: left;
+
+        &.views_tree_link_collapsed {
+          a {
+            background: transparent url(../../images/plus.svg) no-repeat center center;
+            background-size: 100% 100%;
+          }
+        }
+
+        &.views_tree_link_expanded {
+          a {
+            background: transparent url(../../images/minus.svg) no-repeat center center;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+}
