@@ -1,4 +1,4 @@
-uuid: fc1bfb22-0482-4c18-9b41-f14fd8c8e6f3
+uuid: b607b2a2-0336-45db-8b13-d3ede9b6bdcc
 langcode: ru
 status: true
 dependencies:
@@ -12,43 +12,42 @@ mode: default
 content:
   field_phone_number:
     weight: 1
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   mail:
-    weight: 2
+    weight: -2
     region: content
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: basic_string
   message:
-    type: string_textarea
-    weight: 4
-    settings:
-      rows: 12
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  name:
+    type: string
     weight: 0
+    label: above
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  preview:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  subject:
-    type: string_textfield
-    weight: 3
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
+  name:
+    weight: -3
     region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  subject:
+    weight: -1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
 hidden:
-  copy: true
   langcode: true

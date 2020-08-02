@@ -1,33 +1,28 @@
-uuid: 64b3755d-8698-427d-9aa0-b62f53c7d6f0
+uuid: fe0039b7-7cbb-491b-b7fc-bcdd6baec757
 langcode: ru
 status: true
 dependencies:
   config:
-    - contact.form.appointment
+    - contact.form.feedback
   module:
     - contact_block
     - node
     - system
   theme:
     - blondytan2
-id: appointment_contact_block
+id: feedback_contact_block
 theme: blondytan2
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: 'Форма записи на прием'
+  label: 'Форма обратной связи'
   provider: contact_block
   label_display: '0'
-  contact_form: appointment
+  contact_form: feedback
 visibility:
-  request_path:
-    id: request_path
-    pages: /contacts/appointment
-    negate: false
-    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
@@ -35,3 +30,8 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /contacts/feedback
+    negate: false
+    context_mapping: {  }

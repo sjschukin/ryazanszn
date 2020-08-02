@@ -146,7 +146,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Subject
+          label: Тема
           exclude: false
           alter:
             alter_text: false
