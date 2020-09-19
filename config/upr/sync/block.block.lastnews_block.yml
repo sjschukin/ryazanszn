@@ -1,6 +1,6 @@
-uuid: 553b2637-532e-40e7-a358-2743742b99fd
+uuid: fe426c09-2dc7-44a5-8b95-4cc73888e661
 langcode: ru
-status: false
+status: true
 dependencies:
   config:
     - views.view.news
@@ -12,11 +12,11 @@ dependencies:
 id: lastnews_block
 theme: blondytan2
 region: content
-weight: -1
+weight: -9
 provider: null
-plugin: 'views_block:news-block_1'
+plugin: 'views_block:news-block_last_news'
 settings:
-  id: 'views_block:news-block_1'
+  id: 'views_block:news-block_last_news'
   label: ''
   provider: views
   label_display: visible
