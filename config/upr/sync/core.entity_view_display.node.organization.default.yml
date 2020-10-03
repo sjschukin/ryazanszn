@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.organization.field_branch
     - field.field.node.organization.field_description
     - field.field.node.organization.field_email
+    - field.field.node.organization.field_main_email
     - field.field.node.organization.field_map_script
     - field.field.node.organization.field_org_group
     - field.field.node.organization.field_phone_number
@@ -28,12 +29,12 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_email:
+  field_main_email:
     weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: email_mailto
+    type: basic_string
     region: content
   field_map_script:
     weight: 2
@@ -90,4 +91,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_branch: true
+  field_email: true
   langcode: true

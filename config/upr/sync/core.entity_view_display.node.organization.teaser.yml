@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.organization.field_branch
     - field.field.node.organization.field_description
     - field.field.node.organization.field_email
+    - field.field.node.organization.field_main_email
     - field.field.node.organization.field_map_script
     - field.field.node.organization.field_org_group
     - field.field.node.organization.field_phone_number
@@ -25,6 +26,7 @@ hidden:
   field_branch: true
   field_description: true
   field_email: true
+  field_main_email: true
   field_map_script: true
   field_org_group: true
   field_phone_number: true

@@ -9,8 +9,8 @@ id: node.organization.field_email
 field_name: field_email
 entity_type: node
 bundle: organization
-label: E-mail
-description: ''
+label: 'E-mail для формы приема граждан'
+description: 'На эти адреса будут отправляться обращения с электронной формы приема граждан'
 required: false
 translatable: false
 default_value: {  }
