@@ -1,3 +1,6 @@
+
+/******* common *******/
+
 .main-container {
   padding-bottom: 21px;
 }
@@ -26,6 +29,40 @@
 .img-center {
   display: block;
   margin: 0 auto;
+}
+
+/******* margins and paddings *******/
+
+.pd-t {
+  padding-top: 21px;
+}
+
+.pd-b {
+  padding-bottom: 21px;
+}
+
+.pd-l {
+  padding-left: 21px;
+}
+
+.pd-b {
+  padding-right: 21px;
+}
+
+.mg-t {
+  margin-top: 21px;
+}
+
+.mg-b {
+  margin-bottom: 21px;
+}
+
+.mg-l {
+  margin-left: 21px;
+}
+
+.mg-b {
+  margin-right: 21px;
 }
 
 /******* news *******/
