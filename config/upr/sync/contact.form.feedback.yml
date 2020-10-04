@@ -17,7 +17,6 @@ id: feedback
 label: 'Обратная связь'
 recipients:
   - mainpost@uprsznro.ru
-  - feedback@ryazanszn.ru
 reply: ''
 weight: 0
 message: 'Ваше сообщение отправлено.'
