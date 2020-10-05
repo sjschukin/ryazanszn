@@ -28,6 +28,8 @@ settings:
             - Underline
             - Strike
             - RemoveFormat
+            - Superscript
+            - Subscript
             - '-'
             - JustifyLeft
             - JustifyCenter
