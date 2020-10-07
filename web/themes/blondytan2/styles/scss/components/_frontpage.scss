@@ -149,11 +149,12 @@ body.path-frontpage {
 /******* other resources content *******/
 
 #block-other-resources-view-block {
+  padding-top: $size_lv;
   background-color: $color_gray;
 
   .col {
     text-align: center;
-    margin: $size-sv 0;
+    margin: $size_sv 0;
 
     a {
       color: $color_very_light;
