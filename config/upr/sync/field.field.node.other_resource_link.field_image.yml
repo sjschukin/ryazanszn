@@ -1,27 +1,27 @@
-uuid: 2591fcba-6606-4117-9a78-f8370a89aef0
+uuid: 5e5f4b65-4e5d-4880-bc85-d44ac0dc54dc
 langcode: ru
 status: true
 dependencies:
   config:
-    - field.storage.node.field_bn_image
-    - node.type.static_bn
+    - field.storage.node.field_image
+    - node.type.other_resource_link
   module:
     - image
-id: node.static_bn.field_bn_image
-field_name: field_bn_image
+id: node.other_resource_link.field_image
+field_name: field_image
 entity_type: node
-bundle: static_bn
-label: 'Изображение баннера'
+bundle: other_resource_link
+label: Изображение
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: bns
-  file_extensions: 'png gif jpg jpeg'
+  file_directory: images/other_resources
+  file_extensions: 'png jpg jpeg'
   max_filesize: ''
-  max_resolution: ''
+  max_resolution: 640x480
   min_resolution: ''
   alt_field: false
   alt_field_required: true

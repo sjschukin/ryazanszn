@@ -1,13 +1,13 @@
-uuid: 67ca7cac-8678-4cd5-9577-a7a0ce47e030
+uuid: 1db36e19-f400-486b-adb7-46186de7b6e7
 langcode: ru
 status: true
 dependencies:
   config:
-    - node.type.static_bn
-id: node.static_bn.promote
+    - node.type.other_resource_link
+id: node.other_resource_link.promote
 field_name: promote
 entity_type: node
-bundle: static_bn
+bundle: other_resource_link
 label: 'Помещено на главную страницу'
 description: ''
 required: false

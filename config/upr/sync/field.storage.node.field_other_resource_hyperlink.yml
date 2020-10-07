@@ -1,12 +1,12 @@
-uuid: 0096cede-2caf-45e3-8c6f-216a933b3239
+uuid: d72ed254-4351-4e32-9e4e-c87a72f5733d
 langcode: ru
 status: true
 dependencies:
   module:
     - link
     - node
-id: node.field_bn_url
-field_name: field_bn_url
+id: node.field_other_resource_hyperlink
+field_name: field_other_resource_hyperlink
 entity_type: node
 type: link
 settings: {  }

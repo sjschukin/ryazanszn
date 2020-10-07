@@ -1,0 +1,23 @@
+uuid: 9448ded2-1977-4a5b-bd23-e2be8227fbab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_resource_hyperlink
+    - node.type.other_resource_link
+  module:
+    - link
+id: node.other_resource_link.field_other_resource_hyperlink
+field_name: field_other_resource_hyperlink
+entity_type: node
+bundle: other_resource_link
+label: 'Ссылка на ресурс'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

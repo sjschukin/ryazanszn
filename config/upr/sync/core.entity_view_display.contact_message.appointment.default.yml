@@ -7,22 +7,11 @@ dependencies:
     - field.field.contact_message.appointment.field_date
     - field.field.contact_message.appointment.field_organization
     - field.field.contact_message.appointment.field_phone_number
-  module:
-    - datetime
 id: contact_message.appointment.default
 targetEntityType: contact_message
 bundle: appointment
 mode: default
 content:
-  field_date:
-    weight: 4
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_organization:
     weight: 3
     label: above
@@ -48,7 +37,7 @@ content:
     type: basic_string
   message:
     type: basic_string
-    weight: 6
+    weight: 5
     label: above
     region: content
     settings: {  }
@@ -62,7 +51,7 @@ content:
     third_party_settings: {  }
     type: string
   subject:
-    weight: 5
+    weight: 4
     region: content
     label: above
     settings:
@@ -70,4 +59,5 @@ content:
     third_party_settings: {  }
     type: string
 hidden:
+  field_date: true
   langcode: true

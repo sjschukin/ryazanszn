@@ -7,22 +7,11 @@ dependencies:
     - field.field.contact_message.appointment.field_date
     - field.field.contact_message.appointment.field_organization
     - field.field.contact_message.appointment.field_phone_number
-  module:
-    - datetime
 id: contact_message.appointment.default
 targetEntityType: contact_message
 bundle: appointment
 mode: default
 content:
-  field_date:
-    weight: 6
-    settings:
-      date_order: DMY
-      time_type: '24'
-      increment: 30
-    third_party_settings: {  }
-    type: datetime_datelist
-    region: content
   field_organization:
     weight: 3
     settings:
@@ -69,5 +58,6 @@ content:
     third_party_settings: {  }
 hidden:
   copy: true
+  field_date: true
   langcode: true
   preview: true
