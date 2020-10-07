@@ -34,35 +34,35 @@
 /******* margins and paddings *******/
 
 .pd-t {
-  padding-top: 21px;
+  padding-top: $size_v;
+}
+
+.pd-r {
+  padding-bottom: $size_h;
 }
 
 .pd-b {
-  padding-bottom: 21px;
+  padding-left: $size_v;
 }
 
 .pd-l {
-  padding-left: 21px;
-}
-
-.pd-b {
-  padding-right: 21px;
+  padding-right: $size_h;
 }
 
 .mg-t {
-  margin-top: 21px;
+  margin-top: $size_v;
+}
+
+.mg-r {
+  margin-bottom: $size_h;
 }
 
 .mg-b {
-  margin-bottom: 21px;
+  margin-left: $size_v;
 }
 
 .mg-l {
-  margin-left: 21px;
-}
-
-.mg-b {
-  margin-right: 21px;
+  margin-right: $size_h;
 }
 
 /******* news *******/

@@ -145,3 +145,18 @@ body.path-frontpage {
     margin: 15px 0;
   }
 }
+
+/******* other resources content *******/
+
+#block-other-resources-view-block {
+  background-color: $color_gray;
+
+  .col {
+    text-align: center;
+    margin: $size-sv 0;
+
+    a {
+      color: $color_very_light;
+    }
+  }
+}
