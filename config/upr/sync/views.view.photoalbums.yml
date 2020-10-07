@@ -166,7 +166,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      title: Фотоальбомы
+      title: Медиаматериалы
       header: {  }
       footer: {  }
       empty: {  }
@@ -192,14 +192,13 @@ display:
       path: about/photoalbums
       menu:
         type: normal
-        title: Фотогалерея
+        title: Медиаматериалы
         description: ''
         expanded: false
         parent: 'menu_link_content:d38e8253-3bf9-4945-bd8d-c675418f39f5'
         weight: -44
         context: '0'
         menu_name: main
-        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
