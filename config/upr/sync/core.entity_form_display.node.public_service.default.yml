@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.public_service.body
     - field.field.node.public_service.field_doc_file
+    - field.field.node.public_service.field_fullname
     - field.field.node.public_service.field_public_services_categories
     - field.field.node.public_service.field_sort
     - node.type.public_service
@@ -33,8 +34,16 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
+  field_fullname:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
   field_sort:
-    weight: 7
+    weight: 5
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -44,7 +53,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 4
     region: content
     third_party_settings: {  }
   title:

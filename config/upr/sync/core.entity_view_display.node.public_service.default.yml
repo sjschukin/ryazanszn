@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.public_service.body
     - field.field.node.public_service.field_doc_file
+    - field.field.node.public_service.field_fullname
     - field.field.node.public_service.field_public_services_categories
     - field.field.node.public_service.field_sort
     - node.type.public_service
@@ -32,8 +33,15 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
-  links:
+  field_fullname:
     weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

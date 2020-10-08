@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.public_service.body
     - field.field.node.public_service.field_doc_file
+    - field.field.node.public_service.field_fullname
     - field.field.node.public_service.field_public_services_categories
     - field.field.node.public_service.field_sort
     - node.type.public_service
@@ -24,6 +25,7 @@ content:
 hidden:
   body: true
   field_doc_file: true
+  field_fullname: true
   field_public_services_categories: true
   field_sort: true
   langcode: true
