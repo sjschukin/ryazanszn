@@ -1,0 +1,16 @@
+.file {
+  font-size: 100%;
+  font-weight: 400;
+
+  .file-link {
+    color: $color_link;
+
+    &:hover {
+      color: $color_link;
+    }
+  }
+
+  .file-size {
+    color: $color_link;
+  }
+}
