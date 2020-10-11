@@ -5,6 +5,7 @@ dependencies:
   config:
     - contact.form.appointment
     - field.field.contact_message.appointment.field_date
+    - field.field.contact_message.appointment.field_desired_time
     - field.field.contact_message.appointment.field_organization
     - field.field.contact_message.appointment.field_phone_number
 id: contact_message.appointment.default
@@ -12,6 +13,14 @@ targetEntityType: contact_message
 bundle: appointment
 mode: default
 content:
+  field_desired_time:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_organization:
     weight: 3
     label: above
