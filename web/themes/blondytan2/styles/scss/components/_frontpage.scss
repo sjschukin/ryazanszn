@@ -26,6 +26,8 @@ body.path-frontpage {
   }
 }
 
+/******* carousel *******/
+
 .carousel {
   margin-bottom: 60px;
   position: relative;
@@ -45,6 +47,19 @@ body.path-frontpage {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    h1 {
+      font-size: 26px;
+    }
+
+    ul {
+      font-size: 16px;
+      line-height: 1.1;
+    }
   }
 }
 
