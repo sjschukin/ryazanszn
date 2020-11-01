@@ -87,11 +87,33 @@
             </button>
           {% endif %}
         </div>
-
         {# Navigation (collapsible) #}
         {% if page.navigation_collapsible %}
           <div class="navbar-collapse collapse">
-            {{ page.navigation_collapsible }}
+            <div id="nav-menu-row" class="row">
+              <div class="col-md-11 nav-menu">
+                {{ page.navigation_collapsible }}
+              </div>
+              <div class="col-md-1 hidden-sm hidden-xs nav-search">
+                <a id="search-button" href="#" title="Поиск по сайту">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+            <div id="nav-search-row" class="row hidden">
+              <div class="col-md-12 nav-search-box">
+                <form action="/search/node" method="get">
+                  <div class="input-group">
+                    <input class="form-control" name="keys" placeholder="Поиск по сайту..." type="text" />
+                    <span class="input-group-btn">
+                      <a id="search-cancel" class="btn btn-default">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                      </a>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         {% endif %}
       </header>
