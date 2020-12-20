@@ -33,7 +33,7 @@
         "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
         "drupal/sitemap": "^2.0",
-        "drupal/smtp": "1.x-dev@dev",
+        "drupal/smtp": "^1.0",
         "drupal/views_bootstrap": "^3.3",
         "drupal/views_field_view": "^1.0@beta",
         "drupal/views_tree": "^2.0@alpha",
