@@ -1,8 +1,0 @@
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Типы документов'
-vid: document_types
-description: ''
-hierarchy: 0
-weight: 0
