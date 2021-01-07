@@ -11,7 +11,6 @@
 
 # Ignore sensitive information
 /web/sites/*
-/web/.htaccess
 #/web/sites/*/settings.php
 #/web/sites/*/settings.local.php
 
