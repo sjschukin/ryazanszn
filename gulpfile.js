@@ -27,7 +27,7 @@ gulp.task('browser-sync', function(done) {
     ];
     //initialize browsersync
     browserSync.init(files, {
-        proxy: "dev.upr.ryazanszn.ru"
+        proxy: "upr.ryazanszn.test"
     });
 
     //browserSync.watch("web/").on('change', reload);
