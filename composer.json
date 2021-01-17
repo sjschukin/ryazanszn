@@ -31,6 +31,7 @@
         "drupal/imce": "^2.2",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
+        "drupal/recaptcha_v3": "^1.4",
         "drupal/redirect": "^1.6",
         "drupal/sitemap": "^2.0",
         "drupal/smtp": "^1.0",
@@ -51,6 +52,9 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/sites/development.services.yml": false
             }
         },
         "installer-paths": {
