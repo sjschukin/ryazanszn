@@ -3,5 +3,5 @@ langcode: ru
 status: true
 dependencies: {  }
 formId: appointment_form
-captchaType: recaptcha/reCAPTCHA
+captchaType: recaptcha_v3/user_send_form
 label: contact_message_appointment_form

@@ -1,0 +1,11 @@
+uuid: 07421ce8-67c7-4f6a-878d-6b67aa8710d0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.appointment_articles
+id: taxonomy_term.appointment_articles
+target_entity_type_id: taxonomy_term
+target_bundle: appointment_articles
+default_langcode: site_default
+language_alterable: false

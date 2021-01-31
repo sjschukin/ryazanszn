@@ -1,0 +1,21 @@
+uuid: cc3e6c2a-7c8b-4cf2-9cc3-5b4d1cbec028
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_article_other
+field_name: field_article_other
+entity_type: contact_message
+type: string
+settings:
+  max_length: 120
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

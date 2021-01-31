@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - contact.form.appointment
+    - field.field.contact_message.appointment.field_article
+    - field.field.contact_message.appointment.field_article_other
     - field.field.contact_message.appointment.field_date
     - field.field.contact_message.appointment.field_desired_time
     - field.field.contact_message.appointment.field_organization
@@ -13,6 +15,20 @@ targetEntityType: contact_message
 bundle: appointment
 mode: default
 content:
+  field_article:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_article_other:
+    weight: 5
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_desired_time:
     weight: 6
     settings:
@@ -44,29 +60,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  message:
-    type: string_textarea
-    weight: 5
-    settings:
-      rows: 12
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
   name:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-  subject:
-    type: string_textfield
-    weight: 4
-    region: content
-    settings:
-      size: 100
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   copy: true
   field_date: true
   langcode: true
+  message: true
   preview: true
+  subject: true

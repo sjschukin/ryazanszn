@@ -21,31 +21,25 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_doc_file:
-    weight: 3
+    weight: 2
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content
-  field_fullname:
-    weight: 0
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   links:
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_fullname: true
   field_public_services_categories: true
   field_sort: true
   langcode: true

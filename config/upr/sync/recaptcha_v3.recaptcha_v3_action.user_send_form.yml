@@ -1,0 +1,8 @@
+uuid: 27c5d346-16ad-4e5c-b4af-5cecbe8cced7
+langcode: ru
+status: true
+dependencies: {  }
+id: user_send_form
+label: 'User send form'
+threshold: 0.7
+challenge: default

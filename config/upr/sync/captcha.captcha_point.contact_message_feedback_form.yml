@@ -3,5 +3,5 @@ langcode: ru
 status: true
 dependencies: {  }
 formId: contact_message_feedback_form
-captchaType: recaptcha/reCAPTCHA
+captchaType: recaptcha_v3/user_send_form
 label: feedback

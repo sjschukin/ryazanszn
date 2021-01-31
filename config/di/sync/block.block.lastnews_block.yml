@@ -1,25 +1,25 @@
-uuid: 91fa75f8-2f25-4bcf-a3fa-c1aa5facc9c1
+uuid: fe426c09-2dc7-44a5-8b95-4cc73888e661
 langcode: ru
 status: true
 dependencies:
   config:
-    - views.view.other_resources_view
+    - views.view.news
   module:
     - system
     - views
   theme:
     - blondytan2
-id: other_resources_view_block
+id: lastnews_block
 theme: blondytan2
 region: content
-weight: -6
+weight: -8
 provider: null
-plugin: 'views_block:other_resources_view-block_1'
+plugin: 'views_block:news-block_last_news'
 settings:
-  id: 'views_block:other_resources_view-block_1'
+  id: 'views_block:news-block_last_news'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
