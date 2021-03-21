@@ -1,2 +1,5 @@
 prod:
   uri: el-pni.ryazanszn.ru
+
+dev:
+  uri: el-pni.ryazanszn.test

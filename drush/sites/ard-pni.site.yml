@@ -2,4 +2,4 @@ prod:
   uri: ard-pni.ryazanszn.ru
 
 dev:
-  uri: dev.ard-pni.ryazanszn.ru
+  uri: ard-pni.ryazanszn.test

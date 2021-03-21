@@ -2,4 +2,4 @@ prod:
   uri: upr.ryazanszn.ru
 
 dev:
-  uri: dev.upr.ryazanszn.ru
+  uri: upr.ryazanszn.test

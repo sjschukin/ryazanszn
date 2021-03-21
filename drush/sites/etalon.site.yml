@@ -2,4 +2,4 @@ prod:
   uri: etalon.ryazanszn.ru
 
 dev:
-  uri: dev.etalon.ryazanszn.ru
+  uri: etalon.ryazanszn.ru.test
