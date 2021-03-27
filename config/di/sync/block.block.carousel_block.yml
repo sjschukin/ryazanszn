@@ -1,0 +1,31 @@
+uuid: 62d8fedb-a4b8-48f0-94e8-e0fe89376376
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7ee728f6-21f7-4338-8f01-fc9036ab57ba'
+  module:
+    - block_content
+    - system
+  theme:
+    - blondytan2
+id: carousel_block
+theme: blondytan2
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:7ee728f6-21f7-4338-8f01-fc9036ab57ba'
+settings:
+  id: 'block_content:7ee728f6-21f7-4338-8f01-fc9036ab57ba'
+  label: Блок-карусель
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

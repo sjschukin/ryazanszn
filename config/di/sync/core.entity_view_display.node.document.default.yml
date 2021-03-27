@@ -1,0 +1,51 @@
+uuid: 3a59a74f-c983-430c-816b-1aab9b0ad395
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.document.field_doc_description
+    - field.field.node.document.field_doc_file
+    - field.field.node.document.field_doc_type
+    - field.field.node.document.field_doc_url
+    - field.field.node.document.field_sort
+    - node.type.document
+  module:
+    - file
+    - link
+    - user
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  field_doc_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_doc_file:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_doc_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_doc_type: true
+  field_sort: true
+  langcode: true
+  links: true

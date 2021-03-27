@@ -1,0 +1,16 @@
+uuid: f9caba79-0433-4b75-9263-bac6f8a1130c
+langcode: ru
+status: false
+dependencies: {  }
+id: prod
+label: prod
+description: 'Production environment specific configuration.'
+folder: ../config/di/prod
+module: {  }
+theme: {  }
+blacklist:
+  - system.performance
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

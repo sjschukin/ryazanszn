@@ -1,0 +1,22 @@
+uuid: d86ed990-faa8-4291-bc70-8c1599080c5a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: inspection_path
+label: Проверки
+type: 'canonical_entities:node'
+pattern: 'monitoring/inspections/[node:nid]'
+selection_criteria:
+  dacd2fd8-a3dc-482b-ba61-fc14b828fea6:
+    id: node_type
+    bundles:
+      inspection: inspection
+    negate: false
+    context_mapping:
+      node: node
+    uuid: dacd2fd8-a3dc-482b-ba61-fc14b828fea6
+selection_logic: and
+weight: -5
+relationships: {  }

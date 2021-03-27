@@ -1,0 +1,18 @@
+uuid: 81694070-0903-410c-ad84-8124da0ee9ad
+langcode: ru
+status: false
+dependencies: {  }
+id: dev
+label: dev
+description: 'Development environment specific configuration.'
+folder: ../config/di/dev
+module: {  }
+theme: {  }
+blacklist:
+  - system.logging
+  - system.performance
+  - views.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

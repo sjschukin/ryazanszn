@@ -1,0 +1,31 @@
+uuid: f3d624b8-0c5b-4c9c-a322-e5c5f98fdfd4
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dcc781b6-4328-42fe-bc0a-9da261b1efa8'
+  module:
+    - block_content
+    - system
+  theme:
+    - blondytan2
+id: tiles_block
+theme: blondytan2
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:dcc781b6-4328-42fe-bc0a-9da261b1efa8'
+settings:
+  id: 'block_content:dcc781b6-4328-42fe-bc0a-9da261b1efa8'
+  label: Блок-тайлы
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

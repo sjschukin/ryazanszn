@@ -1,0 +1,15 @@
+uuid: ef0f50f3-3d1c-4b0c-83a5-34fe08e50183
+langcode: ru
+status: true
+dependencies: {  }
+name: rectangle_mini
+label: 'Прямоугольный мини (188x140)'
+effects:
+  a2429968-d4e1-4f1c-95cd-7387e716a79a:
+    uuid: a2429968-d4e1-4f1c-95cd-7387e716a79a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 188
+      height: 140
+      anchor: center-center

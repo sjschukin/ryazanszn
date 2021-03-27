@@ -1,0 +1,23 @@
+uuid: 33fdd567-e359-44cc-8835-41cd8e405bc8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: branches_path
+label: 'Структурные подразделения'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'about/structure/[term:tid]'
+selection_criteria:
+  53b7c19e-e01f-41e2-bcaa-efb51efad7a1:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      branches: branches
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 53b7c19e-e01f-41e2-bcaa-efb51efad7a1
+selection_logic: and
+weight: -5
+relationships: {  }

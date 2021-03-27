@@ -4,9 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_image
     - field.field.node.news.field_image_news
-    - image.style.rectangle_mini_aspect_ratio
+    - image.style.rectangle_mini
     - node.type.news
   module:
     - colorbox
@@ -25,10 +24,10 @@ content:
     third_party_settings: {  }
     region: content
   field_image_news:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
-      colorbox_node_style: rectangle_mini_aspect_ratio
+      colorbox_node_style: rectangle_mini
       colorbox_node_style_first: ''
       colorbox_image_style: ''
       colorbox_gallery: post
@@ -39,6 +38,5 @@ content:
     type: colorbox
     region: content
 hidden:
-  field_image: true
   langcode: true
   links: true

@@ -1,0 +1,31 @@
+uuid: 1007b137-7397-4ffc-9c67-689d8e59ddb9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_employee
+    - node.type.employee
+    - node.type.rewarding
+_core:
+  default_config_hash: Ih9PJq32xUmT5rkUq860C4QoMY_2OKozFL0X_c0XVyA
+id: node.rewarding.field_ref_employee
+field_name: field_ref_employee
+entity_type: node
+bundle: rewarding
+label: Сотрудник
+description: 'Ссылка на сотрудника. Укажите сотрудника, к которому будут привязано данное награждение.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      employee: employee
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

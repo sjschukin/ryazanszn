@@ -4,17 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.storage.node.body
-    - field.storage.node.field_image
-    - image.style.rectangle_mini
     - node.type.news
     - system.menu.main
   module:
-    - image
     - node
-    - text
     - user
-    - views_bootstrap
 id: news
 label: Новости
 module: views
@@ -61,9 +55,6 @@ display:
           offset: 0
           id: 0
           total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Элементов на страницу'
@@ -72,6 +63,9 @@ display:
             items_per_page_options_all_label: '- Все -'
             offset: false
             offset_label: Пропустить
+          tags:
+            previous: ‹‹
+            next: ››
       style:
         type: default
         options:
@@ -164,20 +158,6 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
-        sticky:
-          id: sticky
-          table: node_field_data
-          field: sticky
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          entity_field: sticky
-          plugin_id: standard
         created:
           id: created
           table: node_field_data
@@ -209,9 +189,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_last_news:
+  block_1:
     display_plugin: block
-    id: block_last_news
+    id: block_1
     display_title: 'Block: Последние новости'
     position: 3
     display_options:
@@ -223,101 +203,25 @@ display:
         row: false
         pager: false
         fields: false
-        css_class: false
-        header: false
       style:
-        type: views_bootstrap_grid
+        type: html_list
         options:
           grouping: {  }
-          alignment: horizontal
-          col_class_default: 1
-          col_class_custom: ''
-          row_class_default: 1
-          row_class_custom: mg-b
-          columns: '12'
-          col_xs: col-xs-12
-          col_sm: col-sm-12
-          col_md: col-md-6
-          col_lg: col-lg-6
+          row_class: ''
+          default_row_class: false
+          type: ul
+          wrapper_class: last-news
+          class: last-news-list
       row:
         type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 5
           offset: 0
       display_description: ''
       block_description: 'Последние новости'
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: pull-left
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: rectangle_mini
-            image_link: content
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -432,21 +336,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      css_class: 'container content'
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: '<h2>[view:title]</h2>'
-            format: basic_html
-          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -454,8 +343,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
+      tags: {  }
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -472,6 +360,7 @@ display:
       path: news.xml
       displays:
         default: default
+        page_1: page_1
     cache_metadata:
       max-age: -1
       contexts:
@@ -480,10 +369,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_2:
+  page_1:
     display_plugin: page
-    id: page_2
-    display_title: Новости
+    id: page_1
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
@@ -494,288 +383,42 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: -40
+        weight: -48
         context: '0'
         menu_name: main
-      defaults:
-        sorts: true
-        style: false
-        row: false
-        fields: false
-      display_description: ''
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: 'content clearfix'
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      fields:
-        title:
-          id: title
+        enabled: true
+      sorts:
+        sticky:
+          id: sticky
           table: node_field_data
-          field: title
+          field: sticky
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h2
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
           entity_type: node
-          entity_field: title
-          plugin_id: field
+          entity_field: sticky
+          plugin_id: standard
         created:
           id: created
           table: node_field_data
           field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h6
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: only_date
-            custom_date_format: ''
-            timezone: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
+          order: DESC
           entity_type: node
           entity_field: created
-          plugin_id: field
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
+          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: '<img src="{{ field_image__target_id }}" class="img-thumbnail" alt="{{ field_image__title }}" typeof="foaf:Image" width="{{ field_image__width }}" height="{{ field_image__height }}">'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: pull-left
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: rectangle_mini
-            image_link: content
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_summary_or_trimmed
-          settings:
-            trim_length: 600
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      defaults:
+        sorts: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -784,6 +427,4 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image'
+      tags: {  }

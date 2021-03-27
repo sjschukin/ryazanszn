@@ -1,0 +1,15 @@
+uuid: b8095514-bef6-4ed3-8412-8e0613e5f0a8
+langcode: ru
+status: true
+dependencies: {  }
+name: square_mini
+label: 'Квадратный мини (150x150)'
+effects:
+  25b26ca5-0e16-47ed-a7ab-fed0f45c378c:
+    uuid: 25b26ca5-0e16-47ed-a7ab-fed0f45c378c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

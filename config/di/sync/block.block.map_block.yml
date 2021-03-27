@@ -1,0 +1,31 @@
+uuid: 2064a0a4-0491-4726-86a2-d49a030abe87
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:071837bd-359a-4105-815f-5361245501a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - blondytan2
+id: map_block
+theme: blondytan2
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:071837bd-359a-4105-815f-5361245501a5'
+settings:
+  id: 'block_content:071837bd-359a-4105-815f-5361245501a5'
+  label: Блок-карта
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/contacts"
+    negate: false
+    context_mapping: {  }

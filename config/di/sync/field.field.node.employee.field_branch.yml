@@ -1,0 +1,28 @@
+uuid: 53b3199f-79ba-4f4d-95d7-1d6b177c5f76
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_branch
+    - node.type.employee
+    - taxonomy.vocabulary.branches
+id: node.employee.field_branch
+field_name: field_branch
+entity_type: node
+bundle: employee
+label: Подразделение
+description: 'Структурное подразделение, в котором числится данный сотрудник.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      branches: branches
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: d5000ce9-3d28-472b-bd60-139be4265cca
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.extra-menu
+  module:
+    - system
+  theme:
+    - blondytan2
+id: extra_menu
+theme: blondytan2
+region: footer_right
+weight: -10
+provider: null
+plugin: 'system_menu_block:extra-menu'
+settings:
+  id: 'system_menu_block:extra-menu'
+  label: Дополнительно
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
