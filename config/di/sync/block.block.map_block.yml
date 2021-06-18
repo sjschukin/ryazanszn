@@ -12,7 +12,7 @@ dependencies:
 id: map_block
 theme: blondytan2
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: 'block_content:071837bd-359a-4105-815f-5361245501a5'
 settings:
