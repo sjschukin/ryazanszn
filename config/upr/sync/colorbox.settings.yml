@@ -19,8 +19,8 @@ custom:
     slideshow: 0
     auto: true
     speed: 2500
-    text_start: 'start slideshow'
-    text_stop: 'stop slideshow'
+    text_start: 'запустить слайдшоу'
+    text_stop: 'остановить слайдшоу'
 advanced:
   unique_token: 1
   mobile_detect: 1
