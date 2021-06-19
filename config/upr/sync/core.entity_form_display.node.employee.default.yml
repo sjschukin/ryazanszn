@@ -13,7 +13,8 @@ dependencies:
     - image.style.thumbnail
     - node.type.employee
   module:
-    - image
+    - image_widget_crop
+    - imce
     - text
 id: node.employee.default
 targetEntityType: node
@@ -60,10 +61,20 @@ content:
   field_emp_photo:
     weight: 5
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - crop_1_1
+      crop_types_required:
+        - crop_1_1
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings:
+      imce:
+        enabled: false
+    type: image_widget_crop
     region: content
   field_sort:
     weight: 6
