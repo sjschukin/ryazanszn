@@ -31,6 +31,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/image_widget_crop": "^2.3",
         "drupal/imce": "^2.2",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
