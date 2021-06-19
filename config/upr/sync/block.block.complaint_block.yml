@@ -1,9 +1,9 @@
-uuid: f14bac94-6a86-4947-8a8c-90c51d9f6de8
+uuid: 45bd3010-6070-4ba6-bc1d-294d5c26b759
 langcode: ru
 status: true
 dependencies:
   content:
-    - 'block_content:basic:67a40318-cdac-4a09-ba68-f3bc922892c5'
+    - 'block_content:basic:ba676b77-3a42-40e4-9f89-c7f037de1445'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: complaint_block
 theme: blondytan2
 region: content
-weight: -7
+weight: -6
 provider: null
-plugin: 'block_content:67a40318-cdac-4a09-ba68-f3bc922892c5'
+plugin: 'block_content:ba676b77-3a42-40e4-9f89-c7f037de1445'
 settings:
-  id: 'block_content:67a40318-cdac-4a09-ba68-f3bc922892c5'
+  id: 'block_content:ba676b77-3a42-40e4-9f89-c7f037de1445'
   label: 'Жалобы на всё'
   provider: block_content
   label_display: '0'

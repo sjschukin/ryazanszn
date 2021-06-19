@@ -1,7 +1,7 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://dev.upr.ryazanszn.ru/themes/blondytan2/favicon.ico'
+  url: 'https://upr.ryazanszn.ru/themes/blondytan2/favicon.ico'
   use_default: 0
 features:
   comment_user_picture: 1

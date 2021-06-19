@@ -7,6 +7,8 @@ module:
   bootstrap_library: 0
   breakpoint: 0
   captcha: 0
+  chosen: 0
+  chosen_lib: 0
   ckeditor: 0
   color: 0
   colorbox: 0
@@ -44,7 +46,6 @@ module:
   rdf: 0
   recaptcha: 0
   recaptcha_v3: 0
-  redirect: 0
   search: 0
   shortcut: 0
   sitemap: 0

@@ -12,7 +12,7 @@ dependencies:
 id: treatment_block
 theme: blondytan2
 region: content
-weight: -10
+weight: -9
 provider: null
 plugin: 'block_content:a4d720cd-0c16-47b6-a8fc-006a6cf6325b'
 settings:

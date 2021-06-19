@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_description
+    - field.storage.node.field_fullname
+    - field.storage.node.field_public_service
     - system.menu.main
     - taxonomy.vocabulary.social_navigator_categories
   module:

@@ -14,7 +14,7 @@ third_party_settings:
 id: appointment
 label: 'Запись на прием'
 recipients:
-  - s.j.schukin@yandex.ru
+  - mainpost@uprsznro.ru
 reply: ''
 weight: 5
 message: 'Ваше сообщение отправлено.'
