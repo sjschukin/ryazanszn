@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.employee.field_emp_phone
     - field.field.node.employee.field_emp_photo
     - field.field.node.employee.field_sort
-    - image.style.square_mini
+    - image.style.square_150x150
     - node.type.employee
   module:
     - image
@@ -23,7 +23,7 @@ mode: default
 content:
   field_branch:
     type: entity_reference_label
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link: true
@@ -37,7 +37,7 @@ content:
     type: text_default
     region: content
   field_emp_jobtitle:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -56,7 +56,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: square_mini
+      image_style: square_150x150
       image_link: ''
     third_party_settings: {  }
     type: image

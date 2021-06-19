@@ -1,0 +1,25 @@
+uuid: b2d88f39-ea28-484a-8c2e-7f11b69489a0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: square_150x150
+label: 'Square (150x150)'
+effects:
+  5ca55fca-55d1-4877-a6d3-a377cd452239:
+    uuid: 5ca55fca-55d1-4877-a6d3-a377cd452239
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  8fa958f0-1c22-4da2-b7e6-b5c0d904e187:
+    uuid: 8fa958f0-1c22-4da2-b7e6-b5c0d904e187
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 150
+      height: 150
+      anchor: center-center
