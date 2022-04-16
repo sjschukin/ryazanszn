@@ -1,0 +1,22 @@
+uuid: 216d150c-f95c-43a8-b92d-31213597749a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: organizations_pattern
+label: 'Районные отделы'
+type: 'canonical_entities:node'
+pattern: 'about/organizations/[node:nid]'
+selection_criteria:
+  27ecd05d-0bdf-404f-a3d9-8c8b7e0ec390:
+    id: node_type
+    negate: false
+    uuid: 27ecd05d-0bdf-404f-a3d9-8c8b7e0ec390
+    context_mapping:
+      node: node
+    bundles:
+      organization: organization
+selection_logic: and
+weight: -5
+relationships: {  }

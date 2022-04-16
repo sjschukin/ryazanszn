@@ -1,0 +1,30 @@
+uuid: 4d810331-9cee-4097-80cd-d54f8be80c00
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.employees
+  module:
+    - system
+    - views
+  theme:
+    - blondytan2
+id: head_photo_block
+theme: blondytan2
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:employees-block_1'
+settings:
+  id: 'views_block:employees-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

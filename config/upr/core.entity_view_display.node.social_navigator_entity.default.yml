@@ -1,0 +1,49 @@
+uuid: 34f40f04-6160-4ab3-8af0-c270f4e2eaae
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.social_navigator_entity.field_description
+    - field.field.node.social_navigator_entity.field_public_service
+    - field.field.node.social_navigator_entity.field_social_nav_categories
+    - field.field.node.social_navigator_entity.field_sort
+    - node.type.social_navigator_entity
+  module:
+    - text
+    - user
+id: node.social_navigator_entity.default
+targetEntityType: node
+bundle: social_navigator_entity
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_public_service:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_social_nav_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_sort: true
+  langcode: true

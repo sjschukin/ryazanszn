@@ -1,0 +1,62 @@
+uuid: d8c89499-7c2f-4483-9951-e12174810226
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.document_anticorruption.field_doc_description
+    - field.field.node.document_anticorruption.field_doc_file
+    - field.field.node.document_anticorruption.field_doc_url
+    - field.field.node.document_anticorruption.field_sort
+    - node.type.document_anticorruption
+  module:
+    - file
+    - link
+    - user
+id: node.document_anticorruption.default
+targetEntityType: node
+bundle: document_anticorruption
+mode: default
+content:
+  field_doc_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_doc_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_doc_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_sort:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

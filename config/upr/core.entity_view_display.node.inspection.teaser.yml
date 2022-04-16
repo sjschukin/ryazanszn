@@ -1,0 +1,48 @@
+uuid: f30be638-ecc1-4cc5-85ec-64881d072ca8
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.inspection.field_insp_from
+    - field.field.node.inspection.field_insp_org
+    - field.field.node.inspection.field_insp_result
+    - field.field.node.inspection.field_insp_to
+    - node.type.inspection
+  module:
+    - datetime
+    - user
+id: node.inspection.teaser
+targetEntityType: node
+bundle: inspection
+mode: teaser
+content:
+  field_insp_from:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d.m.Y
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_insp_org:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_insp_to:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d.m.Y
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_insp_result: true
+  langcode: true
+  links: true

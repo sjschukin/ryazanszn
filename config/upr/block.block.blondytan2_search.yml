@@ -1,0 +1,23 @@
+uuid: 893a85bd-5b5b-4a4e-ab34-3e18cc883869
+langcode: ru
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - blondytan2
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: blondytan2_search
+theme: blondytan2
+region: navigation
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Поиск
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

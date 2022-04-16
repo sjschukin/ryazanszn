@@ -1,0 +1,25 @@
+uuid: b1ed3f29-d121-4e14-a081-3b2c325a090f
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rewarding.field_ref_employee
+    - field.field.node.rewarding.field_sort
+    - node.type.rewarding
+  module:
+    - user
+id: node.rewarding.teaser
+targetEntityType: node
+bundle: rewarding
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ref_employee: true
+  field_sort: true
+  langcode: true

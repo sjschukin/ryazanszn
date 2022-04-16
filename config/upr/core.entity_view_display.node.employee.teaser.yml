@@ -1,0 +1,48 @@
+uuid: d271a9eb-a762-43b7-9ae3-3b5aeaf47568
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee.field_branch
+    - field.field.node.employee.field_emp_activity
+    - field.field.node.employee.field_emp_jobtitle
+    - field.field.node.employee.field_emp_leadership
+    - field.field.node.employee.field_emp_phone
+    - field.field.node.employee.field_emp_photo
+    - field.field.node.employee.field_sort
+    - image.style.square_mini
+    - node.type.employee
+  module:
+    - image
+    - user
+id: node.employee.teaser
+targetEntityType: node
+bundle: employee
+mode: teaser
+content:
+  field_emp_jobtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_emp_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_mini
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_branch: true
+  field_emp_activity: true
+  field_emp_leadership: true
+  field_emp_phone: true
+  field_sort: true
+  langcode: true
+  links: true
