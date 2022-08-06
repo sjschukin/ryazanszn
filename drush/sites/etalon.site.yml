@@ -1,5 +1,0 @@
-prod:
-  uri: etalon.ryazanszn.ru
-
-dev:
-  uri: etalon.ryazanszn.ru.test
