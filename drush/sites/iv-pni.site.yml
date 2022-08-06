@@ -1,0 +1,5 @@
+prod:
+  uri: iv-pni.ryazanszn.ru
+
+dev:
+  uri: iv-pni.ryazanszn.test
