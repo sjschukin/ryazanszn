@@ -1,0 +1,20 @@
+uuid: ffc5f3bd-c137-43c4-84ea-3df2fbcb6538
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_social_nav_categories
+field_name: field_social_nav_categories
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

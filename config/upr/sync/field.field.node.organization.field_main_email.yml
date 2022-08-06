@@ -1,0 +1,19 @@
+uuid: f12d2437-eeeb-4c9d-b0a7-7b86cb7bcf34
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_email
+    - node.type.organization
+id: node.organization.field_main_email
+field_name: field_main_email
+entity_type: node
+bundle: organization
+label: Email
+description: 'Адрес электронной почты, который будет отображаться в перечне организаций'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

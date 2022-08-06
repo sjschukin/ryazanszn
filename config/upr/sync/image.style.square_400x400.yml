@@ -1,0 +1,25 @@
+uuid: 1f4714bd-c8ca-4647-b4d6-185fb7c1a928
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: square_400x400
+label: 'Square (400x400)'
+effects:
+  2285f7d2-5b2e-4640-805f-3c43f6449194:
+    uuid: 2285f7d2-5b2e-4640-805f-3c43f6449194
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 400
+      height: 400
+      anchor: center-center
+  67f985f9-5f35-47d6-86bd-ef9d81617181:
+    uuid: 67f985f9-5f35-47d6-86bd-ef9d81617181
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: crop_1_1

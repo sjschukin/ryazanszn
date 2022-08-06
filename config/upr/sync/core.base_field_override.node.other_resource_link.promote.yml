@@ -1,0 +1,22 @@
+uuid: 1db36e19-f400-486b-adb7-46186de7b6e7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.other_resource_link
+id: node.other_resource_link.promote
+field_name: promote
+entity_type: node
+bundle: other_resource_link
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

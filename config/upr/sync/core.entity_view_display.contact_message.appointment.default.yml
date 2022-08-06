@@ -1,0 +1,77 @@
+uuid: e7078882-c3d9-4370-99e0-271c60d19344
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.appointment
+    - field.field.contact_message.appointment.field_article
+    - field.field.contact_message.appointment.field_article_other
+    - field.field.contact_message.appointment.field_date
+    - field.field.contact_message.appointment.field_desired_time
+    - field.field.contact_message.appointment.field_organization
+    - field.field.contact_message.appointment.field_phone_number
+id: contact_message.appointment.default
+targetEntityType: contact_message
+bundle: appointment
+mode: default
+content:
+  field_article:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_article_other:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_desired_time:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_organization:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_phone_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  mail:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_date: true
+  langcode: true
+  message: true
+  subject: true

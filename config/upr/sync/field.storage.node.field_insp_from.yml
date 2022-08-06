@@ -1,0 +1,20 @@
+uuid: ae746d15-11a0-46b3-a39c-ba7eedb1d355
+langcode: ru
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_insp_from
+field_name: field_insp_from
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

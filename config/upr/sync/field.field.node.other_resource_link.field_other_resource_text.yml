@@ -1,0 +1,19 @@
+uuid: 39231a2b-24b1-46a4-b647-4e5f5f3fa2f7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_resource_text
+    - node.type.other_resource_link
+id: node.other_resource_link.field_other_resource_text
+field_name: field_other_resource_text
+entity_type: node
+bundle: other_resource_link
+label: 'Текст ссылки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: afe61cf7-0400-4339-96dc-dd06f78f4d2f
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.other_resource_link.field_image
+    - field.field.node.other_resource_link.field_other_resource_hyperlink
+    - field.field.node.other_resource_link.field_other_resource_text
+    - field.field.node.other_resource_link.field_sort
+    - node.type.other_resource_link
+  module:
+    - user
+id: node.other_resource_link.teaser
+targetEntityType: node
+bundle: other_resource_link
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_other_resource_hyperlink: true
+  field_other_resource_text: true
+  field_sort: true
+  langcode: true

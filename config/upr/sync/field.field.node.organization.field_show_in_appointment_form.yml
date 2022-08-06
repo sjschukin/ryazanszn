@@ -1,0 +1,23 @@
+uuid: 7167dad7-05d5-491a-8541-611d57a34be6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_appointment_form
+    - node.type.organization
+id: node.organization.field_show_in_appointment_form
+field_name: field_show_in_appointment_form
+entity_type: node
+bundle: organization
+label: 'Отображать на электронной форме записи'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

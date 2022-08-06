@@ -1,0 +1,8 @@
+uuid: 25396649-b88f-4916-9977-90a9e0291519
+langcode: ru
+status: true
+dependencies: {  }
+id: user_send_form
+label: 'User send form'
+threshold: 0.7
+challenge: recaptcha/reCAPTCHA

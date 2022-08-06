@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: ru
+uuid: 484ad8de-4e72-4d9e-9b2d-4699fcc254ab
+name: 'Управление социальной защиты населения Рязанской области'
+mail: mainpost@uprsznro.ru
+slogan: 'Государственное казенное учреждение Рязанской области'
+page:
+  403: ''
+  404: ''
+  front: /node/156
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: ru

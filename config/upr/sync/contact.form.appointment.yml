@@ -1,0 +1,21 @@
+uuid: 1cb3dc5a-4e40-4509-8224-39748f629203
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Отправить сообщение'
+    show_preview: false
+    disabled_form_message: 'Данный функционал временно недоступен.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: appointment
+label: 'Запись на прием'
+recipients:
+  - mainpost@uprsznro.ru
+reply: ''
+weight: 5
+message: 'Ваше сообщение отправлено.'
+redirect: /contacts

@@ -1,0 +1,11 @@
+uuid: a305e8b2-8fc9-4e56-bd33-9ae0570abe06
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.banner_types
+id: taxonomy_term.banner_types
+target_entity_type_id: taxonomy_term
+target_bundle: banner_types
+default_langcode: site_default
+language_alterable: false

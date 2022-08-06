@@ -1,0 +1,17 @@
+uuid: 7cd8c53d-9f76-460b-af5a-e3619178f706
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Учреждение
+type: organization
+description: 'Подведомственное учреждение, в котором содержатся такие сведения, как наименование, адрес, телефон а прочие.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

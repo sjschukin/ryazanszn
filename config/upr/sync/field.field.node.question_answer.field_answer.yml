@@ -1,0 +1,21 @@
+uuid: 31e1076e-9aac-4d74-bd2d-e1e9664f0785
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_answer
+    - node.type.question_answer
+  module:
+    - text
+id: node.question_answer.field_answer
+field_name: field_answer
+entity_type: node
+bundle: question_answer
+label: Ответ
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: 06c7deac-b060-45c4-853b-c34ddba0324f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_services_categories
+    - node.type.public_service
+    - taxonomy.vocabulary.public_services_categories
+id: node.public_service.field_public_services_categories
+field_name: field_public_services_categories
+entity_type: node
+bundle: public_service
+label: Категории
+description: 'Категории, к которым принадлежит услуга в перечне государственных услуг. Можно указать несколько вариантов.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      public_services_categories: public_services_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

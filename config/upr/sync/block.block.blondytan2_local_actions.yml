@@ -1,0 +1,20 @@
+uuid: 04128e9a-fc16-42b8-a001-921ebe49015d
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - blondytan2
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: blondytan2_local_actions
+theme: blondytan2
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  label_display: '0'
+  provider: core
+visibility: {  }

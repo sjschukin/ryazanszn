@@ -1,0 +1,18 @@
+uuid: c218ef06-4e80-4873-8486-a4535b4ec661
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.title
+field_name: title
+entity_type: node
+bundle: document
+label: 'Краткое наименование документа'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

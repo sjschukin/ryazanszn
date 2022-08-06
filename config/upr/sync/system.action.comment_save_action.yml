@@ -1,0 +1,13 @@
+uuid: c024bf47-6336-4318-a048-954a7ea05558
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: TSkg_gUZvk-39yXFrIFnKjsxuEzO0qBH82TdDxOMMr4
+id: comment_save_action
+label: 'Сохранить комментарий'
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

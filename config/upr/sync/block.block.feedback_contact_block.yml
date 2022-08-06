@@ -1,0 +1,37 @@
+uuid: fe0039b7-7cbb-491b-b7fc-bcdd6baec757
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - node
+    - system
+  theme:
+    - blondytan2
+id: feedback_contact_block
+theme: blondytan2
+region: content
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Форма обратной связи'
+  label_display: '0'
+  provider: contact_block
+  contact_form: feedback
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /contacts/feedback
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

@@ -1,0 +1,17 @@
+uuid: 8ca0f11e-cd5b-4ae9-8339-0213e42d5f93
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Документ - противодействие коррупции'
+type: document_anticorruption
+description: 'Нормативные правовые документы и иные акты, связанные с антикоррупционной деятельностью.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,17 @@
+uuid: 59111dce-d4ba-44ba-b9a8-d7d33510caf8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Фотоальбом
+type: photoalbum
+description: 'Фотоальбомы учреждения. Один фотоальбом может содержать большое количество фотографий.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: ce8df520-f069-4bfb-bcba-2053d9091dfa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.public_service
+id: node.public_service
+target_entity_type_id: node
+target_bundle: public_service
+default_langcode: site_default
+language_alterable: false

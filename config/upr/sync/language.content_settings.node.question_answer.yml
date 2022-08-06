@@ -1,0 +1,11 @@
+uuid: 07cdcb17-3359-4307-8bd0-f41eb1424e78
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.question_answer
+id: node.question_answer
+target_entity_type_id: node
+target_bundle: question_answer
+default_langcode: site_default
+language_alterable: false

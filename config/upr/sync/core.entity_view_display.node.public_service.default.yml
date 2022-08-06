@@ -1,0 +1,51 @@
+uuid: a6d70487-add8-4508-b3a1-5d1272bba920
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.public_service.body
+    - field.field.node.public_service.field_doc_file
+    - field.field.node.public_service.field_fullname
+    - field.field.node.public_service.field_public_services_categories
+    - field.field.node.public_service.field_sort
+    - node.type.public_service
+  module:
+    - file
+    - text
+    - user
+id: node.public_service.default
+targetEntityType: node
+bundle: public_service
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_doc_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fullname:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_public_services_categories: true
+  field_sort: true
+  langcode: true

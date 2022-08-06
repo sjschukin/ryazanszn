@@ -1,0 +1,8 @@
+uuid: db41d2f1-f3f2-4c9d-b03a-289139037568
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Темы обращений'
+vid: appointment_articles
+description: 'Список тем, отображаемых на форме записи на прием'
+weight: 0

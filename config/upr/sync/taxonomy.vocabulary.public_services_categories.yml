@@ -1,0 +1,8 @@
+uuid: c19fce87-a5a3-40a5-9744-1a68e8c79ebb
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории государственных услуг'
+vid: public_services_categories
+description: ''
+weight: -10

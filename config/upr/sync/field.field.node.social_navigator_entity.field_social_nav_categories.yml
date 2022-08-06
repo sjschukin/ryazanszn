@@ -1,0 +1,29 @@
+uuid: 008fdd15-d7e9-4b79-8caa-390498f69aa8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_nav_categories
+    - node.type.social_navigator_entity
+    - taxonomy.vocabulary.social_navigator_categories
+id: node.social_navigator_entity.field_social_nav_categories
+field_name: field_social_nav_categories
+entity_type: node
+bundle: social_navigator_entity
+label: Категория
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      social_navigator_categories: social_navigator_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

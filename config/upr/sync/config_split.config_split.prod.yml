@@ -1,0 +1,16 @@
+uuid: 64f8b858-5c18-4e64-a22a-7613c985296f
+langcode: ru
+status: false
+dependencies: {  }
+id: prod
+label: prod
+description: 'Production environment specific configuration.'
+weight: 0
+folder: ../config/upr/prod
+module: {  }
+theme: {  }
+blacklist:
+  - system.performance
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
