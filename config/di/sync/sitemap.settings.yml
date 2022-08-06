@@ -1,11 +1,10 @@
+_core:
+  default_config_hash: qZeaiLq06xBUfw-JNZtgetxUUMz-J8YCzw_LuhPrk2E
+langcode: ru
 page_title: 'Карта сайта'
 message:
   value: ''
   format: restricted_html
-_core:
-  default_config_hash: qZeaiLq06xBUfw-JNZtgetxUUMz-J8YCzw_LuhPrk2E
-langcode: ru
-include_css: false
 plugins:
   frontpage:
     enabled: false
@@ -88,3 +87,4 @@ plugins:
       enable_rss: true
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
+include_css: false

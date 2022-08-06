@@ -1,7 +1,14 @@
 uuid: f7de3280-f9d4-4d25-bd44-8a2e5f5c012e
 langcode: ru
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact
+    - search
+    - shortcut
+    - sitemap
+    - system
+    - toolbar
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

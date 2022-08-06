@@ -1,7 +1,15 @@
 uuid: 7297d237-15d3-4db1-bf64-d8acaa199f26
 langcode: ru
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - contact
+    - filter
+    - search
+    - sitemap
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous

@@ -18,36 +18,36 @@ bundle: inspection
 mode: default
 content:
   field_insp_from:
-    weight: 1
+    type: datetime_custom
     label: inline
     settings:
       timezone_override: ''
       date_format: d.m.Y
     third_party_settings: {  }
-    type: datetime_custom
+    weight: 1
     region: content
   field_insp_org:
-    weight: 0
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 0
     region: content
   field_insp_result:
-    weight: 3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_insp_to:
-    weight: 2
+    type: datetime_custom
     label: inline
     settings:
       timezone_override: ''
       date_format: d.m.Y
     third_party_settings: {  }
-    type: datetime_custom
+    weight: 2
     region: content
 hidden:
   langcode: true

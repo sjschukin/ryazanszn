@@ -18,14 +18,14 @@ plugin: 'block_content:17871698-a804-4ef2-8488-f9c68c252cce'
 settings:
   id: 'block_content:17871698-a804-4ef2-8488-f9c68c252cce'
   label: Баннеры
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

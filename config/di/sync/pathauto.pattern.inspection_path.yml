@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'monitoring/inspections/[node:nid]'
 selection_criteria:
   dacd2fd8-a3dc-482b-ba61-fc14b828fea6:
-    id: node_type
-    bundles:
-      inspection: inspection
+    id: 'entity_bundle:node'
     negate: false
+    uuid: dacd2fd8-a3dc-482b-ba61-fc14b828fea6
     context_mapping:
       node: node
-    uuid: dacd2fd8-a3dc-482b-ba61-fc14b828fea6
+    bundles:
+      inspection: inspection
 selection_logic: and
 weight: -5
 relationships: {  }

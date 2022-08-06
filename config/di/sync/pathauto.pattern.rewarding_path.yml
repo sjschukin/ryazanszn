@@ -12,13 +12,13 @@ type: 'canonical_entities:node'
 pattern: 'about/rewarding/[node:nid]'
 selection_criteria:
   d5a2ba4c-d868-45b4-9819-acb46a4d7989:
-    id: node_type
-    bundles:
-      rewarding: rewarding
+    id: 'entity_bundle:node'
     negate: false
+    uuid: d5a2ba4c-d868-45b4-9819-acb46a4d7989
     context_mapping:
       node: node
-    uuid: d5a2ba4c-d868-45b4-9819-acb46a4d7989
+    bundles:
+      rewarding: rewarding
 selection_logic: and
 weight: -5
 relationships: {  }

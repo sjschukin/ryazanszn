@@ -18,14 +18,14 @@ plugin: 'block_content:071837bd-359a-4105-815f-5361245501a5'
 settings:
   id: 'block_content:071837bd-359a-4105-815f-5361245501a5'
   label: Блок-карта
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/contacts"
     negate: false
     context_mapping: {  }
+    pages: "<front>\r\n/contacts"

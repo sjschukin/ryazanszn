@@ -1,11 +1,9 @@
+langcode: ru
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
   url: 'http://al-kcson.ryazanszn.ru/themes/bootstrap/favicon.ico'
   use_default: true
-schema: '8000'
-cdn_provider: ''
-cdn_provider_import_data: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -15,6 +13,8 @@ logo:
   path: ''
   url: ''
   use_default: true
+schema: '8000'
+cdn_provider: ''
+cdn_provider_import_data: ''
 schemas:
   bootstrap: 8000
-langcode: ru

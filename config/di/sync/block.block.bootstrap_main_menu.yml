@@ -18,9 +18,9 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Главное меню'
-  provider: system
+  label: 'Основная навигация'
   label_display: '0'
+  provider: system
   level: 1
   depth: 2
   expand_all_items: false

@@ -23,43 +23,45 @@ mode: default
 content:
   field_branch:
     type: entity_reference_label
-    weight: 2
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   field_emp_activity:
-    weight: 3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_emp_jobtitle:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_emp_phone:
-    weight: 4
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_emp_photo:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: square_150x150
       image_link: ''
+      image_style: square_150x150
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
 hidden:
   field_emp_leadership: true

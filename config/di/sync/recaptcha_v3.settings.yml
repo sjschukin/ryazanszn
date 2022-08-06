@@ -1,9 +1,9 @@
+_core:
+  default_config_hash: jv0PKCJEOq2bOwY9RspuPZCf67ifVJ4tfTk-BfZMw8k
+langcode: ru
 site_key: 6Ld_YzAaAAAAAN2kWuI251koiKHV9zvyFy-4SA3b
 secret_key: 6Ld_YzAaAAAAANaTub6k4LGKMaD8sychMu8s36Bj
 verify_hostname: true
 default_challenge: recaptcha/reCAPTCHA
 error_message: 'Проверка что вы не бот не пройдена.'
 cacheable: false
-_core:
-  default_config_hash: jv0PKCJEOq2bOwY9RspuPZCf67ifVJ4tfTk-BfZMw8k
-langcode: ru

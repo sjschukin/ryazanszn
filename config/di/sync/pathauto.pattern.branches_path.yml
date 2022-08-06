@@ -12,12 +12,12 @@ pattern: 'about/structure/[term:tid]'
 selection_criteria:
   53b7c19e-e01f-41e2-bcaa-efb51efad7a1:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      branches: branches
     negate: false
+    uuid: 53b7c19e-e01f-41e2-bcaa-efb51efad7a1
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 53b7c19e-e01f-41e2-bcaa-efb51efad7a1
+    bundles:
+      branches: branches
 selection_logic: and
 weight: -5
 relationships: {  }

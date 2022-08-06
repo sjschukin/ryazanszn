@@ -19,21 +19,21 @@ bundle: document
 mode: default
 content:
   field_doc_description:
-    weight: 0
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 0
     region: content
   field_doc_file:
-    weight: 2
+    type: file_url_plain
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: file_url_plain
+    weight: 2
     region: content
   field_doc_url:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -42,7 +42,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden:
   field_doc_type: true

@@ -18,21 +18,23 @@ bundle: news
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 101
     region: content
   field_image_news:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: rectangle_mini
       image_link: content
+      image_style: rectangle_mini
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   langcode: true

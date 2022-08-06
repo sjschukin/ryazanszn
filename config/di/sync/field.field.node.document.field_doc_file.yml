@@ -18,10 +18,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: 'documents/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'pdf doc docx zip rar xls xlsx'
   max_filesize: '10 MB'
   description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: file

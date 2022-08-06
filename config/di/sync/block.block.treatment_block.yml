@@ -18,14 +18,14 @@ plugin: 'block_content:e67297fb-33db-48b0-bf37-b6bc4cb3f6cd'
 settings:
   id: 'block_content:e67297fb-33db-48b0-bf37-b6bc4cb3f6cd'
   label: Блок-обращение
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

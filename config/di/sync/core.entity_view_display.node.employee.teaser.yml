@@ -25,29 +25,31 @@ mode: teaser
 content:
   field_branch:
     type: entity_reference_label
-    weight: 1
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_emp_jobtitle:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_emp_photo:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: square_mini
       image_link: ''
+      image_style: square_mini
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_emp_activity: true
   field_emp_leadership: true

@@ -18,12 +18,14 @@ mode: teaser
 content:
   field_photoalbum_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: rectangle_mini
       image_link: content
+      image_style: rectangle_mini
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_photoalbum_images: true

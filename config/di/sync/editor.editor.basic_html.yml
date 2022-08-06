@@ -44,11 +44,7 @@ settings:
           items:
             - ImceLink
             - Source
-  plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
+  plugins: {  }
 image_upload:
   status: true
   scheme: public

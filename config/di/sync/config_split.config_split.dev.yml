@@ -5,6 +5,7 @@ dependencies: {  }
 id: dev
 label: dev
 description: 'Development environment specific configuration.'
+weight: 0
 folder: ../config/di/dev
 module: {  }
 theme: {  }
@@ -15,4 +16,3 @@ blacklist:
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

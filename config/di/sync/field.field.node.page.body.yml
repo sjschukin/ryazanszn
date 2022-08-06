@@ -19,8 +19,8 @@ required: false
 translatable: true
 default_value:
   -
-    summary: ''
     value: '<p>Страница находится в разработке ...</p>'
+    summary: ''
     format: basic_html
 default_value_callback: ''
 settings:

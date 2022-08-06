@@ -18,9 +18,9 @@ provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: Tools
-  provider: system
+  label: Инструменты
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

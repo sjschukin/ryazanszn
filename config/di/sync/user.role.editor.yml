@@ -1,7 +1,26 @@
 uuid: 3ea9f836-4dce-4708-b43e-3508b5a302ff
 langcode: ru
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.document
+    - node.type.employee
+    - node.type.inspection
+    - node.type.news
+    - node.type.page
+    - node.type.photoalbum
+    - node.type.rewarding
+    - taxonomy.vocabulary.branches
+  module:
+    - contextual
+    - filter
+    - node
+    - quickedit
+    - system
+    - taxonomy
 _core:
   default_config_hash: Gf_zo-fbwEiiTf6axpmmyBtpoJB-fzUD14v4cLwlBjI
 id: editor

@@ -17,8 +17,8 @@ plugin: 'block_content:c978c6ab-5ac8-474d-90f3-db9dc7f4d3f5'
 settings:
   id: 'block_content:c978c6ab-5ac8-474d-90f3-db9dc7f4d3f5'
   label: 'Блок-логотип министерства'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

@@ -1,6 +1,6 @@
-ignored_config_entities:
-  - system.site
-  - 'contact.form.feedback:recipients'
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: ru
+ignored_config_entities:
+  - system.site
+  - 'contact.form.feedback:recipients'

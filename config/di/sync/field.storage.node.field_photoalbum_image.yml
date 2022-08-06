@@ -11,6 +11,9 @@ field_name: field_photoalbum_image
 entity_type: node
 type: image
 settings:
+  target_type: file
+  display_field: false
+  display_default: false
   uri_scheme: public
   default_image:
     uuid: 177a49d2-de02-47e6-b6e4-8fd3849c0d57
@@ -18,9 +21,6 @@ settings:
     title: ''
     width: 512
     height: 512
-  target_type: file
-  display_field: false
-  display_default: false
 module: image
 locked: false
 cardinality: 1
