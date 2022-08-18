@@ -13,3 +13,10 @@ global-styling:
 social-navigator-library:
   js:
     js/social-navigator.js: {}
+chat-widget-library:
+  css:
+    theme:
+      styles/css/chat-widget.css: {}
+  js:
+    js/chat-widget/chunk-vendors.js: {}
+    js/chat-widget/app.js: {}

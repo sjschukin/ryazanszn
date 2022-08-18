@@ -12,7 +12,7 @@ dependencies:
 id: carousel_block
 theme: blondytan2
 region: content
-weight: -13
+weight: -14
 provider: null
 plugin: 'block_content:30ad4d53-4941-4ba4-9bf1-f8d10e0840b2'
 settings:

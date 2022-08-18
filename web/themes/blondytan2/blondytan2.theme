@@ -6,7 +6,6 @@
  * Place your custom PHP code in this file.
  */
 
-
 // function blondytan2_preprocess_node(&$variables) {
 //   //dpm($variables['elements']['field_image_news']);
 // }
@@ -78,7 +77,12 @@ function blondytan2_theme_suggestions_alter(array &$suggestions, array $variable
 /**
  * Implements hook_page_attachments_alter().
  */
-function blondytan2_page_attachments_alter(&$page){
+function blondytan2_page_attachments_alter(&$page) {
+  //check if current page is front page
+  //if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $page['#attached']['library'][] = 'blondytan2/chat-widget-library';
+  //}
+
   $path = $current_path = \Drupal::service('path.current')->getPath();
 
   if($path == '/activities/social-navigator') {

@@ -1,24 +1,24 @@
-uuid: 24a81e0c-9849-4968-926f-387960841380
+uuid: 07dc610f-e245-4c48-9faa-0629702ac852
 langcode: ru
 status: true
 dependencies:
   content:
-    - 'block_content:basic:d592ca00-46f4-4ee7-96d1-0ab51ca78238'
+    - 'block_content:basic:7399c00b-c01a-4188-8347-6ba67d42c940'
   module:
     - block_content
     - system
   theme:
     - blondytan2
-id: tiles_block
+id: chat_widget
 theme: blondytan2
 region: content
-weight: -9
+weight: -4
 provider: null
-plugin: 'block_content:d592ca00-46f4-4ee7-96d1-0ab51ca78238'
+plugin: 'block_content:7399c00b-c01a-4188-8347-6ba67d42c940'
 settings:
-  id: 'block_content:d592ca00-46f4-4ee7-96d1-0ab51ca78238'
-  label: Блок-тайлы
-  label_display: '0'
+  id: 'block_content:7399c00b-c01a-4188-8347-6ba67d42c940'
+  label: Чат-виджет
+  label_display: visible
   provider: block_content
   status: true
   info: ''
@@ -27,5 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
     pages: '<front>'
