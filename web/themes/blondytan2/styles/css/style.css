@@ -433,7 +433,8 @@ body.path-frontpage {
 
 @media (min-width: 768px) {
   .carousel-caption h1 {
-    margin-top: 10.5px; }
+    margin-top: 10.5px;
+    font-size: 39px; }
   .carousel-caption p {
     font-size: 21px;
     line-height: 1.4; } }
