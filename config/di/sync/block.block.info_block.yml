@@ -1,23 +1,23 @@
-uuid: 62d8fedb-a4b8-48f0-94e8-e0fe89376376
+uuid: 6b25a54f-37a7-4cd8-ad93-dc3f8687d4c5
 langcode: ru
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7ee728f6-21f7-4338-8f01-fc9036ab57ba'
+    - 'block_content:basic:575f5e59-c794-4b7b-b987-387433e1caf6'
   module:
     - block_content
     - system
   theme:
     - blondytan2
-id: carousel_block
+id: info_block
 theme: blondytan2
 region: content
-weight: -12
+weight: -9
 provider: null
-plugin: 'block_content:7ee728f6-21f7-4338-8f01-fc9036ab57ba'
+plugin: 'block_content:575f5e59-c794-4b7b-b987-387433e1caf6'
 settings:
-  id: 'block_content:7ee728f6-21f7-4338-8f01-fc9036ab57ba'
-  label: Блок-карусель
+  id: 'block_content:575f5e59-c794-4b7b-b987-387433e1caf6'
+  label: Информация
   label_display: '0'
   provider: block_content
   status: true
@@ -27,5 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
     pages: '<front>'
