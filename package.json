@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/sjschukin/ryazanszn#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.9",
+    "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-beautify": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
