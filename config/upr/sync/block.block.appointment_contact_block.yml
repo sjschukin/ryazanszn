@@ -13,7 +13,7 @@ dependencies:
 id: appointment_contact_block
 theme: blondytan2
 region: content
-weight: 1
+weight: 2
 provider: null
 plugin: contact_block
 settings:

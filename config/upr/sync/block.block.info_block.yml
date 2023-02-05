@@ -1,23 +1,23 @@
-uuid: 07dc610f-e245-4c48-9faa-0629702ac852
+uuid: 3d59ff3e-44bb-460f-8154-d6b351d59536
 langcode: ru
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7399c00b-c01a-4188-8347-6ba67d42c940'
+    - 'block_content:basic:0fa8da36-0d73-40fb-9ebe-85c5d0566936'
   module:
     - block_content
     - system
   theme:
     - blondytan2
-id: chat_widget
+id: info_block
 theme: blondytan2
 region: content
-weight: -3
+weight: -11
 provider: null
-plugin: 'block_content:7399c00b-c01a-4188-8347-6ba67d42c940'
+plugin: 'block_content:0fa8da36-0d73-40fb-9ebe-85c5d0566936'
 settings:
-  id: 'block_content:7399c00b-c01a-4188-8347-6ba67d42c940'
-  label: Чат-виджет
+  id: 'block_content:0fa8da36-0d73-40fb-9ebe-85c5d0566936'
+  label: Информация
   label_display: '0'
   provider: block_content
   status: true
