@@ -25,7 +25,6 @@ dependencies:
     - contextual
     - filter
     - node
-    - quickedit
     - system
     - taxonomy
 id: editor
@@ -36,7 +35,6 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
-  - 'access in-place editing'
   - 'access site reports'
   - 'administer nodes'
   - 'administer taxonomy'
