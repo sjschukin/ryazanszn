@@ -1,5 +1,4 @@
 prod:
-  uri: upr.ryazanszn.ru
-
+  uri: https://upr.ryazanszn.ru
 dev:
-  uri: upr.ryazanszn.test
+  uri: http://upr.ryazanszn.test

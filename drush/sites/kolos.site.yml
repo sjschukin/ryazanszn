@@ -1,5 +1,4 @@
 prod:
-  uri: kolos.ryazanszn.ru
-
+  uri: https://kolos.ryazanszn.ru
 dev:
-  uri: kolos.ryazanszn.test
+  uri: http://kolos.ryazanszn.test

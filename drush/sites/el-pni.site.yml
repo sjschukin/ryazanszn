@@ -1,5 +1,4 @@
 prod:
-  uri: el-pni.ryazanszn.ru
-
+  uri: https://el-pni.ryazanszn.ru
 dev:
-  uri: el-pni.ryazanszn.test
+  uri: http://el-pni.ryazanszn.test
