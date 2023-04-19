@@ -1,4 +1,2 @@
 prod:
   uri: https://s-bor.ryazanszn.ru
-dev:
-  uri: http://s-bor.ryazanszn.test
