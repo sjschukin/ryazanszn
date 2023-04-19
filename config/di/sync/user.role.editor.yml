@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - filter.format.full_html
     - node.type.article
     - node.type.document
     - node.type.employee
@@ -90,7 +89,6 @@ permissions:
   - 'revert photoalbum revisions'
   - 'revert rewarding revisions'
   - 'use text format basic_html'
-  - 'use text format full_html'
   - 'view all revisions'
   - 'view article revisions'
   - 'view document revisions'
