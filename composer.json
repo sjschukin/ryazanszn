@@ -17,9 +17,9 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^3.3",
-        "drupal/auditfiles": "^3.0",
+        "drupal/auditfiles": "^4.0@beta",
         "drupal/bootstrap": "^3.23",
-        "drupal/bootstrap_library": "^1.13",
+        "drupal/bootstrap_library": "^2.0",
         "drupal/chosen": "^3.0",
         "drupal/colorbox": "^2.0",
         "drupal/config_ignore": "^2.3",
@@ -37,12 +37,13 @@
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
         "drupal/recaptcha_v3": "^1.4",
-        "drupal/recreate_block_content": "^2.1",
+        "drupal/recreate_block_content": "^3.0",
         "drupal/redirect": "^1.6",
         "drupal/sitemap": "^2.0",
         "drupal/smtp": "^1.0",
         "drupal/snowball_stemmer": "^2.0",
         "drupal/transliterate_filenames": "^2.0",
+        "drupal/upgrade_status": "^4.0",
         "drupal/views_bootstrap": "^3.3",
         "drupal/views_field_view": "^1.0@beta",
         "drupal/views_tree": "^2.0@RC",
@@ -120,7 +121,7 @@
         }
     },
     "require-dev": {
-        "drupal/devel": "^4.0",
+        "drupal/devel": "^5.0",
         "drupal/twig_xdebug": "^1.2",
         "kint-php/kint": "^3.3"
     }
