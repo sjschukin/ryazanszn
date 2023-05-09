@@ -10,7 +10,7 @@ field_name: field_article_other
 entity_type: contact_message
 bundle: appointment
 label: 'Тема (прочее)'
-description: 'Заполняется только в случае, если выбрана тема ''Прочие меры социальной поддержки'''
+description: "Заполняется только в случае, если выбрана тема 'Прочие меры социальной поддержки'"
 required: false
 translatable: false
 default_value: {  }
