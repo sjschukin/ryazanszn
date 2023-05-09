@@ -24,7 +24,7 @@
         "drupal/colorbox": "^2.0",
         "drupal/config_ignore": "^2.3",
         "drupal/config_split": "^1.7",
-        "drupal/config_update": "^1.7",
+        "drupal/config_update": "^2.0@alpha",
         "drupal/contact_block": "^1.5",
         "drupal/contact_emails": "^1.19",
         "drupal/contact_storage": "^1.1",
