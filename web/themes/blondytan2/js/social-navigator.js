@@ -2,13 +2,18 @@
  * @file
  */
 
-(function ($, Drupal) {
+(function (Drupal) {
   'use strict';
 
-  $('.view-social-navigator-view ul')
-    .prev('a')
-    .attr('href', '#')
-    .on('click', function (e) {
-      e.preventDefault();
-    });
-})(jQuery, Drupal);
+  document.querySelectorAll(".view-social-navigator-view ul").forEach((el) => {
+    let previousElement = el.previousElementSibling;
+
+    if (previousElement && previousElement.matches('a')) {
+      previousElement.href = "#";
+
+      previousElement.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    }
+  });
+})(Drupal);
