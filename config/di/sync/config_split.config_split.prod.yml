@@ -6,11 +6,10 @@ id: prod
 label: prod
 description: 'Production environment specific configuration.'
 weight: 0
+storage: folder
 folder: ../config/di/prod
 module: {  }
 theme: {  }
-blacklist:
+complete_list:
   - system.performance
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+partial_list: {  }

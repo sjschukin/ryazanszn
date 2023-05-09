@@ -9,8 +9,8 @@ label: 'Профиль участника'
 description: 'Конфигурация для участников сайта'
 conf:
   extensions: 'jpg png gif pdf doc docx xls xlsx zip rar'
-  maxsize: !!float 8
-  quota: !!float 512
+  maxsize: 8.0
+  quota: 512.0
   maxwidth: 1280
   maxheight: 1024
   replace: 1
