@@ -1,0 +1,4 @@
+prod:
+  uri: https://ryazanszn.ru
+dev:
+  uri: http://ryazanszn.test
