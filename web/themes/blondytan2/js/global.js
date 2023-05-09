@@ -1,30 +1,57 @@
 /**
  * @file
  */
-(function ($) {
+
+(function (Drupal, cookies) {
   "use strict";
 
+  /*Drupal.behaviors.blindVersionBehavior = {
+    attach: () => {
+      let blind = $.cookie('blindVersion');
+
+      if (blind == 1) {
+        SetBlindStyle();
+      } else {
+        SetMainStyle();
+      }
+
+      document.querySelector('#to-blind-version').addEventListener('click', () => {
+        SetBlindStyle();
+        cookies.set('blindVersion', 1, JSON.stringify({ expires: 7, path: '/'}));
+
+        return false;
+      });
+
+      document.querySelector('.to-main-version').addEventListener('click', () => {
+        SetMainStyle();
+        cookies.set('blindVersion', 0, JSON.stringify({ expires: 7, path: '/'}));
+
+        return false;
+      });
+    },
+  };*/
+
   // blind version *********************
-  $('#to-blind-version').on('click', function () {
-    SetBlindStyle();
-    $.cookie('blindVersion', 1, { expires: 7, path: '/'});
-    return false;
-  });
+  // $('#to-blind-version').on('click', function () {
+  //   SetBlindStyle();
+  //   $.cookie('blindVersion', 1, { expires: 7, path: '/'});
+  //   return false;
+  // });
 
-  $('.to-main-version').on('click', function () {
-    SetMainStyle();
-    $.cookie('blindVersion', 0, { expires: 7, path: '/'});
-    return false;
-  });
+  // $('.to-main-version').on('click', function () {
+  //   SetMainStyle();
+  //   $.cookie('blindVersion', 0, { expires: 7, path: '/'});
+  //   return false;
+  // });
 
-  var blind = $.cookie('blindVersion');
-  if (blind == 1) {
-    SetBlindStyle();
-  } else {
-    SetMainStyle();
-  }
+  // var blind = $.cookie('blindVersion');
+  // if (blind == 1) {
+  //   SetBlindStyle();
+  // } else {
+  //   SetMainStyle();
+  // }
 
-  $('.js-toggle-fontsize').on('click', function () {
+  /*$('.js-toggle-fontsize').on('click', function () {
     $(this).siblings().removeClass('selected').end().addClass('selected');
     var bodyClass = $(this).attr('data-class');
     $('body').removeClass('fontsize-small fontsize-middle fontsize-big').addClass(bodyClass);
@@ -87,5 +114,5 @@
     $('#nav-search-row').fadeOut('slow', function () {
       $('#nav-menu-row').show();
     });
-  });
-})(jQuery);
+  });*/
+})(Drupal, window.Cookies);

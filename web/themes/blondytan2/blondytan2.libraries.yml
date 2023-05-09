@@ -7,9 +7,8 @@ global-styling:
   js:
     js/global.js: {}
   dependencies:
-    - core/jquery
-    - core/jquery.once
-    - core/jquery.cookie
+    - core/drupal
+    - core/js-cookie
 social-navigator-library:
   js:
     js/social-navigator.js: {}
