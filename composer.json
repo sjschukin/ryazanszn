@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "drupal/admin_toolbar": "^3.3",
+        "drupal/admin_toolbar": "^3.4",
         "drupal/auditfiles": "^4.1@beta",
         "drupal/bootstrap": "^3.23",
         "drupal/bootstrap_library": "^2.0",
