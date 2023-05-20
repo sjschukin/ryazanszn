@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_branch
     - field.storage.node.field_org_group
     - node.type.organization
-    - system.menu.main
   module:
     - node
     - user
@@ -330,7 +329,7 @@ display:
       display_extenders: {  }
       path: about/organizations
       menu:
-        type: normal
+        type: none
         title: 'Структурные подразделения'
         description: ''
         weight: -46

@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - node.type.document
-    - system.menu.main
     - taxonomy.vocabulary.document_types
   content:
     - 'taxonomy_term:document_types:00f22012-80a3-4df3-905a-7f922fa9ee9f'
@@ -262,12 +261,11 @@ display:
       display_extenders: {  }
       path: activities/documents
       menu:
-        type: normal
+        type: none
         title: Документы
         description: ''
         weight: -46
-        enabled: true
-        expanded: true
+        expanded: false
         menu_name: main
         parent: 'menu_link_content:2accbf79-0213-4cf1-901c-80092f1a4849'
         context: '0'
@@ -372,7 +370,7 @@ display:
       display_extenders: {  }
       path: activities/federal-documents
       menu:
-        type: normal
+        type: none
         title: 'Федеральное законодательство'
         description: ''
         weight: -50
@@ -481,7 +479,7 @@ display:
       display_extenders: {  }
       path: activities/regional-documents
       menu:
-        type: normal
+        type: none
         title: 'Региональное законодательство'
         description: ''
         weight: -49
@@ -591,7 +589,7 @@ display:
       display_extenders: {  }
       path: activities/anticorruption
       menu:
-        type: normal
+        type: none
         title: 'Антикоррупционная деятельность'
         description: ''
         weight: -47

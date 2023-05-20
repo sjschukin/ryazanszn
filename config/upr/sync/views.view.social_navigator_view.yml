@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_description
-    - system.menu.main
     - taxonomy.vocabulary.social_navigator_categories
   module:
     - node
@@ -420,7 +419,7 @@ display:
       display_extenders: {  }
       path: activities/social-navigator
       menu:
-        type: normal
+        type: none
         title: 'Социальный навигатор'
         description: ''
         weight: -43

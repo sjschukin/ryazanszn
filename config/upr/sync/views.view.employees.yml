@@ -5,9 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.storage.node.field_emp_photo
-    - image.style.square_400x400
     - node.type.employee
-    - system.menu.main
   module:
     - image
     - node
@@ -411,7 +409,7 @@ display:
       display_extenders: {  }
       path: about/department-leadership
       menu:
-        type: normal
+        type: none
         title: 'Руководство аппарата управления'
         description: ''
         weight: -50
@@ -541,7 +539,7 @@ display:
       display_extenders: {  }
       path: about/organizations-leadership
       menu:
-        type: normal
+        type: none
         title: 'Руководство районных структурных подразделений'
         description: ''
         weight: -49

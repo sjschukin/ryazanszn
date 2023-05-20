@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_answer
     - field.storage.node.field_faq_category
     - field.storage.node.field_question
-    - system.menu.main
     - taxonomy.vocabulary.faq_categories
   module:
     - node
@@ -436,7 +435,7 @@ display:
       display_extenders: {  }
       path: contacts/faq
       menu:
-        type: normal
+        type: none
         title: Вопрос-ответ
         description: ''
         weight: -48

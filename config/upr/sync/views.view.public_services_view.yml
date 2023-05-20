@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_doc_file
     - field.storage.node.field_fullname
     - node.type.public_service
-    - system.menu.main
   module:
     - file
     - node
@@ -427,11 +426,14 @@ display:
       display_extenders: {  }
       path: activities/public-services
       menu:
-        type: normal
+        type: none
         title: 'Государственные услуги'
+        description: ''
         weight: -44
+        expanded: false
         menu_name: main
         parent: 'menu_link_content:2accbf79-0213-4cf1-901c-80092f1a4849'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
