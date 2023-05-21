@@ -8,7 +8,6 @@ dependencies:
     - field.storage.node.field_image
     - image.style.rectangle_mini
     - node.type.news
-    - system.menu.main
   module:
     - image
     - node
@@ -777,7 +776,7 @@ display:
       display_extenders: {  }
       path: news
       menu:
-        type: normal
+        type: none
         title: Новости
         description: ''
         weight: -40
