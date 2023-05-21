@@ -1,30 +1,30 @@
 // to the top navigation button
 #back-top {
+  background-color: $color_gray;
+  border-radius: 10em;
+  bottom: 25px;
+  color: $color_dark;
+  cursor: pointer;
+  font-size: 26px;
+  height: 50px;
+  line-height: 50px;
   position: fixed;
-  bottom: 30px;
-  right: 3%;
-  border: 2px solid #18bc9c;
-  border-radius: 4px;
-  display: none;
+  right: -100px;
+  text-align: center;
+  transition: all .25s ease;
+  width: 50px;
+  z-index: 12;
 
-  a {
-    text-align: center;
-    font-size: 24px;
-    line-height: 60px;
-    width: 60px;
-    height: 60px;
-    display: block;
-    opacity: 1;
-    transition: opacity 1s;
+  &:hover {
+    background-color: $color_dark;
+  }
 
-    .fadeIn {
-      opacity: 0;
-      transition: opacity 600ms;
-    }
+  &.active {
+    right: 20px;
+  }
 
-    .fadeOut {
-      opacity: 1;
-      transition: opacity 600ms;
-    }
+  span {
+    padding-top: 12px;
+    color: $color_very_light;
   }
 }

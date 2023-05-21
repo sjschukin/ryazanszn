@@ -29,7 +29,7 @@
         return false;
       });
     },
-  };*/
+  };
 
   // blind version *********************
   // $('#to-blind-version').on('click', function () {
@@ -51,7 +51,7 @@
   //   SetMainStyle();
   // }
 
-  /*$('.js-toggle-fontsize').on('click', function () {
+  $('.js-toggle-fontsize').on('click', function () {
     $(this).siblings().removeClass('selected').end().addClass('selected');
     var bodyClass = $(this).attr('data-class');
     $('body').removeClass('fontsize-small fontsize-middle fontsize-big').addClass(bodyClass);
@@ -79,40 +79,33 @@
     $('body').removeClass('fontsize-small fontsize-middle fontsize-big color-white color-black color-blue css-blind');
     //$('#page-wrapper').removeClass('css-blind');
     //$('#foot_wrap').removeClass('css_blind').addClass('css_main');
+  } */
+
+  // to the top navigation *********************
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById('back-top').classList.add('active');
+    } else {
+      document.getElementById('back-top').classList.remove('active');
+    }
   }
 
-  // to top navigation *********************
-  $('#back-top').hide();
-
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $('#back-top').fadeIn();
-      } else {
-        $('#back-top').fadeOut();
-      }
+  document.getElementById('back-top').onclick = function() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
     });
-
-    $('#back-top a').click(function () {
-      $('body,html').animate({
-        scrollTop: 0
-      }, 400);
-      return false;
-    });
-  });
+  }
 
   // search navigation panel *********************
-  $('#nav-search-row').hide();
+  document.getElementById('search-button').onclick = function() {
+    document.getElementById('nav-menu-row').classList.add('hidden');
+    document.getElementById('nav-search-row').classList.remove('hidden');
+  }
 
-  $('#search-button').click(function () {
-    $('#nav-menu-row').hide();
-    $('#nav-search-row').hide().removeClass('hidden');
-    $('#nav-search-row').fadeIn('slow');
-  });
-
-  $('#search-cancel').click(function () {
-    $('#nav-search-row').fadeOut('slow', function () {
-      $('#nav-menu-row').show();
-    });
-  });*/
+  document.getElementById('search-button-cancel').onclick = function() {
+    document.getElementById('nav-search-row').classList.add('hidden');
+    document.getElementById('nav-menu-row').classList.remove('hidden');
+  }
 })(Drupal, window.Cookies);
