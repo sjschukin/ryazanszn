@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.rewarding
-    - system.menu.main
   module:
     - node
     - user
@@ -217,10 +216,10 @@ display:
       display_extenders: {  }
       path: about/rewarding
       menu:
-        type: normal
+        type: none
         title: 'Доска почёта'
         description: ''
-        weight: -42
+        weight: -40
         expanded: false
         menu_name: main
         parent: 'menu_link_content:d38e8253-3bf9-4945-bd8d-c675418f39f5'

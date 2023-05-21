@@ -5,9 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.storage.node.field_emp_photo
-    - image.style.square_400x400
     - node.type.employee
-    - system.menu.main
   module:
     - image
     - node
@@ -413,11 +411,10 @@ display:
       display_extenders: {  }
       path: about/leadership
       menu:
-        type: normal
+        type: none
         title: Руководство
         description: ''
         weight: -50
-        enabled: true
         expanded: false
         menu_name: main
         parent: 'menu_link_content:d38e8253-3bf9-4945-bd8d-c675418f39f5'
@@ -544,11 +541,10 @@ display:
       display_extenders: {  }
       path: about/employees
       menu:
-        type: normal
+        type: none
         title: 'Наши специалисты'
         description: ''
         weight: -49
-        enabled: true
         expanded: false
         menu_name: main
         parent: 'menu_link_content:d38e8253-3bf9-4945-bd8d-c675418f39f5'

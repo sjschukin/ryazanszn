@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.photoalbum
-    - system.menu.main
   module:
     - node
     - user
@@ -192,11 +191,10 @@ display:
       display_extenders: {  }
       path: about/photoalbums
       menu:
-        type: normal
+        type: none
         title: Фотогалерея
         description: ''
-        weight: -43
-        enabled: true
+        weight: -41
         expanded: false
         menu_name: main
         parent: 'menu_link_content:d38e8253-3bf9-4945-bd8d-c675418f39f5'

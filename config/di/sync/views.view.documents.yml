@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - node.type.document
-    - system.menu.main
     - taxonomy.vocabulary.document_types
   content:
     - 'taxonomy_term:document_types:00f22012-80a3-4df3-905a-7f922fa9ee9f'
@@ -16,7 +15,6 @@ dependencies:
   module:
     - node
     - taxonomy
-    - user
 id: documents
 label: Документы
 module: views
@@ -112,9 +110,8 @@ display:
           sort_asc_label: 'По возрастанию'
           sort_desc_label: Убыв
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -251,7 +248,6 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_1:
     id: page_1
@@ -263,11 +259,10 @@ display:
       display_extenders: {  }
       path: documents
       menu:
-        type: normal
+        type: none
         title: Документы
         description: ''
         weight: -47
-        enabled: true
         expanded: false
         menu_name: main
         parent: ''
@@ -280,7 +275,6 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_2:
     id: page_2
@@ -373,11 +367,10 @@ display:
       display_extenders: {  }
       path: documents/federal
       menu:
-        type: normal
+        type: none
         title: 'Федеральное законодательство'
         description: ''
         weight: -50
-        enabled: true
         expanded: false
         menu_name: main
         parent: 'views_view:views.documents.page_1'
@@ -390,7 +383,6 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_3:
     id: page_3
@@ -483,14 +475,13 @@ display:
       display_extenders: {  }
       path: documents/regional
       menu:
-        type: normal
+        type: none
         title: 'Региональное законодательство'
         description: ''
-        weight: -48
-        enabled: true
+        weight: -49
         expanded: false
         menu_name: main
-        parent: 'views_view:views.documents.page_1'
+        parent: 'menu_link_content:9f79690b-ecd8-4790-b44e-fe759e0ac373'
         context: '0'
     cache_metadata:
       max-age: -1
@@ -500,7 +491,6 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_4:
     id: page_4
@@ -593,14 +583,13 @@ display:
       display_extenders: {  }
       path: documents/standards
       menu:
-        type: normal
+        type: none
         title: 'Национальные стандарты (ГОСТ)'
         description: ''
-        weight: -47
-        enabled: true
+        weight: -48
         expanded: false
         menu_name: main
-        parent: 'views_view:views.documents.page_1'
+        parent: 'menu_link_content:9f79690b-ecd8-4790-b44e-fe759e0ac373'
         context: '0'
     cache_metadata:
       max-age: -1
@@ -610,7 +599,6 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_5:
     id: page_5
@@ -703,11 +691,10 @@ display:
       display_extenders: {  }
       path: monitoring/anticorruption
       menu:
-        type: normal
+        type: none
         title: 'Антикоррупционная деятельность'
         description: ''
-        weight: -25
-        enabled: true
+        weight: -49
         expanded: false
         menu_name: main
         parent: 'views_view:views.inspections.page_1'
@@ -720,5 +707,4 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
