@@ -1,0 +1,30 @@
+// to the top navigation button
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 3%;
+  border: 2px solid #18bc9c;
+  border-radius: 4px;
+  display: none;
+
+  a {
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    opacity: 1;
+    transition: opacity 1s;
+
+    .fadeIn {
+      opacity: 0;
+      transition: opacity 600ms;
+    }
+
+    .fadeOut {
+      opacity: 1;
+      transition: opacity 600ms;
+    }
+  }
+}
