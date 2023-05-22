@@ -6,6 +6,7 @@ id: prod
 label: prod
 description: 'Production environment specific configuration.'
 weight: 0
+stackable: false
 storage: folder
 folder: ../config/di/prod
 module: {  }
