@@ -82,30 +82,38 @@
   } */
 
   // to the top navigation *********************
-  window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById('back-top').classList.add('active');
-    } else {
-      document.getElementById('back-top').classList.remove('active');
+  let backTop = document.getElementById('back-top');
+
+  if (backTop) {
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backTop.classList.add('active');
+      } else {
+        backTop.classList.remove('active');
+      }
+    }
+
+    backTop.onclick = function() {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
     }
   }
 
-  document.getElementById('back-top').onclick = function() {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }
-
   // search navigation panel *********************
-  document.getElementById('search-button').onclick = function() {
-    document.getElementById('nav-menu-row').classList.add('hidden');
-    document.getElementById('nav-search-row').classList.remove('hidden');
-  }
+  let searchButton = document.getElementById('search-button');
 
-  document.getElementById('search-button-cancel').onclick = function() {
-    document.getElementById('nav-search-row').classList.add('hidden');
-    document.getElementById('nav-menu-row').classList.remove('hidden');
+  if (searchButton) {
+    searchButton.onclick = function() {
+      document.getElementById('nav-menu-row').classList.add('hidden');
+      document.getElementById('nav-search-row').classList.remove('hidden');
+    }
+
+    document.getElementById('search-button-cancel').onclick = function() {
+      document.getElementById('nav-search-row').classList.add('hidden');
+      document.getElementById('nav-menu-row').classList.remove('hidden');
+    }
   }
 })(Drupal, window.Cookies);
