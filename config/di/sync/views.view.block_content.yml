@@ -525,7 +525,7 @@ display:
       path: admin/structure/block/block-content
       menu:
         type: tab
-        title: 'Пользовательские блоки'
+        title: Блоки
         description: ''
         weight: 0
         enabled: true
