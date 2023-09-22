@@ -1,0 +1,4 @@
+prod:
+  uri: https://uc.ryazanszn.ru
+dev:
+  uri: http://uc.ryazanszn.test
