@@ -63,6 +63,7 @@ settings:
         - '<h5 id>'
         - '<h6 id>'
         - '<table class>'
+        - '<iframe src width height title allow frameborder allowfullscreen>'
 image_upload:
   status: true
   scheme: public
