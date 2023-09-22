@@ -8,12 +8,17 @@ id: member
 label: 'Editor profile'
 description: 'Configuration for site editors'
 conf:
+  usertab: false
   extensions: 'jpg png gif pdf doc docx xls xlsx zip rar'
   maxsize: 8.0
-  quota: 512.0
+  quota: 1024.0
   maxwidth: 1280
   maxheight: 1024
   replace: 1
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  url_alter: false
   folders:
     -
       path: shared
