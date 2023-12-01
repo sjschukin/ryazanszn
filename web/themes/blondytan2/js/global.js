@@ -2,6 +2,13 @@
  * @file
  */
 
+let toggleFontSizeElements = document.querySelectorAll('.font-toggle > .js-toggle-fontsize');
+let fontSizeClasses = ['fontsize-small', 'fontsize-middle', 'fontsize-big'];
+let toggleColorElements = document.querySelectorAll('.color-toggle > .js-toggle-color');
+let colorClasses = ['color-white', 'color-black', 'color-blue'];
+let toggleImageElements = document.querySelectorAll('.image-toggle > .js-toggle-img');
+let imageClasses = ['image-off', 'image-on'];
+
 (function (Drupal) {
   "use strict";
 
@@ -27,89 +34,64 @@
         return false;
       });
 
-      let toggleFontSizeElements = document.querySelectorAll('.font-toggle > .js-toggle-fontsize');
-      let toggleColorElements = document.querySelectorAll('.color-toggle > .js-toggle-color');
-      let toggleImageElements = document.querySelectorAll('.image-toggle > .js-toggle-img');
-
       for (let i = 0; i < toggleFontSizeElements.length; i++) {
         toggleFontSizeElements[i].addEventListener('click', function () {
-          for (let j = 0; j < toggleFontSizeElements.length; j++) {
-            toggleFontSizeElements[j].classList.remove('selected');
-          }
-
-          this.classList.add('selected');
-
-          let bodyClass = this.getAttribute('data-class');
-          document.body.classList.remove('fontsize-small', 'fontsize-middle', 'fontsize-big');
-          document.body.classList.add(bodyClass);
-          setCookie('blindFontSize', bodyClass);
+          setBlindMode(toggleFontSizeElements, fontSizeClasses, i);
+          setCookie('blindFontSize', i);
           return false;
         });
       }
 
       for (let i = 0; i < toggleColorElements.length; i++) {
         toggleColorElements[i].addEventListener('click', function () {
-          for (let j = 0; j < toggleColorElements.length; j++) {
-            toggleColorElements[j].classList.remove('selected');
-          }
-
-          this.classList.add('selected');
-
-          let bodyClass = this.getAttribute('data-class');
-          document.body.classList.remove('color-white', 'color-black', 'color-blue');
-          document.body.classList.add(bodyClass);
-          setCookie('blindColor', bodyClass);
+          setBlindMode(toggleColorElements, colorClasses, i);
+          setCookie('blindColor', i);
           return false;
         });
       }
 
       for (let i = 0; i < toggleImageElements.length; i++) {
         toggleImageElements[i].addEventListener('click', function () {
-          for (let j = 0; j < toggleImageElements.length; j++) {
-            toggleImageElements[j].classList.remove('selected');
-          }
-
-          this.classList.add('selected');
-
-          let bodyClass = this.getAttribute('data-class');
-          document.body.classList.remove('image-off', 'image-on');
-          document.body.classList.add(bodyClass);
-          setCookie('blindImage', bodyClass);
+          setBlindMode(toggleImageElements, imageClasses, i);
+          setCookie('blindImage', i);
           return false;
         });
       }
     },
   };
 
-  /*$('.js-toggle-fontsize').on('click', function () {
-    $(this).siblings().removeClass('selected').end().addClass('selected');
-    var bodyClass = $(this).attr('data-class');
-    $('body').removeClass('fontsize-small fontsize-middle fontsize-big').addClass(bodyClass);
-    $.cookie('blind_fontsize', bodyClass, { expires: 7, path: '/'});
-  });
-  $('.js-toggle-color').on('click', function () {
-    $(this).siblings().removeClass('selected').end().addClass('selected');
-    var bodyClass = $(this).attr('data-class');
-    $('body').removeClass('color-white color-black color-blue').addClass(bodyClass);
-    $.cookie('blind_color', bodyClass, { expires: 7, path: '/'});
-  });
-  $('.js-toggle-img').on('click', function () {
-    $(this).siblings().removeClass('selected').end().addClass('selected');
-    var bodyClass = $(this).attr('data-class');
-    $('body').removeClass('image-off image-on').addClass(bodyClass);
-    $.cookie('blind_image', bodyClass, { expires: 7, path: '/'});
-  });*/
-
   function setBlindStyle() {
-    document.body.classList.add('fontsize-small','color-white','image-on','css-blind');
-    //$('#page-wrapper').addClass('css-blind');
-    //$('#foot_wrap').removeClass('css_main').addClass('css_blind');
+    let fontSizeIndex = getCookie('blindFontSize');
+    let colorIndex = getCookie('blindColor');
+    let imageIndex = getCookie('blindImage');
+
+    setBlindMode(toggleFontSizeElements, fontSizeClasses, fontSizeIndex);
+    setBlindMode(toggleColorElements, colorClasses, colorIndex);
+    setBlindMode(toggleImageElements, imageClasses, imageIndex);
+
+    document.body.classList.add('css-blind');
   }
 
   function setMainStyle() {
-    document.body.classList.remove('fontsize-small','fontsize-middle','fontsize-big','color-white','color-black','color-blue','css-blind');
-    //$('#page-wrapper').removeClass('css-blind');
-    //$('#foot_wrap').removeClass('css_blind').addClass('css_main');
+    document.body.classList.remove('fontsize-small', 'fontsize-middle', 'fontsize-big', 'color-white', 'color-black', 'color-blue', 'css-blind');
+  }
+
+  function setBlindMode(elements, classes, index) {
+    if (index === undefined) {
+      index = 0;
+    }
+
+    for (let i = 0; i < elements.length; i++) {
+      if (i == index) {
+        elements[i].classList.add('selected');
+      }
+      else {
+        elements[i].classList.remove('selected');
+      }
+    }
+
+    document.body.classList.remove(...classes);
+    document.body.classList.add(classes[index]);
   }
 
   function setCookie(name, value) {
