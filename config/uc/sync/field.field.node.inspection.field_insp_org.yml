@@ -1,0 +1,19 @@
+uuid: 638db197-e0f0-4a21-b3a0-a0a81a06b7a6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_insp_org
+    - node.type.inspection
+id: node.inspection.field_insp_org
+field_name: field_insp_org
+entity_type: node
+bundle: inspection
+label: 'Проверяющий орган'
+description: 'Учреждение, которое проводило проверку. Допустимо добавление нескольких объектов.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

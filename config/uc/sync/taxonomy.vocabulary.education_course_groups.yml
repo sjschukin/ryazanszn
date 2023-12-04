@@ -1,0 +1,8 @@
+uuid: 5ad65718-d9e4-4d68-8fd7-53333a3effc1
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Группы образовательных программ'
+vid: education_course_groups
+description: ''
+weight: 0

@@ -1,0 +1,30 @@
+uuid: be4d9fec-8861-4144-b62b-ed18d7047354
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0d8e5776-1f83-446c-8374-20f6bac702a0'
+  module:
+    - block_content
+    - system
+  theme:
+    - blondytan2
+id: complaint_block
+theme: blondytan2
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:0d8e5776-1f83-446c-8374-20f6bac702a0'
+settings:
+  id: 'block_content:0d8e5776-1f83-446c-8374-20f6bac702a0'
+  label: 'Жалобы на всё'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

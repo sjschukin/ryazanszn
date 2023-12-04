@@ -1,0 +1,22 @@
+uuid: 9fad4560-9f88-46c6-9378-99cf18d09f0b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.education_course
+id: node.education_course.status
+field_name: status
+entity_type: node
+bundle: education_course
+label: Опубликовано
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

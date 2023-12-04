@@ -1,0 +1,13 @@
+uuid: caba6a0c-9995-4282-aab3-f6c34c5aa279
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i4OVV5qrD7abstl4SKS8v5Ee7PuxrL548iZVSty1HRg
+name: Статья
+type: article
+description: 'Статья — это документ, который обычно используется для новостей, анонсов и любых других сообщений, для которых не задействованы другие типы документов. Этот тип документа также используют для ведения персонального блога. По умолчанию, документы этого типа выводятся на первую страницу сайта и их разрешено комментировать.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

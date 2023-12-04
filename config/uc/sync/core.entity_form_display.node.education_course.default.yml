@@ -1,0 +1,51 @@
+uuid: a8668074-69d2-4044-a7e2-6c88bccc66a0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.education_course.field_course_group
+    - field.field.node.education_course.field_description
+    - node.type.education_course
+  module:
+    - text
+id: node.education_course.default
+targetEntityType: node
+bundle: education_course
+mode: default
+content:
+  field_course_group:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

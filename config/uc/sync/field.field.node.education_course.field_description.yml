@@ -1,0 +1,21 @@
+uuid: 3231cddf-96f8-449c-bef1-3a8ed5686c5a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.education_course
+  module:
+    - text
+id: node.education_course.field_description
+field_name: field_description
+entity_type: node
+bundle: education_course
+label: Описание
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

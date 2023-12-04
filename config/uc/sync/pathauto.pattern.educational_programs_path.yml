@@ -1,0 +1,22 @@
+uuid: 8507c8d2-3042-46c7-a062-6b67389e77e6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: educational_programs_path
+label: 'Образовательные программы'
+type: 'canonical_entities:node'
+pattern: '/about/educational-program/[node:nid]'
+selection_criteria:
+  23e2da97-ad9b-412c-80da-1418377c3992:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 23e2da97-ad9b-412c-80da-1418377c3992
+    context_mapping:
+      node: node
+    bundles:
+      education_course: education_course
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,27 @@
+uuid: 84cd7390-b3e0-4830-959d-f53c68d5ed9f
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8J9aFZdUzbHV6w1y727kflHq31ev3U3wy7U-zSWDkeE
+id: member
+label: 'Профиль участника'
+description: 'Конфигурация для участников сайта'
+conf:
+  extensions: 'jpg png gif pdf doc docx xls xlsx zip rar'
+  maxsize: 8.0
+  quota: 512.0
+  maxwidth: 1280
+  maxheight: 1024
+  replace: 1
+  folders:
+    -
+      path: shared
+      permissions:
+        browse_files: true
+        browse_subfolders: true
+        create_subfolders: true
+        upload_files: true
+        delete_files: true
+        delete_subfolders: true
+        resize_images: true

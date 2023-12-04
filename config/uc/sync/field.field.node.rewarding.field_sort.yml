@@ -1,0 +1,27 @@
+uuid: 89b7837b-8c79-489c-8118-0c48a04267e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort
+    - node.type.rewarding
+_core:
+  default_config_hash: KORIHsVgYTWgpcGBsrpeFCAPl2UNTYcUnIrdlynZYh0
+id: node.rewarding.field_sort
+field_name: field_sort
+entity_type: node
+bundle: rewarding
+label: Сортировка
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

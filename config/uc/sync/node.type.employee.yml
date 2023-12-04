@@ -1,0 +1,17 @@
+uuid: 3a8f0a4c-b398-44d6-bfb2-2f34280095fb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Сотрудник
+type: employee
+description: 'Сотрудники отображаются в списках работников учреждения.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

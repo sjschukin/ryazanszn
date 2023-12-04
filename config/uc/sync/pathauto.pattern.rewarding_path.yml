@@ -1,0 +1,24 @@
+uuid: 6a17ec84-f33d-4591-984d-382a7acbd26e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: wCqNCL2oLdHd2nDuySnzMI2xyEac09WIavGN5mfR104
+id: rewarding_path
+label: Награждения
+type: 'canonical_entities:node'
+pattern: 'about/rewarding/[node:nid]'
+selection_criteria:
+  d5a2ba4c-d868-45b4-9819-acb46a4d7989:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d5a2ba4c-d868-45b4-9819-acb46a4d7989
+    context_mapping:
+      node: node
+    bundles:
+      rewarding: rewarding
+selection_logic: and
+weight: -5
+relationships: {  }

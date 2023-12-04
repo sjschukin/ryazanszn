@@ -1,0 +1,25 @@
+uuid: 80357182-33ee-4836-9a73-1baab4e03d41
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.education_course.field_course_group
+    - field.field.node.education_course.field_description
+    - node.type.education_course
+  module:
+    - user
+id: node.education_course.teaser
+targetEntityType: node
+bundle: education_course
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_course_group: true
+  field_description: true
+  langcode: true

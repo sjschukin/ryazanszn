@@ -1,0 +1,31 @@
+uuid: 59c3c5b6-b919-4bec-9436-0ed5b100446e
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e67297fb-33db-48b0-bf37-b6bc4cb3f6cd'
+  module:
+    - block_content
+    - system
+  theme:
+    - blondytan2
+id: treatment_block
+theme: blondytan2
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:e67297fb-33db-48b0-bf37-b6bc4cb3f6cd'
+settings:
+  id: 'block_content:e67297fb-33db-48b0-bf37-b6bc4cb3f6cd'
+  label: Блок-обращение
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

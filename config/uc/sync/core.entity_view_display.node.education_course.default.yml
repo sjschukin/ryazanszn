@@ -1,0 +1,31 @@
+uuid: 2666c6a9-b950-4828-bc6d-c8f57b1f2e6f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.education_course.field_course_group
+    - field.field.node.education_course.field_description
+    - node.type.education_course
+  module:
+    - text
+    - user
+id: node.education_course.default
+targetEntityType: node
+bundle: education_course
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_course_group: true
+  langcode: true

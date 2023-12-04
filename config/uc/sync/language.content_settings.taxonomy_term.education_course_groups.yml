@@ -1,0 +1,11 @@
+uuid: 28469271-d94b-42fa-bcbb-c3c99ee09923
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.education_course_groups
+id: taxonomy_term.education_course_groups
+target_entity_type_id: taxonomy_term
+target_bundle: education_course_groups
+default_langcode: site_default
+language_alterable: false

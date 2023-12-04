@@ -1,0 +1,29 @@
+uuid: 2c7c2fe0-cb80-4f43-97a7-61f7bee9cd15
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_group
+    - node.type.education_course
+    - taxonomy.vocabulary.education_course_groups
+id: node.education_course.field_course_group
+field_name: field_course_group
+entity_type: node
+bundle: education_course
+label: Группа
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      education_course_groups: education_course_groups
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

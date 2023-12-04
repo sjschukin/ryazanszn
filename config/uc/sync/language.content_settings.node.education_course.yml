@@ -1,0 +1,11 @@
+uuid: a0dc2d5e-a9d9-4b8c-97d9-99ff100b368d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.education_course
+id: node.education_course
+target_entity_type_id: node
+target_bundle: education_course
+default_langcode: site_default
+language_alterable: false

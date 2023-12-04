@@ -1,0 +1,22 @@
+uuid: 576ddc89-1e72-4bbf-abd3-028b9d8ab835
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.education_course
+id: node.education_course.promote
+field_name: promote
+entity_type: node
+bundle: education_course
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

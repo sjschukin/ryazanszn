@@ -1,0 +1,12 @@
+uuid: c4a5a3f9-3972-448f-89bd-553b785e7d93
+langcode: ru
+status: true
+dependencies: {  }
+label: 'Crop 1:1'
+id: crop_1_1
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: 400
+soft_limit_height: 400
+hard_limit_width: 200
+hard_limit_height: 200

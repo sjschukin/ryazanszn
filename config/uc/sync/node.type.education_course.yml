@@ -1,0 +1,17 @@
+uuid: 3e199f48-0d9b-4358-bf72-7257b8492db1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Образовательный курс'
+type: education_course
+description: 'Курс или образовательная программа, отображаемая в списке доступных курсов'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

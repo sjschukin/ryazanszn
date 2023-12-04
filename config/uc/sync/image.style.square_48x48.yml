@@ -1,0 +1,15 @@
+uuid: 7e09d38f-c9c2-4fb0-9460-202f3a3946c3
+langcode: ru
+status: true
+dependencies: {  }
+name: square_48x48
+label: 'Квадратный (48x48)'
+effects:
+  ebe4d000-f96b-4823-bdb4-3fa507d17f11:
+    uuid: ebe4d000-f96b-4823-bdb4-3fa507d17f11
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 48
+      height: 48
+      anchor: center-center
