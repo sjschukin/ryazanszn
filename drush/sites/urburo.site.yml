@@ -1,0 +1,4 @@
+prod:
+  uri: https://urburo.ryazanszn.ru
+dev:
+  uri: http://urburo.ryazanszn.test
