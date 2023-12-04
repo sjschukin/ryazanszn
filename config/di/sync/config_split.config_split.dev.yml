@@ -7,6 +7,7 @@ label: dev
 description: 'Development environment specific configuration.'
 weight: 0
 stackable: false
+no_patching: false
 storage: folder
 folder: ../config/di/dev
 module: {  }
