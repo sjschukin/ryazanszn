@@ -3,6 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - node.type.inspection
   module:
     - datetime
@@ -165,16 +166,13 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: well
+          row_class: ''
           default_row_class: false
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          view_mode: teaser
       query:
         type: views_query
         options:
