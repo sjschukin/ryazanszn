@@ -6,6 +6,8 @@ id: prod
 label: prod
 description: 'Production environment specific configuration.'
 weight: 0
+stackable: false
+no_patching: false
 storage: folder
 folder: ../config/upr/prod
 module: {  }

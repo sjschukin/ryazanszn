@@ -42,6 +42,7 @@ module:
   imce: 0
   language: 0
   link: 0
+  local_features: 0
   locale: 0
   menu_ui: 0
   mysql: 0
@@ -50,6 +51,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   recaptcha: 0
   recaptcha_v3: 0
   recreate_block_content: 0
@@ -64,7 +66,6 @@ module:
   token: 0
   toolbar: 0
   tour: 0
-  transliterate_filenames: 0
   update: 0
   user: 0
   views_bootstrap: 0
