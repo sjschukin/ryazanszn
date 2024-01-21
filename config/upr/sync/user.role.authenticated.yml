@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - contact
-    - file
     - search
     - shortcut
     - sitemap
@@ -24,6 +23,5 @@ permissions:
   - 'access toolbar'
   - 'administer shortcuts'
   - 'customize shortcut links'
-  - 'delete own files'
   - 'search content'
   - 'switch shortcut sets'

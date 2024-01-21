@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: ugOcAZ_g8S26-iGCjTlbSpuxDahvhMV5FYi0jNsn1rk
 id: contact_message_delete_action
-label: 'Удалить контактное сообщение'
+label: 'Delete contact message'
 type: contact_message
 plugin: 'entity:delete_action:contact_message'
 configuration: {  }
