@@ -19,6 +19,7 @@ dependencies:
     - contextual
     - file
     - filter
+    - help
     - node
     - system
     - taxonomy
@@ -32,6 +33,7 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
+  - 'access help pages'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'administer nodes'
