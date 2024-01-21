@@ -1,0 +1,27 @@
+uuid: f7f6718e-537e-47ad-96fd-8475af7a092f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.support
+    - field.storage.contact_message.field_attachment
+  module:
+    - file
+id: contact_message.support.field_attachment
+field_name: field_attachment
+entity_type: contact_message
+bundle: support
+label: 'Прикрепляемый файл'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: images/support_attachments
+  file_extensions: 'png jpg jpeg'
+  max_filesize: '4 MB'
+  description_field: false
+field_type: file

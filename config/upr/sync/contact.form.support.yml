@@ -1,0 +1,21 @@
+uuid: c93a2a28-23e7-4a23-ad43-b971179a63a8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Отправить сообщение'
+    show_preview: false
+    disabled_form_message: 'Эта контактная форма отключена.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: support
+label: 'Письмо администратору сайта'
+recipients:
+  - s.j.schukin@yandex.ru
+reply: ''
+weight: 0
+message: 'Спасибо за обращение. Ваше сообщение отправлено.'
+redirect: /

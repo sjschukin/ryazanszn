@@ -1,0 +1,7 @@
+uuid: 0a80c5dc-f4ae-4b56-8d8f-7584e94639ea
+langcode: ru
+status: true
+dependencies: {  }
+formId: contact_message_support_form
+captchaType: recaptcha_v3/user_send_form
+label: support
