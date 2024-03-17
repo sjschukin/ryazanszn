@@ -13,6 +13,7 @@
 /web/sites/*
 !/web/sites/*/default.services.yml
 !/web/sites/*/default.settings.php
+!/web/sites/example.*.php
 
 # Ignore Drupal's file directory
 #/web/sites/*/files/
