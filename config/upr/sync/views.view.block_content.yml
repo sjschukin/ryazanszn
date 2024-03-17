@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: tp4wP6wVrEPZfApiCfkpoCxUzN-B1ceGcGv5sEzQ2Sg
 id: block_content
-label: 'Пользовательские блоки'
+label: Контент-блоки
 module: views
 description: 'Поиск и управление пользовательскими блоками.'
 tag: default
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Пользовательские блоки'
+      title: Контент-блоки
       fields:
         info:
           id: info
@@ -534,7 +534,7 @@ display:
       path: admin/structure/block/block-content
       menu:
         type: tab
-        title: 'Пользовательские блоки'
+        title: Блоки
         description: ''
         weight: 0
         enabled: true

@@ -421,9 +421,9 @@ display:
           grouping: {  }
           alignment: horizontal
           col_class_default: 1
-          col_class_custom: ''
+          col_class_custom: content
           row_class_default: 1
-          row_class_custom: mg-b
+          row_class_custom: ''
           columns: '12'
           col_xs: col-xs-12
           col_sm: col-sm-12
