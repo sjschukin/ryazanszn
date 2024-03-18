@@ -444,6 +444,7 @@ display:
         row: false
         fields: false
         header: false
+        footer: false
       css_class: 'container content'
       display_description: ''
       header:
@@ -458,7 +459,21 @@ display:
           empty: false
           content:
             value: '<h2>[view:title]</h2>'
-            format: basic_html
+            format: full_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div class=\"row main-container\">\r\n    <div class=\"col-xs-12\">\r\n        <p class=\"text-center text-uppercase\"><a href=\"/news\">Все новости</a></p>\r\n    </div>\r\n</div>"
+            format: full_html
           tokenize: false
       display_extenders: {  }
       block_description: 'Последние новости'
