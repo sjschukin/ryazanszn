@@ -1,0 +1,20 @@
+uuid: b7b786fa-e7be-4f29-b658-c3cbf3031544
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact
+    - taxonomy
+id: contact_message.field_training_program
+field_name: field_training_program
+entity_type: contact_message
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

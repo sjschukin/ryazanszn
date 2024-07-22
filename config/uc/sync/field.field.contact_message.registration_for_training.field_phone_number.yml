@@ -1,0 +1,19 @@
+uuid: 680951de-5d45-483c-9ff7-01b699bf49f5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.storage.contact_message.field_phone_number
+id: contact_message.registration_for_training.field_phone_number
+field_name: field_phone_number
+entity_type: contact_message
+bundle: registration_for_training
+label: 'Номер телефона'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

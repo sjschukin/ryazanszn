@@ -1,0 +1,80 @@
+uuid: 2063a833-8b91-40e0-9e89-1c0fb0d38c63
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.field.contact_message.registration_for_training.field_birth
+    - field.field.contact_message.registration_for_training.field_email
+    - field.field.contact_message.registration_for_training.field_full_name
+    - field.field.contact_message.registration_for_training.field_phone_number
+    - field.field.contact_message.registration_for_training.field_preferential_category
+    - field.field.contact_message.registration_for_training.field_training_program
+  module:
+    - datetime
+id: contact_message.registration_for_training.default
+targetEntityType: contact_message
+bundle: registration_for_training
+mode: default
+content:
+  field_birth:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_phone_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_preferential_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_training_program:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  mail: true
+  message: true
+  subject: true

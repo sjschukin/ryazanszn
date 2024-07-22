@@ -12,7 +12,7 @@ dependencies:
 id: educational_programs_block
 theme: blondytan2
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:f7216235-f9d7-4422-89be-7737102a1a05'
 settings:

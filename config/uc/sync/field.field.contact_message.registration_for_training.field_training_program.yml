@@ -1,0 +1,29 @@
+uuid: c15229d3-0edc-4f75-ab60-cc429a018af1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.storage.contact_message.field_training_program
+    - taxonomy.vocabulary.training_programs
+id: contact_message.registration_for_training.field_training_program
+field_name: field_training_program
+entity_type: contact_message
+bundle: registration_for_training
+label: 'Выберите желаемую профессию'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      training_programs: training_programs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

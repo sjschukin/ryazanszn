@@ -1,0 +1,21 @@
+uuid: a0a71b76-07a8-4dde-b6d8-a13a5fb77368
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: Отправить
+    show_preview: false
+    disabled_form_message: 'Эта контактная форма отключена.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: registration_for_training
+label: 'Запись на обучение'
+recipients:
+  - distkurs@list.ru
+reply: ''
+weight: 0
+message: 'Спасибо за обращение. Ваше сообщение отправлено.'
+redirect: /about/services-procedures

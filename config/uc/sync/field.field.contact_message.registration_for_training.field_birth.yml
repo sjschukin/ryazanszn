@@ -1,0 +1,21 @@
+uuid: 49a267f9-063c-4d84-a8b4-c899ad87416e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.storage.contact_message.field_birth
+  module:
+    - datetime
+id: contact_message.registration_for_training.field_birth
+field_name: field_birth
+entity_type: contact_message
+bundle: registration_for_training
+label: 'Год рождения'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

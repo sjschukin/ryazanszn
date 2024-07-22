@@ -12,7 +12,7 @@ dependencies:
 id: tiles_block
 theme: blondytan2
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: 'block_content:dcc781b6-4328-42fe-bc0a-9da261b1efa8'
 settings:

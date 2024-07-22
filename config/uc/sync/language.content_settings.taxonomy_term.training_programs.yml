@@ -1,0 +1,11 @@
+uuid: ab20f48a-3b4c-4915-99c7-cd5f9c24cfe4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.training_programs
+id: taxonomy_term.training_programs
+target_entity_type_id: taxonomy_term
+target_bundle: training_programs
+default_langcode: site_default
+language_alterable: false

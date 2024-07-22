@@ -12,7 +12,7 @@ dependencies:
 id: info_block
 theme: blondytan2
 region: content
-weight: -10
+weight: 1
 provider: null
 plugin: 'block_content:575f5e59-c794-4b7b-b987-387433e1caf6'
 settings:

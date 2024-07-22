@@ -1,0 +1,8 @@
+uuid: 1e274a56-c5e0-49c8-aae5-c24ab6284fe6
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Обучающие программы'
+vid: training_programs
+description: ''
+weight: 0

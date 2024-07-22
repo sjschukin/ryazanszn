@@ -1,0 +1,29 @@
+uuid: a86abaeb-fa97-4932-b4ec-bba9a4fc685a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.storage.contact_message.field_preferential_category
+    - taxonomy.vocabulary.preferential_categories
+id: contact_message.registration_for_training.field_preferential_category
+field_name: field_preferential_category
+entity_type: contact_message
+bundle: registration_for_training
+label: 'Выберите подходящую категорию'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      preferential_categories: preferential_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: dfa335f7-b9c3-49a0-9ba3-13bf90d470f4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.preferential_categories
+id: taxonomy_term.preferential_categories
+target_entity_type_id: taxonomy_term
+target_bundle: preferential_categories
+default_langcode: site_default
+language_alterable: false

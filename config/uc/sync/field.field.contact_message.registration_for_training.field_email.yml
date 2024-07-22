@@ -1,0 +1,19 @@
+uuid: 67ef6d37-6a3c-4a51-bdd1-efa1366fc72a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.storage.contact_message.field_email
+id: contact_message.registration_for_training.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: registration_for_training
+label: E-mail
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

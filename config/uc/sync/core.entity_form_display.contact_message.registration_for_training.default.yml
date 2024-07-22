@@ -1,0 +1,76 @@
+uuid: 41996e19-f7f4-4322-884c-387a796b4f12
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+    - field.field.contact_message.registration_for_training.field_birth
+    - field.field.contact_message.registration_for_training.field_email
+    - field.field.contact_message.registration_for_training.field_full_name
+    - field.field.contact_message.registration_for_training.field_phone_number
+    - field.field.contact_message.registration_for_training.field_preferential_category
+    - field.field.contact_message.registration_for_training.field_training_program
+  module:
+    - datetime
+id: contact_message.registration_for_training.default
+targetEntityType: contact_message
+bundle: registration_for_training
+mode: default
+content:
+  field_birth:
+    type: datetime_datelist
+    weight: 1
+    region: content
+    settings:
+      increment: 15
+      date_order: DMY
+      time_type: none
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_full_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone_number:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_preferential_category:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_training_program:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  subject: true

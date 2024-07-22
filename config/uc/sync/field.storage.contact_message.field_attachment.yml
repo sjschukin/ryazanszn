@@ -1,0 +1,30 @@
+uuid: bb3b6406-4f39-4d90-b327-6eddd9acf43c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact
+    - file
+    - image
+id: contact_message.field_attachment
+field_name: field_attachment
+entity_type: contact_message
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

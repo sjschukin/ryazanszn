@@ -1,0 +1,29 @@
+uuid: 5355a801-1338-4fb0-bbf0-9b31e204b9e4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.registration_for_training
+  module:
+    - contact_block
+    - system
+  theme:
+    - blondytan2
+id: registration_for_training_block
+theme: blondytan2
+region: content
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Запись на обучение'
+  label_display: visible
+  provider: contact_block
+  contact_form: registration_for_training
+  form_display: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /about/services-procedures

@@ -1,0 +1,8 @@
+uuid: 0aecd1ae-e695-4b03-b009-c8a81a3e7690
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Льготные категории граждан'
+vid: preferential_categories
+description: ''
+weight: 0
