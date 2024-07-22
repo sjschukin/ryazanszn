@@ -9,8 +9,8 @@ dependencies:
   content:
     - 'taxonomy_term:document_types:00f22012-80a3-4df3-905a-7f922fa9ee9f'
     - 'taxonomy_term:document_types:3a6e1144-1d07-4616-b8f4-39d19630c2cd'
+    - 'taxonomy_term:document_types:4454176b-0cf8-4a70-9c08-1a2c726ae92e'
     - 'taxonomy_term:document_types:b05ecab6-bd59-48df-8397-a11d36d9730e'
-    - 'taxonomy_term:document_types:eeb46d1a-ac36-4def-8493-e49f2452a25c'
     - 'taxonomy_term:document_types:f03b454c-9fbd-4d93-83f0-24d1e7a29909'
   module:
     - node
@@ -389,11 +389,11 @@ display:
       tags: {  }
   page_4:
     id: page_4
-    display_title: 'Page: Национальные стандарты (ГОСТ)'
+    display_title: 'Page: Профессиональные стандарты'
     display_plugin: page
     position: 1
     display_options:
-      title: 'Национальные стандарты (ГОСТ)'
+      title: 'Профессиональные стандарты'
       filters:
         status:
           id: status
@@ -430,7 +430,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            4: 4
+            52: 52
           group: 1
           exposed: false
           expose:
