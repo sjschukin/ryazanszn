@@ -41,7 +41,7 @@
         "drupal/recaptcha_v3": "^2.0@alpha",
         "drupal/recreate_block_content": "^3.0",
         "drupal/redirect": "^1.6",
-        "drupal/site_settings": "^2.0@alpha",
+        "drupal/site_settings": "^2.0@RC",
         "drupal/sitemap": "^2.0",
         "drupal/smtp": "^1.0",
         "drupal/snowball_stemmer": "^2.0",
