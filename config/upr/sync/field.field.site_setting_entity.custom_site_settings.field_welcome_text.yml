@@ -1,0 +1,24 @@
+uuid: fdb905c6-82db-480d-91fe-78ec632372bb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.field_welcome_text
+    - filter.format.basic_html
+    - site_settings.site_setting_entity_type.custom_site_settings
+  module:
+    - text
+id: site_setting_entity.custom_site_settings.field_welcome_text
+field_name: field_welcome_text
+entity_type: site_setting_entity
+bundle: custom_site_settings
+label: 'Текст приветствия'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

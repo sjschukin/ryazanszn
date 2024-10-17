@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Типы баннеров'
 vid: banner_types
-description: ''
+description: null
 weight: -4
+new_revision: false

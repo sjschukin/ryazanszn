@@ -53,8 +53,7 @@ body {
   float: none;
 }
 .navbar-nav .to-portal {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 9px;
 }
 
 /******* footer *******/
@@ -102,6 +101,13 @@ body {
 }
 .footer.container {
   max-width: 1140px;
+}
+.footer #block-social-networks-block {
+  margin-bottom: 21px;
+}
+.footer #block-social-networks-block img {
+  width: 32px;
+  height: 32px;
 }
 
 .path-frontpage .footer-wrapper {

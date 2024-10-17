@@ -114,6 +114,15 @@ body {
   &.container {
     max-width: 1140px;
   }
+
+  #block-social-networks-block {
+    margin-bottom: 21px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 .path-frontpage .footer-wrapper {

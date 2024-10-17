@@ -11,7 +11,7 @@ third_party_settings:
 name: Новость
 type: news
 description: 'Используйте <em>Новости</em> для добавления материалов, отображаемых в порядке зависимом от времени публикации.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

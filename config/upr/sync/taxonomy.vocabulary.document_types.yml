@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Типы документов'
 vid: document_types
-description: ''
+description: null
 weight: -3
+new_revision: false

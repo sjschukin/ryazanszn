@@ -11,7 +11,7 @@ dependencies:
 id: szn_logo
 theme: blondytan2
 region: footer_right
-weight: -9
+weight: -12
 provider: null
 plugin: 'block_content:d4769c54-6338-4d63-84d9-56b2608c1dc5'
 settings:

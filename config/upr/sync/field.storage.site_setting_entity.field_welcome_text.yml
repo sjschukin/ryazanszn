@@ -1,0 +1,19 @@
+uuid: 096bc373-b5e2-4c2e-a2cc-a6ac7d49c911
+langcode: ru
+status: true
+dependencies:
+  module:
+    - site_settings
+    - text
+id: site_setting_entity.field_welcome_text
+field_name: field_welcome_text
+entity_type: site_setting_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

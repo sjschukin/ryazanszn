@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Категории государственных услуг'
 vid: public_services_categories
-description: ''
+description: null
 weight: -10
+new_revision: false

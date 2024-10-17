@@ -6,3 +6,4 @@ name: 'Темы обращений'
 vid: appointment_articles
 description: 'Список тем, отображаемых на форме записи на прием'
 weight: 0
+new_revision: false

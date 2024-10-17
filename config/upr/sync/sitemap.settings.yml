@@ -2,11 +2,13 @@ _core:
   default_config_hash: qZeaiLq06xBUfw-JNZtgetxUUMz-J8YCzw_LuhPrk2E
 langcode: ru
 page_title: 'Карта сайта'
+path: sitemap
 message:
   value: ''
   format: restricted_html
 plugins:
   'vocabulary:branches':
+    base_plugin: vocabulary
     enabled: false
     weight: -50
     settings:
@@ -22,6 +24,7 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:document_types':
+    base_plugin: vocabulary
     enabled: false
     weight: -50
     settings:
@@ -37,6 +40,7 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:faq_categories':
+    base_plugin: vocabulary
     enabled: false
     weight: -50
     settings:
@@ -52,6 +56,7 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:public_services_categories':
+    base_plugin: vocabulary
     enabled: false
     weight: -50
     settings:
@@ -67,6 +72,7 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:social_navigator_categories':
+    base_plugin: vocabulary
     enabled: false
     weight: -50
     settings:
@@ -82,6 +88,7 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:tags':
+    base_plugin: vocabulary
     enabled: false
     weight: -50
     settings:
@@ -97,12 +104,14 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'menu:account':
+    base_plugin: menu
     enabled: false
     weight: -50
     settings:
       title: 'User account menu'
       show_disabled: false
   'menu:admin':
+    base_plugin: menu
     enabled: false
     weight: -50
     settings:
@@ -115,30 +124,35 @@ plugins:
       title: Администрирование
       show_disabled: false
   'menu:extra-menu':
+    base_plugin: menu
     enabled: false
     weight: -50
     settings:
       title: Администрирование
       show_disabled: false
   'menu:footer':
+    base_plugin: menu
     enabled: false
     weight: -50
     settings:
       title: Подвал
       show_disabled: false
   'menu:main':
+    base_plugin: menu
     enabled: true
     weight: -50
     settings:
       title: 'Главное меню'
       show_disabled: false
   'menu:tools':
+    base_plugin: menu
     enabled: false
     weight: -50
     settings:
       title: Tools
       show_disabled: false
   frontpage:
+    base_plugin: frontpage
     enabled: false
     weight: -50
     settings:
@@ -148,6 +162,7 @@ plugins:
     enabled: false
     weight: -50
   'vocabulary:banner_types':
+    base_plugin: vocabulary
     enabled: false
     weight: 0
     settings:

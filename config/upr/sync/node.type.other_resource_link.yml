@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Ссылка на другой ресурс'
 type: other_resource_link
 description: 'Ссылка на ресурс, которая будет размещена в виде баннера на главной странице в виде изображения и короткого текста.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

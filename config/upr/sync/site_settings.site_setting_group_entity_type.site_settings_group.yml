@@ -1,0 +1,6 @@
+uuid: abc9e3cf-2af6-43e8-a776-279ebfdcc1aa
+langcode: ru
+status: true
+dependencies: {  }
+id: site_settings_group
+label: 'Настройки сайта'

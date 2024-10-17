@@ -10,7 +10,7 @@ _core:
 id: block_content
 label: Контент-блоки
 module: views
-description: 'Поиск и управление пользовательскими блоками.'
+description: 'Поиск и управление блоками.'
 tag: default
 base_table: block_content_field_data
 base_field: id
@@ -273,6 +273,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -314,7 +315,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Нет доступных пользовательских блоков.'
+          content: 'Блоков пока нет.'
           tokenize: false
         block_content_listing_empty:
           id: block_content_listing_empty
@@ -535,7 +536,7 @@ display:
       menu:
         type: tab
         title: Блоки
-        description: ''
+        description: 'Создание и редактирование пользовательских блоков.'
         weight: 0
         enabled: true
         expanded: false

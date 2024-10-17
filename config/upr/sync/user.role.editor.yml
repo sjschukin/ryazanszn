@@ -25,6 +25,8 @@ dependencies:
     - filter
     - help
     - node
+    - site_settings
+    - site_settings_type_permissions
     - system
     - taxonomy
 id: editor
@@ -36,9 +38,9 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access help pages'
-  - 'access site reports'
+  - 'access site settings overview'
+  - 'access taxonomy overview'
   - 'administer nodes'
-  - 'administer taxonomy'
   - 'create article content'
   - 'create document content'
   - 'create employee content'
@@ -104,6 +106,7 @@ permissions:
   - 'edit any public_service content'
   - 'edit any question_answer content'
   - 'edit any social_navigator_entity content'
+  - 'edit custom_site_settings site setting'
   - 'edit own article content'
   - 'edit own document content'
   - 'edit own employee content'
@@ -146,6 +149,8 @@ permissions:
   - 'view page revisions'
   - 'view photoalbum revisions'
   - 'view public_service revisions'
+  - 'view published custom_site_settings site setting entities'
+  - 'view published site setting entities'
   - 'view question_answer revisions'
   - 'view social_navigator_entity revisions'
   - 'view the administration theme'

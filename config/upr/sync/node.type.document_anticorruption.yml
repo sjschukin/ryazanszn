@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Документ - противодействие коррупции'
 type: document_anticorruption
 description: 'Нормативные правовые документы и иные акты, связанные с антикоррупционной деятельностью.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

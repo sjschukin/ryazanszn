@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Категории социального навигатора'
 vid: social_navigator_categories
-description: ''
+description: null
 weight: -9
+new_revision: false

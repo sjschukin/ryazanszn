@@ -1,30 +1,25 @@
-uuid: 3d59ff3e-44bb-460f-8154-d6b351d59536
+uuid: 352b0e57-6da5-4dca-8b4e-b2f30c357b65
 langcode: ru
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:basic:0fa8da36-0d73-40fb-9ebe-85c5d0566936'
   module:
     - block_content
-    - system
   theme:
     - blondytan2
-id: info_block
+id: social_networks_block
 theme: blondytan2
-region: content
-weight: -11
+region: footer_right
+weight: -13
 provider: null
 plugin: 'block_content:0fa8da36-0d73-40fb-9ebe-85c5d0566936'
 settings:
   id: 'block_content:0fa8da36-0d73-40fb-9ebe-85c5d0566936'
-  label: Информация
+  label: 'Социальные сети'
   label_display: '0'
   provider: block_content
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 520a0d12-3d1c-40d2-89fa-47661b3fe4ae
+langcode: ru
+status: true
+dependencies:
+  config:
+    - site_settings.site_setting_group_entity_type.site_settings_group
+id: custom_site_settings
+label: 'Настройки сайта'
+group: site_settings_group
+multiple: false

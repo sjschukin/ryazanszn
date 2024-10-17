@@ -1,0 +1,23 @@
+uuid: 3c97ae52-e05a-41cc-b80e-8057d5908a35
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.field_vk_url
+    - site_settings.site_setting_entity_type.custom_site_settings
+  module:
+    - link
+id: site_setting_entity.custom_site_settings.field_vk_url
+field_name: field_vk_url
+entity_type: site_setting_entity
+bundle: custom_site_settings
+label: 'Страница ВКонтакте'
+description: 'Адрес страницы вашей группы ВКонтакте'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

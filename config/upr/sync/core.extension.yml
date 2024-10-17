@@ -1,6 +1,5 @@
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
-langcode: ru
 module:
   admin_toolbar: 0
   auditfiles: 0
@@ -55,6 +54,8 @@ module:
   recreate_block_content: 0
   search: 0
   shortcut: 0
+  site_settings: 0
+  site_settings_type_permissions: 0
   sitemap: 0
   smtp: 0
   snowball_stemmer: 0
@@ -62,11 +63,12 @@ module:
   taxonomy: 0
   text: 0
   token: 0
+  token_filter: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
   views_bootstrap: 0
+  views_extras: 0
   views_field_view: 0
   views_tree: 0
   views_ui: 0
