@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b989dc45e1d731d33a7a737b9ba4a960",
+    "content-hash": "dd09e4c7e1b4160e17a8ce5ac99632d3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9460,7 +9460,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/auditfiles": 10,
         "drupal/captcha": 10,
         "drupal/config_ignore": 10,
         "drupal/config_split": 5,
