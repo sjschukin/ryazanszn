@@ -11,7 +11,7 @@ third_party_settings:
 name: Фотоальбом
 type: photoalbum
 description: 'Фотоальбомы учреждения. Один фотоальбом может содержать большое количество фотографий.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

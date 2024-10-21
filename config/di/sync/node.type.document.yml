@@ -11,7 +11,7 @@ third_party_settings:
 name: Документ
 type: document
 description: 'Документы отображаются в одной из вкладок с набором документов. Одна запись содержит в себе один документ, либо ссылку на него из существующего источника.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

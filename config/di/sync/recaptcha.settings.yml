@@ -1,6 +1,5 @@
 _core:
   default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0
-langcode: ru
 site_key: 6LcXkJMUAAAAAP7YWgy8gQYB4Sj7gwYAca_P4wzb
 secret_key: 6LcXkJMUAAAAAPE3zS0OSJztzPuvG8BgVGdho0Er
 verify_hostname: false
@@ -9,5 +8,5 @@ widget:
   theme: light
   type: image
   size: ''
-  tabindex: 0
   noscript: false
+  tabindex: 0
