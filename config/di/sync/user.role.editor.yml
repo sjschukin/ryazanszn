@@ -21,6 +21,7 @@ dependencies:
     - node
     - system
     - taxonomy
+    - webform
 _core:
   default_config_hash: Gf_zo-fbwEiiTf6axpmmyBtpoJB-fzUD14v4cLwlBjI
 id: editor
@@ -33,7 +34,7 @@ permissions:
   - 'access contextual links'
   - 'access help pages'
   - 'access site in maintenance mode'
-  - 'access site reports'
+  - 'access webform submission user'
   - 'administer nodes'
   - 'administer taxonomy'
   - 'create article content'
@@ -100,6 +101,7 @@ permissions:
   - 'view inspection revisions'
   - 'view news revisions'
   - 'view own unpublished content'
+  - 'view own webform submission'
   - 'view page revisions'
   - 'view photoalbum revisions'
   - 'view rewarding revisions'

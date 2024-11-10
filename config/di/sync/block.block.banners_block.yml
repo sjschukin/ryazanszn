@@ -12,7 +12,7 @@ dependencies:
 id: banners_block
 theme: blondytan2
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'block_content:17871698-a804-4ef2-8488-f9c68c252cce'
 settings:

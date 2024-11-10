@@ -12,7 +12,7 @@ dependencies:
 id: head_photo_block
 theme: blondytan2
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:employees-block_1'
 settings:

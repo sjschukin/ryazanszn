@@ -2,9 +2,12 @@ uuid: f7de3280-f9d4-4d25-bd44-8a2e5f5c012e
 langcode: ru
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - contact
     - file
+    - filter
     - search
     - shortcut
     - sitemap
@@ -27,3 +30,4 @@ permissions:
   - 'delete own files'
   - 'search content'
   - 'switch shortcut sets'
+  - 'use text format webform_default'

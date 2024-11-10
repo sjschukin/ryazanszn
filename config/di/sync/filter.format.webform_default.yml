@@ -1,0 +1,13 @@
+uuid: f4db2379-52ca-4f9e-80f6-5842e3feb865
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: EeKp_M4Oid3erARiAam9rsgBKR91uEnFkEP3aZS2ol8
+name: 'Webform (Default) - DO NOT EDIT'
+format: webform_default
+weight: 100
+filters: {  }
