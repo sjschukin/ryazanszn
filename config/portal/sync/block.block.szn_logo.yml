@@ -1,0 +1,25 @@
+uuid: 5f0a6b4f-e1a4-4d08-bc52-0efe1f6457f2
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5fc3ad8b-f9b6-45f7-8f9b-310516ecef14'
+  module:
+    - block_content
+  theme:
+    - blondytan2
+id: szn_logo
+theme: blondytan2
+region: footer_right
+weight: -6
+provider: null
+plugin: 'block_content:5fc3ad8b-f9b6-45f7-8f9b-310516ecef14'
+settings:
+  id: 'block_content:5fc3ad8b-f9b6-45f7-8f9b-310516ecef14'
+  label: 'Блок-логотип министерства'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

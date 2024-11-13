@@ -1,0 +1,27 @@
+uuid: dce607e0-3f87-4932-a6f0-e7d0c18dffa3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - blondytan2
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: blondytan2_page_title
+theme: blondytan2
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

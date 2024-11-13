@@ -1,0 +1,23 @@
+uuid: 3cd69934-b5be-4156-9820-cbee2e66ff6a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regnumber
+    - node.type.social_provider
+id: node.social_provider.field_regnumber
+field_name: field_regnumber
+entity_type: node
+bundle: social_provider
+label: 'Регистрационный номер'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

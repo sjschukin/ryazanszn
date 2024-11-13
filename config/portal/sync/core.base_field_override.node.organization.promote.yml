@@ -1,0 +1,22 @@
+uuid: a4edaae7-91ec-4710-8ae3-1f413c44e945
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.organization
+id: node.organization.promote
+field_name: promote
+entity_type: node
+bundle: organization
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

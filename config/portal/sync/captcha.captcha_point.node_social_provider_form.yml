@@ -1,0 +1,7 @@
+uuid: 7cd16238-3b93-49dd-8fd8-40cb6fdd4250
+langcode: ru
+status: false
+dependencies: {  }
+formId: node_social_provider_form
+captchaType: default
+label: node_social_provider_form

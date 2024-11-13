@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: OHFGY8dygN7xT4c0vdvK-HmdGFN61Sww_KLKfBkIrWc
+langcode: ru
+minimum_single: 20
+minimum_multiple: 20
+disable_search_threshold: 0
+minimum_width: 0
+max_shown_results: null
+use_relative_width: false
+jquery_selector: 'select:visible'
+search_contains: false
+disable_search: false
+allow_single_deselect: false
+add_helper_buttons: false
+disabled_themes:
+  bootstrap: '0'
+  blondytan2: '0'
+  claro: '0'
+chosen_include: 0
+placeholder_text_multiple: 'Выберите какие-нибудь варианты'
+placeholder_text_single: 'Выберите вариант'
+no_results_text: 'Нет соответствий'

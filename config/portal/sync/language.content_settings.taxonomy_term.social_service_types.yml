@@ -1,0 +1,11 @@
+uuid: 7ad34edf-13ce-408a-95f4-1cbfb84e98b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_service_types
+id: taxonomy_term.social_service_types
+target_entity_type_id: taxonomy_term
+target_bundle: social_service_types
+default_langcode: site_default
+language_alterable: false

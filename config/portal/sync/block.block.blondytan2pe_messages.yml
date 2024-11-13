@@ -1,0 +1,22 @@
+uuid: 33f8450d-80f3-4cbc-85df-11ff6f24fc34
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - blondytan2pe
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: blondytan2pe_messages
+theme: blondytan2pe
+region: highlighted
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Сообщения статуса'
+  label_display: '0'
+  provider: system
+visibility: {  }

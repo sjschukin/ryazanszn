@@ -1,0 +1,19 @@
+uuid: 3774ba5a-9864-4ca4-9a8d-55c2db587a83
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_form
+    - node.type.organization
+id: node.organization.field_legal_form
+field_name: field_legal_form
+entity_type: node
+bundle: organization
+label: 'Организационно-правовая форма'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

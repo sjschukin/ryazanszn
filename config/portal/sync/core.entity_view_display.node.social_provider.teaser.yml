@@ -1,0 +1,43 @@
+uuid: 1ff7eeb1-d909-4e8f-a2b6-c5d5d45ad7e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_provider.field_date_reg
+    - field.field.node.social_provider.field_experience
+    - field.field.node.social_provider.field_inspection
+    - field.field.node.social_provider.field_license
+    - field.field.node.social_provider.field_place_count
+    - field.field.node.social_provider.field_ref_organization
+    - field.field.node.social_provider.field_regnumber
+    - field.field.node.social_provider.field_social_form
+    - field.field.node.social_provider.field_social_service_type
+    - field.field.node.social_provider.field_tariffs_url
+    - field.field.node.social_provider.field_terms_of_service
+    - node.type.social_provider
+  module:
+    - user
+id: node.social_provider.teaser
+targetEntityType: node
+bundle: social_provider
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date_reg: true
+  field_experience: true
+  field_inspection: true
+  field_license: true
+  field_place_count: true
+  field_ref_organization: true
+  field_regnumber: true
+  field_social_form: true
+  field_social_service_type: true
+  field_tariffs_url: true
+  field_terms_of_service: true
+  langcode: true

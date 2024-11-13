@@ -1,0 +1,19 @@
+uuid: 1970ae43-86fe-4822-84c8-a9befa9f51f7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shortname
+    - node.type.organization
+id: node.organization.field_shortname
+field_name: field_shortname
+entity_type: node
+bundle: organization
+label: 'Сокращенное наименование'
+description: 'Сокращенное наименование поставщика социальных услуг'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

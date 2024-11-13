@@ -1,0 +1,19 @@
+uuid: 3acd9ebb-f98e-4b6b-bcbe-08905e6601df
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ysid
+    - node.type.organization
+id: node.organization.field_ysid
+field_name: field_ysid
+entity_type: node
+bundle: organization
+label: Карта
+description: 'Указывается идентификатор Yandex Maps.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,131 @@
+uuid: 93cb0e72-31f1-4c40-8186-ec0a99085384
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.social_provider.field_date_reg
+    - field.field.node.social_provider.field_experience
+    - field.field.node.social_provider.field_inspection
+    - field.field.node.social_provider.field_license
+    - field.field.node.social_provider.field_place_count
+    - field.field.node.social_provider.field_ref_organization
+    - field.field.node.social_provider.field_regnumber
+    - field.field.node.social_provider.field_social_form
+    - field.field.node.social_provider.field_social_service_type
+    - field.field.node.social_provider.field_tariffs_url
+    - field.field.node.social_provider.field_terms_of_service
+    - node.type.social_provider
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.social_provider.default
+targetEntityType: node
+bundle: social_provider
+mode: default
+content:
+  field_date_reg:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_experience:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_inspection:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_license:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_place_count:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_ref_organization:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_regnumber:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_social_form:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_social_service_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_tariffs_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_terms_of_service:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

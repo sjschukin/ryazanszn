@@ -1,0 +1,22 @@
+uuid: 6c7e0ab7-e0d3-40e4-9c04-44d03c5162bb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - blondytan2
+_core:
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
+id: blondytan2_help
+theme: blondytan2
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  label_display: '0'
+  provider: help
+visibility: {  }

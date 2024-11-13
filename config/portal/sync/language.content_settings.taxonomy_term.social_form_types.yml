@@ -1,0 +1,11 @@
+uuid: 61882ef0-7d6d-406e-ad31-6a79d1f26f3c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_form_types
+id: taxonomy_term.social_form_types
+target_entity_type_id: taxonomy_term
+target_bundle: social_form_types
+default_langcode: site_default
+language_alterable: false

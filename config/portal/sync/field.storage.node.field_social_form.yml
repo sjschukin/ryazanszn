@@ -1,0 +1,20 @@
+uuid: 9f7ebc77-a3d1-4fb0-9d76-f2e6318f2aeb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_social_form
+field_name: field_social_form
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

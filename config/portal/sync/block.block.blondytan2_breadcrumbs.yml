@@ -1,0 +1,22 @@
+uuid: 0e87e852-ce26-4cb5-b1a1-4be54020c7a1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - blondytan2
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: blondytan2_breadcrumbs
+theme: blondytan2
+region: header
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  label_display: '0'
+  provider: system
+visibility: {  }

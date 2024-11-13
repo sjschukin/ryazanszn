@@ -1,0 +1,22 @@
+uuid: e91a3fc0-8acf-4d09-b964-42d7add60004
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - blondytan2
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: blondytan2_content
+theme: blondytan2
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  label_display: '0'
+  provider: system
+visibility: {  }

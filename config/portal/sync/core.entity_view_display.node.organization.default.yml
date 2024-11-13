@@ -1,0 +1,113 @@
+uuid: 91bd288e-a587-4574-93e2-fd6f426035f0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.organization.body
+    - field.field.node.organization.field_address
+    - field.field.node.organization.field_boolean
+    - field.field.node.organization.field_director
+    - field.field.node.organization.field_email
+    - field.field.node.organization.field_id
+    - field.field.node.organization.field_legal_form
+    - field.field.node.organization.field_org_type
+    - field.field.node.organization.field_phonenumber
+    - field.field.node.organization.field_shedule
+    - field.field.node.organization.field_shortname
+    - field.field.node.organization.field_website
+    - field.field.node.organization.field_ysid
+    - node.type.organization
+  module:
+    - link
+    - user
+id: node.organization.default
+targetEntityType: node
+bundle: organization
+mode: default
+content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_director:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_email:
+    type: email_mailto
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_legal_form:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phonenumber:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_shedule:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_shortname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_ysid:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_boolean: true
+  field_id: true
+  field_org_type: true
+  langcode: true

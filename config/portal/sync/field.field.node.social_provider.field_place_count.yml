@@ -1,0 +1,24 @@
+uuid: 82081452-1cb3-44bd-a4d2-5a7ab400612f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place_count
+    - node.type.social_provider
+  module:
+    - text
+id: node.social_provider.field_place_count
+field_name: field_place_count
+entity_type: node
+bundle: social_provider
+label: 'Общее количество мест'
+description: 'Общее количество мест, количество занятых мест и количество свободных мест в разрезе форм социального обслуживания'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<table class=\"table table-bordered table-hover\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<td>Форма социального обслуживания</td>\r\n\t\t\t<td>Всего</td>\r\n\t\t\t<td>Занято</td>\r\n\t\t\t<td>Свободно</td>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Стационарное социальное обслуживание</td>\r\n\t\t\t<td>0</td>\r\n\t\t\t<td>0</td>\r\n\t\t\t<td>0</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Полустационарное социальное обслуживание</td>\r\n\t\t\t<td>0</td>\r\n\t\t\t<td>0</td>\r\n\t\t\t<td>0</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Социальное обслуживание на дому</td>\r\n\t\t\t<td>0</td>\r\n\t\t\t<td>0</td>\r\n\t\t\t<td>0</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

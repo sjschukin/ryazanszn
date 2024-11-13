@@ -1,0 +1,31 @@
+uuid: a8efb147-e572-4c2b-aee8-c76ec3b4537c
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4919c2ea-9a66-436f-bf8f-4e4aa006990d'
+  module:
+    - block_content
+    - system
+  theme:
+    - blondytan2
+id: frontpage_logo_block
+theme: blondytan2
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:4919c2ea-9a66-436f-bf8f-4e4aa006990d'
+settings:
+  id: 'block_content:4919c2ea-9a66-436f-bf8f-4e4aa006990d'
+  label: 'Блок-изображение с наименованием'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

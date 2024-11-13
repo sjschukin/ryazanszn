@@ -1,0 +1,19 @@
+uuid: ff53994f-655c-45a7-a825-4b1fd0208aa0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experience
+    - node.type.social_provider
+id: node.social_provider.field_experience
+field_name: field_experience
+entity_type: node
+bundle: social_provider
+label: 'Сведения об опыте работы'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

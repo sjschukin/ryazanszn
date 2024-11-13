@@ -1,0 +1,22 @@
+uuid: ea69164c-7b54-4a39-93f5-01ea6652c222
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_organization
+label: 'Шаблон учреждения'
+type: 'canonical_entities:node'
+pattern: '/organizations/[node:nid]'
+selection_criteria:
+  9401eac2-e3c6-46cd-a4ec-601f6c3ddbd7:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9401eac2-e3c6-46cd-a4ec-601f6c3ddbd7
+    context_mapping:
+      node: node
+    bundles:
+      organization: organization
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,9 @@
+uuid: 93608f9c-036d-44d7-b5c3-f9705fd9ab19
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Формы социального обслуживания'
+vid: social_form_types
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,19 @@
+uuid: 6c340452-9e90-465f-b752-37d00dd162e8
+langcode: ru
+status: false
+dependencies: {  }
+id: dev
+label: dev
+description: 'Development environment specific configuration.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/portal/dev
+module: {  }
+theme: {  }
+complete_list:
+  - system.logging
+  - system.performance
+  - views.settings
+partial_list: {  }

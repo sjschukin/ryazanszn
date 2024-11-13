@@ -1,0 +1,19 @@
+uuid: 0a2a69cb-b387-41fb-bb63-80ec6d9b5293
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shedule
+    - node.type.organization
+id: node.organization.field_shedule
+field_name: field_shedule
+entity_type: node
+bundle: organization
+label: 'График работы'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

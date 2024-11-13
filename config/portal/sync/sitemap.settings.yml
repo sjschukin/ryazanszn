@@ -1,0 +1,91 @@
+_core:
+  default_config_hash: yUNkiSB-fp4pyUb6B2L9HiiCdISBDvK7r1v9_XkGUaQ
+langcode: ru
+page_title: 'Карта сайта'
+path: sitemap
+message:
+  value: ''
+  format: restricted_html
+plugins:
+  frontpage:
+    base_plugin: frontpage
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+  'menu:main':
+    base_plugin: menu
+    enabled: true
+    weight: -50
+    settings:
+      title: 'Главное меню'
+      show_disabled: false
+  'menu:account':
+    base_plugin: menu
+    enabled: false
+    weight: -50
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:admin':
+    base_plugin: menu
+    enabled: false
+    weight: -50
+    settings:
+      title: Администрирование
+      show_disabled: false
+  'menu:extra-menu':
+    base_plugin: menu
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Дополнительное меню'
+      show_disabled: false
+  'menu:footer':
+    base_plugin: menu
+    enabled: false
+    weight: -50
+    settings:
+      title: Подвал
+      show_disabled: false
+  'menu:tools':
+    base_plugin: menu
+    enabled: false
+    weight: -50
+    settings:
+      title: Tools
+      show_disabled: false
+  'vocabulary:org_types':
+    base_plugin: vocabulary
+    enabled: false
+    weight: -50
+    settings:
+      title: 'Типы учреждений'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:tags':
+    base_plugin: vocabulary
+    enabled: false
+    weight: -50
+    settings:
+      title: Теги
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+include_css: false

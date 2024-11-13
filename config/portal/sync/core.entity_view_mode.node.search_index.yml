@@ -1,0 +1,13 @@
+uuid: b65bf8b9-9754-47b7-a745-0684c7b693f7
+langcode: ru
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fVFfJv_GzBRE-wpRHbfD5a3VjnhbEOXG6lvRd3uaccY
+id: node.search_index
+label: 'Поисковый индекс'
+description: ''
+targetEntityType: node
+cache: true

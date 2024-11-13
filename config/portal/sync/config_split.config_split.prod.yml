@@ -1,0 +1,18 @@
+uuid: 192fb282-f7d7-4266-93bc-613ccd25fef7
+langcode: ru
+status: false
+dependencies: {  }
+id: prod
+label: prod
+description: 'Production environment specific configuration.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/portal/prod
+module: {  }
+theme: {  }
+complete_list:
+  - system.logging
+  - system.performance
+partial_list: {  }

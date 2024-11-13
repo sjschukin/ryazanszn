@@ -1,0 +1,21 @@
+uuid: 7e2dc3c5-6515-4752-91e9-5434c2acce8a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_reg
+    - node.type.social_provider
+  module:
+    - datetime
+id: node.social_provider.field_date_reg
+field_name: field_date_reg
+entity_type: node
+bundle: social_provider
+label: 'Дата государственной регистрации юридического лица'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

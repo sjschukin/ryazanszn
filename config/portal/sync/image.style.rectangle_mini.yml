@@ -1,0 +1,15 @@
+uuid: b8e443e5-de67-4554-af50-71b6a64636b5
+langcode: ru
+status: true
+dependencies: {  }
+name: rectangle_mini
+label: 'Прямоугольный мини'
+effects:
+  d7cdf98c-7852-4a6d-859e-8946b811789b:
+    uuid: d7cdf98c-7852-4a6d-859e-8946b811789b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 188
+      height: 140
+      anchor: center-center

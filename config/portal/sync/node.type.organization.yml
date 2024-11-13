@@ -1,0 +1,17 @@
+uuid: ed5b136d-b9fe-4956-97e8-60662e88f212
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Учреждение
+type: organization
+description: 'Подведомственное учреждение социальной защиты, в котором содержатся такие сведения, как наименование, адрес, телефон а прочие.'
+help: 'Полное наименование поставщика социальных услуг'
+new_revision: false
+preview_mode: 1
+display_submitted: false

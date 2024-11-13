@@ -1,0 +1,28 @@
+uuid: ff557db6-b12b-40ec-b8e2-3f2fc10ef262
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_organization
+    - node.type.organization
+    - node.type.social_provider
+id: node.social_provider.field_ref_organization
+field_name: field_ref_organization
+entity_type: node
+bundle: social_provider
+label: Учреждение
+description: 'Ссылка на учреждение. Укажите учреждение, к которому будут привязаны эти сведения как о поставщике социальных услуг.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

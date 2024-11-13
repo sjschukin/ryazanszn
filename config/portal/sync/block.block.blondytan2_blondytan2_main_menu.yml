@@ -1,0 +1,25 @@
+uuid: 568ffed6-c860-455f-9f24-f6267047d144
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - blondytan2
+id: blondytan2_blondytan2_main_menu
+theme: blondytan2
+region: navigation_collapsible
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

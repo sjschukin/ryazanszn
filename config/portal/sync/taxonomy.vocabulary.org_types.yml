@@ -1,0 +1,9 @@
+uuid: bfd732d2-ddf8-4eaa-991a-470fb1b175e9
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Типы учреждений'
+vid: org_types
+description: null
+weight: 0
+new_revision: false

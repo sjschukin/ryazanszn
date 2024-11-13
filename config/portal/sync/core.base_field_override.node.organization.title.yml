@@ -1,0 +1,18 @@
+uuid: 84f8feb0-a392-4c20-a02e-44906477ce72
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.organization
+id: node.organization.title
+field_name: title
+entity_type: node
+bundle: organization
+label: 'Наименование учреждения'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

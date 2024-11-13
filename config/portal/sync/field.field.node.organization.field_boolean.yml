@@ -1,0 +1,23 @@
+uuid: 93efba9d-428d-4d29-9e40-bd6958be6040
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boolean
+    - node.type.organization
+id: node.organization.field_boolean
+field_name: field_boolean
+entity_type: node
+bundle: organization
+label: 'Не является подведомственным учреждением'
+description: 'Установите флажок, чтобы данная организация не отображалась в списке подведомственных учреждений.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Да
+  off_label: Нет
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 94497a8c-5a87-4c5b-9347-701345f7c5e7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.social_provider
+id: node.social_provider.title
+field_name: title
+entity_type: node
+bundle: social_provider
+label: 'Наименование поставщика'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

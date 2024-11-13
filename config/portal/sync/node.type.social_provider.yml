@@ -1,0 +1,17 @@
+uuid: 8589a235-6022-4116-a40b-a015895e286b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Поставщик социальных услуг'
+type: social_provider
+description: 'Сведения об учреждении, как о поставщике социальных услуг'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

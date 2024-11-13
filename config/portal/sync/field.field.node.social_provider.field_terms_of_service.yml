@@ -1,0 +1,28 @@
+uuid: ab76a79b-f1eb-4015-b2a6-67397ef4548a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms_of_service
+    - node.type.social_provider
+  module:
+    - link
+id: node.social_provider.field_terms_of_service
+field_name: field_terms_of_service
+entity_type: node
+bundle: social_provider
+label: 'Условия предоставления социальных услуг'
+description: 'Адрес страницы с условиями предоставления социальных услуг'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:#'
+    title: 'Перейти на страницу'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

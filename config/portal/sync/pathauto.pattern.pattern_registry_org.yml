@@ -1,0 +1,22 @@
+uuid: 12e2736a-b81f-4328-b5dc-9fe1c210d83f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_registry_org
+label: 'Шаблон поставщика социальных услуг'
+type: 'canonical_entities:node'
+pattern: '/registry/[node:nid]'
+selection_criteria:
+  e5aaca63-62e1-4400-bfd2-b30b984d0dff:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e5aaca63-62e1-4400-bfd2-b30b984d0dff
+    context_mapping:
+      node: node
+    bundles:
+      social_provider: social_provider
+selection_logic: and
+weight: -5
+relationships: {  }

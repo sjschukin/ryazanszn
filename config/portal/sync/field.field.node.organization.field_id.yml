@@ -1,0 +1,19 @@
+uuid: 7f9b246c-a687-415b-8abc-b5e63d16411c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id
+    - node.type.organization
+id: node.organization.field_id
+field_name: field_id
+entity_type: node
+bundle: organization
+label: Идентификатор
+description: 'Идентификатор учреждения во внешней информационной системе'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

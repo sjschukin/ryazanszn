@@ -1,0 +1,14 @@
+uuid: 89cb2f32-29d2-4d2a-98c8-d881584d1adc
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Обратная связь с сайтом'
+recipients:
+  - s.dev.ap@yandex.ru
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

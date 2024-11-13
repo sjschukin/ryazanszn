@@ -1,0 +1,9 @@
+uuid: 82344052-d854-4a88-8c3b-26bcb588d7b8
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Виды социальных услуг'
+vid: social_service_types
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,26 @@
+uuid: f9f3aea6-91b6-410c-bcae-9e4622460d7b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - search
+    - sitemap
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Анонимный пользователь'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'search content'
+  - 'use text format restricted_html'

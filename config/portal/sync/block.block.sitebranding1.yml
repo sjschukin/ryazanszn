@@ -1,0 +1,23 @@
+uuid: 0fc1fbb7-ad62-4c4e-86ab-54a3cecbde04
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - blondytan2pe
+id: sitebranding
+theme: blondytan2pe
+region: footer
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

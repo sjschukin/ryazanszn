@@ -1,0 +1,28 @@
+uuid: 48a70ae1-87ac-49dc-ad8a-af00b9d62d61
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_form
+    - node.type.social_provider
+    - taxonomy.vocabulary.social_form_types
+id: node.social_provider.field_social_form
+field_name: field_social_form
+entity_type: node
+bundle: social_provider
+label: 'Формы социального обслуживания'
+description: 'Перечень форм социального обслуживания, оказываемых поставщиком'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      social_form_types: social_form_types
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

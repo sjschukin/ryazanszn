@@ -1,0 +1,28 @@
+uuid: 9cd4c0c5-39cd-4fb9-8242-71eb508fed14
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_org_type
+    - node.type.organization
+    - taxonomy.vocabulary.org_types
+id: node.organization.field_org_type
+field_name: field_org_type
+entity_type: node
+bundle: organization
+label: 'Тип учреждения'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      org_types: org_types
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 661856be-7f72-4299-b1bd-5c24faa5cbcf
+langcode: ru
+status: true
+dependencies: {  }
+id: extra-menu
+label: 'Дополнительное меню'
+description: 'Дополнительное меню сайта'
+locked: false

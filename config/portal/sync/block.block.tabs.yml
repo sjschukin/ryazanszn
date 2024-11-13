@@ -1,0 +1,20 @@
+uuid: 212b2e02-1303-40b6-a0c7-55496eced7d5
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - blondytan2
+id: tabs
+theme: blondytan2
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
