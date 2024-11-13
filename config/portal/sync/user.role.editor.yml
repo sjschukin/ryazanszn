@@ -1,0 +1,21 @@
+uuid: b2c711e1-f948-422c-8d03-b7ad2051dbe6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - contextual
+    - filter
+    - help
+    - system
+id: editor
+label: Редактор
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access help pages'
+  - 'use text format basic_html'
+  - 'view the administration theme'

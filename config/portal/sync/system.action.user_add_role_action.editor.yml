@@ -1,0 +1,14 @@
+uuid: 0582d7c1-4c9a-4c63-9eb7-c826df8dedbf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+id: user_add_role_action.editor
+label: 'Добавьте роль Редактор выбранным пользователям'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor
