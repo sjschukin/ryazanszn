@@ -2,13 +2,10 @@ uuid: edb06bf1-81c4-4298-ace6-ccb03c5147e0
 langcode: ru
 status: true
 dependencies:
-  config:
-    - filter.format.basic_html
   module:
     - comment
     - contact
     - file
-    - filter
     - search
     - shortcut
     - sitemap
@@ -29,4 +26,3 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'

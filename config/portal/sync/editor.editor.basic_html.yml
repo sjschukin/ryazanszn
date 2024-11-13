@@ -11,17 +11,25 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - undo
+      - redo
+      - '|'
       - heading
       - bold
       - italic
+      - underline
+      - strikethrough
+      - removeFormat
       - '|'
       - link
-      - blockQuote
-      - code
+      - '|'
       - bulletedList
       - numberedList
-      - imce_image
+      - '|'
+      - blockQuote
+      - drupalInsertImage
       - insertTable
+      - '|'
       - sourceEditing
   plugins:
     ckeditor5_heading:
@@ -31,6 +39,8 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
     ckeditor5_list:
       properties:
         reversed: false
@@ -47,12 +57,18 @@ settings:
         - '<blockquote cite>'
         - '<ul type>'
         - '<ol type>'
-        - '<img data-caption data-align>'
-        - '<table class>'
         - '<h2 id>'
         - '<h3 id>'
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+        - '<table class>'
+        - '<iframe src width height title allow frameborder allowfullscreen>'
 image_upload:
-  status: false
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: '1 MB'
+  max_dimensions:
+    width: 512
+    height: 512

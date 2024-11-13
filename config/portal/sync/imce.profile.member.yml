@@ -5,19 +5,28 @@ dependencies: {  }
 _core:
   default_config_hash: 8J9aFZdUzbHV6w1y727kflHq31ev3U3wy7U-zSWDkeE
 id: member
-label: 'Member profile'
-description: 'Configuration for site members'
+label: 'Профиль участника'
+description: 'Конфигурация для участников сайта'
 conf:
-  extensions: 'jpg png gif'
-  maxsize: 2.0
-  quota: 50.0
-  maxwidth: 1024
+  usertab: false
+  extensions: 'jpg png gif pdf doc docx xls xlsx zip rar'
+  maxsize: 8.0
+  quota: null
+  maxwidth: 1280
   maxheight: 1024
-  replace: 0
+  replace: 1
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  url_alter: false
   folders:
     -
-      path: 'users/user[user:uid]'
+      path: shared
       permissions:
         browse_files: true
+        browse_subfolders: true
+        create_subfolders: true
         upload_files: true
         delete_files: true
+        delete_subfolders: true
+        resize_images: true
