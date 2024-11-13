@@ -1,8 +1,0 @@
-uuid: 20a8bc32-ffa8-496c-9ffa-49d430c22bbb
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Типы баннеров'
-vid: banner_types
-description: ''
-weight: -4

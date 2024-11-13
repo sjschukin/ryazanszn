@@ -1,8 +1,0 @@
-uuid: d760c27e-40fc-43c7-8425-08a0477c83d7
-langcode: ru
-status: true
-dependencies: {  }
-id: only_date
-label: 'Дата без времени'
-locked: false
-pattern: d.m.Y

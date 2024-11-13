@@ -1,8 +1,0 @@
-uuid: 1eec464b-d76a-4d02-8460-d4bfa96ccb0e
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Типы документов'
-vid: document_types
-description: ''
-weight: -3

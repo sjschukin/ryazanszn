@@ -1,8 +1,0 @@
-uuid: 74ebb3be-ef3b-441a-8a26-7fe0785deea8
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Структурные подразделения'
-vid: branches
-description: 'Наименования структурных подразделений учреждения. Указываются с учетом действующей структуры с указанием зависимостей.'
-weight: -8
