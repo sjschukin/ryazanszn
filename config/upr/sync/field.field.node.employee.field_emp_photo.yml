@@ -23,7 +23,7 @@ settings:
   file_directory: employees
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
-  max_resolution: ''
+  max_resolution: 800x600
   min_resolution: ''
   alt_field: false
   alt_field_required: true

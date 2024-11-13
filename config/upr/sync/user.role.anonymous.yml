@@ -8,6 +8,7 @@ dependencies:
     - contact
     - filter
     - search
+    - site_settings_type_permissions
     - sitemap
     - system
 _core:
@@ -22,3 +23,5 @@ permissions:
   - 'access sitemap'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view published custom_site_settings site setting entities'
+  - 'view unpublished custom_site_settings site setting entities'

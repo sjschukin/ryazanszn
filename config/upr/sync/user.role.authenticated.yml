@@ -6,6 +6,7 @@ dependencies:
     - contact
     - search
     - shortcut
+    - site_settings_type_permissions
     - sitemap
     - system
     - toolbar
@@ -25,3 +26,5 @@ permissions:
   - 'customize shortcut links'
   - 'search content'
   - 'switch shortcut sets'
+  - 'view published custom_site_settings site setting entities'
+  - 'view unpublished custom_site_settings site setting entities'
