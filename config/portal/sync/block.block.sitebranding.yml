@@ -1,4 +1,4 @@
-uuid: e5b122b3-1195-4a32-a276-9c838ac1a374
+uuid: b58cae5b-ab3f-4b5c-b430-14f0abc7e33f
 langcode: ru
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: sitebranding
 theme: blondytan2
 region: footer
-weight: -8
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
