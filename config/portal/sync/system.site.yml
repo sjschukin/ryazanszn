@@ -3,7 +3,7 @@ _core:
 langcode: ru
 uuid: 7b5edf11-5cc7-40da-954e-38be12946a68
 name: 'Портал министерства труда и социальной защиты населения'
-mail: s.dev.ap@yandex.ru
+mail: mintrud@ryazan.gov.ru
 slogan: 'Рязанская область'
 page:
   403: ''
