@@ -726,6 +726,26 @@ body.path-frontpage {
   color: #18bc9c;
 }
 
+.map-area #svg-map {
+  width: 100%;
+  height: auto;
+}
+.map-area #svg-map path {
+  stroke: #2c3e50;
+  stroke-width: 0.5;
+  fill: #ffffff;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.map-area #svg-map path.active {
+  fill: #95a5a6;
+}
+.map-area #svg-map text {
+  stroke: #2c3e50;
+  cursor: pointer;
+  font-family: "Cuprum", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
   font-family: "Cuprum", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
