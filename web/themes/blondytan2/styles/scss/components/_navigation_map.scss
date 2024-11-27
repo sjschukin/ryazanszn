@@ -1,0 +1,25 @@
+.map-area {
+
+  #svg-map {
+    width: 100%;
+    height: auto;
+
+    path {
+      stroke: $color_dark;
+      stroke-width: 0.5;
+      fill: $color_very_light;
+      transition-duration: 200ms;
+      cursor: pointer;
+
+      &.active {
+        fill: $color_gray;
+      }
+    }
+
+    text {
+      stroke: $color_dark;
+      cursor: pointer;
+      font-family: "Cuprum", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+}
