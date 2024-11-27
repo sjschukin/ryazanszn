@@ -67,8 +67,6 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 270px;
 }
 
 .footer {
@@ -80,8 +78,6 @@ body {
   border-top: none;
   border-radius: 4px 4px 0 0;
   overflow: hidden;
-  /* Set the fixed height of the footer here */
-  min-height: 270px;
 
   a {
     color: #e5e5e5;
