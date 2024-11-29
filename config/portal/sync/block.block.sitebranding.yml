@@ -8,8 +8,8 @@ dependencies:
     - blondytan2
 id: sitebranding
 theme: blondytan2
-region: footer
-weight: 0
+region: footer_middle
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,17 +1,16 @@
-uuid: f1f11503-1fc1-4e2b-bcfc-264c92dbe7ae
+uuid: ef16432b-08a9-410f-b834-969a7eb8955e
 langcode: ru
 status: true
 dependencies:
   module:
     - node
-id: node.field_shedule
-field_name: field_shedule
+    - taxonomy
+id: node.field_district
+field_name: field_district
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

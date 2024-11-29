@@ -1,0 +1,11 @@
+uuid: dc1019ee-a875-4977-86f1-00a6cda916b6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.districts
+id: taxonomy_term.districts
+target_entity_type_id: taxonomy_term
+target_bundle: districts
+default_langcode: site_default
+language_alterable: false

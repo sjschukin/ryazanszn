@@ -7,12 +7,12 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_boolean
     - field.field.node.organization.field_director
+    - field.field.node.organization.field_district
     - field.field.node.organization.field_email
     - field.field.node.organization.field_id
     - field.field.node.organization.field_legal_form
     - field.field.node.organization.field_org_type
     - field.field.node.organization.field_phonenumber
-    - field.field.node.organization.field_shedule
     - field.field.node.organization.field_shortname
     - field.field.node.organization.field_website
     - field.field.node.organization.field_ysid
@@ -64,14 +64,6 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  field_shedule:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 9
-    region: content
   field_shortname:
     type: string
     label: above
@@ -108,6 +100,7 @@ content:
 hidden:
   body: true
   field_boolean: true
+  field_district: true
   field_id: true
   field_org_type: true
   langcode: true

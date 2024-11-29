@@ -7,12 +7,12 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_boolean
     - field.field.node.organization.field_director
+    - field.field.node.organization.field_district
     - field.field.node.organization.field_email
     - field.field.node.organization.field_id
     - field.field.node.organization.field_legal_form
     - field.field.node.organization.field_org_type
     - field.field.node.organization.field_phonenumber
-    - field.field.node.organization.field_shedule
     - field.field.node.organization.field_shortname
     - field.field.node.organization.field_website
     - field.field.node.organization.field_ysid
@@ -34,7 +34,7 @@ content:
     third_party_settings: {  }
   field_boolean:
     type: boolean_checkbox
-    weight: 27
+    weight: 13
     region: content
     settings:
       display_label: true
@@ -46,6 +46,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_district:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_email:
     type: email_default
@@ -65,7 +71,7 @@ content:
     third_party_settings: {  }
   field_legal_form:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -73,7 +79,7 @@ content:
     third_party_settings: {  }
   field_org_type:
     type: options_select
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -85,17 +91,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_shedule:
-    type: string_textfield
-    weight: 11
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_shortname:
     type: string_textfield
-    weight: 3
+    weight: 4
     region: content
     settings:
       size: 90
@@ -119,7 +117,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 121
+    weight: 14
     region: content
     settings:
       display_label: true

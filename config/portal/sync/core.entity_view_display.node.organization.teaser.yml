@@ -8,12 +8,12 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_boolean
     - field.field.node.organization.field_director
+    - field.field.node.organization.field_district
     - field.field.node.organization.field_email
     - field.field.node.organization.field_id
     - field.field.node.organization.field_legal_form
     - field.field.node.organization.field_org_type
     - field.field.node.organization.field_phonenumber
-    - field.field.node.organization.field_shedule
     - field.field.node.organization.field_shortname
     - field.field.node.organization.field_website
     - field.field.node.organization.field_ysid
@@ -30,12 +30,12 @@ hidden:
   field_address: true
   field_boolean: true
   field_director: true
+  field_district: true
   field_email: true
   field_id: true
   field_legal_form: true
   field_org_type: true
   field_phonenumber: true
-  field_shedule: true
   field_shortname: true
   field_website: true
   field_ysid: true

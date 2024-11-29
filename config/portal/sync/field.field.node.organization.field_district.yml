@@ -1,0 +1,29 @@
+uuid: 1fa60f33-9949-408e-a87c-b3713c48b927
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_district
+    - node.type.organization
+    - taxonomy.vocabulary.districts
+id: node.organization.field_district
+field_name: field_district
+entity_type: node
+bundle: organization
+label: Район
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      districts: districts
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
