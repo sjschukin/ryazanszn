@@ -10,8 +10,8 @@ field_name: field_shortname
 entity_type: node
 bundle: organization
 label: 'Сокращенное наименование'
-description: 'Сокращенное наименование поставщика социальных услуг'
-required: true
+description: ''
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

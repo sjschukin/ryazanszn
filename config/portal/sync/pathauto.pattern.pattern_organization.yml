@@ -7,12 +7,12 @@ dependencies:
 id: pattern_organization
 label: 'Шаблон учреждения'
 type: 'canonical_entities:node'
-pattern: '/organizations/[node:nid]'
+pattern: '/all-organizations/[node:nid]'
 selection_criteria:
-  9401eac2-e3c6-46cd-a4ec-601f6c3ddbd7:
+  a4773f32-55d3-45de-b013-361addfc0754:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 9401eac2-e3c6-46cd-a4ec-601f6c3ddbd7
+    uuid: a4773f32-55d3-45de-b013-361addfc0754
     context_mapping:
       node: node
     bundles:
