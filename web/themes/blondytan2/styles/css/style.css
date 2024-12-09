@@ -7,8 +7,6 @@ html {
 body {
   position: static;
   margin-top: 0;
-  /* Margin bottom by footer height */
-  margin-bottom: 270px;
 }
 
 /******* header *******/
@@ -58,7 +56,6 @@ body {
 
 /******* footer *******/
 .footer-wrapper {
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
