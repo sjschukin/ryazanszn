@@ -12,7 +12,7 @@ dependencies:
     - user
     - views_bootstrap
 id: employees
-label: Сотрудники
+label: 'Структура образовательной организации'
 module: views
 description: 'Список сотрудников учреждения'
 tag: ''
@@ -78,6 +78,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 10
           total_pages: null
           id: 0
@@ -401,36 +402,9 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_emp_photo'
-  page_1:
-    id: page_1
-    display_title: 'Page: Руководство'
-    display_plugin: page
-    position: 1
-    display_options:
-      display_description: ''
-      display_extenders: {  }
-      path: about/leadership
-      menu:
-        type: none
-        title: Руководство
-        description: ''
-        weight: -50
-        expanded: false
-        menu_name: main
-        parent: 'menu_link_content:d38e8253-3bf9-4945-bd8d-c675418f39f5'
-        context: '0'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
   page_2:
     id: page_2
-    display_title: 'Page: Специалисты'
+    display_title: 'Page: Структура образовательной организации'
     display_plugin: page
     position: 1
     display_options:
@@ -491,44 +465,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_emp_leadership_value:
-          id: field_emp_leadership_value
-          table: node__field_emp_leadership
-          field: field_emp_leadership_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: boolean
-          operator: '='
-          value: '0'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -539,7 +475,7 @@ display:
         filter_groups: false
       display_description: ''
       display_extenders: {  }
-      path: about/employees
+      path: about/sctructure
       menu:
         type: none
         title: 'Наши специалисты'

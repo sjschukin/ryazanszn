@@ -14,8 +14,9 @@ smtp_from: feedback@ryazanszn.ru
 smtp_fromname: 'Служба уведомлений портала ryazanszn.ru'
 smtp_client_hostname: ''
 smtp_client_helo: ''
-smtp_allowhtml: '1'
+smtp_allowhtml: true
 smtp_test_address: ''
 smtp_debugging: false
 prev_mail_system: php_mail
 smtp_keepalive: false
+smtp_debug_level: 1

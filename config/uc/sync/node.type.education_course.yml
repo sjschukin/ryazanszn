@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Образовательный курс'
 type: education_course
 description: 'Курс или образовательная программа, отображаемая в списке доступных курсов'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

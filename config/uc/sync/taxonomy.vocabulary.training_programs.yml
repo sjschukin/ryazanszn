@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Обучающие программы'
 vid: training_programs
-description: ''
+description: null
 weight: 0
+new_revision: false

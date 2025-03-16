@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Льготные категории граждан'
 vid: preferential_categories
-description: ''
+description: null
 weight: 0
+new_revision: false

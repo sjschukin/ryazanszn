@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Группы образовательных программ'
 vid: education_course_groups
-description: ''
+description: null
 weight: 0
+new_revision: false

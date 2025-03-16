@@ -8,6 +8,7 @@ dependencies:
     - taxonomy.vocabulary.document_types
   content:
     - 'taxonomy_term:document_types:00f22012-80a3-4df3-905a-7f922fa9ee9f'
+    - 'taxonomy_term:document_types:0afb40c5-7ab4-4afc-b345-79162fb52976'
     - 'taxonomy_term:document_types:3a6e1144-1d07-4616-b8f4-39d19630c2cd'
     - 'taxonomy_term:document_types:4454176b-0cf8-4a70-9c08-1a2c726ae92e'
     - 'taxonomy_term:document_types:b05ecab6-bd59-48df-8397-a11d36d9730e'
@@ -30,7 +31,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Документы учреждения'
+      title: 'Локальные акты'
       fields:
         title:
           id: title
@@ -83,6 +84,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -117,7 +119,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p>Документов не найдено.</p>'
+            format: basic_html
+          tokenize: false
       sorts:
         field_sort_value:
           id: field_sort_value
@@ -253,13 +268,94 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: 'Page: Документы учреждения'
+    display_title: 'Page: Локальные акты'
     display_plugin: page
     position: 1
     display_options:
+      title: 'Локальные акты'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            document: document
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_doc_type_target_id:
+          id: field_doc_type_target_id
+          table: node__field_doc_type
+          field: field_doc_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            1: 1
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: document_types
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
       display_description: ''
       display_extenders: {  }
-      path: documents
+      path: about/documents/local
       menu:
         type: none
         title: Документы
@@ -280,11 +376,11 @@ display:
       tags: {  }
   page_2:
     id: page_2
-    display_title: 'Page: Нормативно-правовая база'
+    display_title: 'Page: Федеральное законодательство'
     display_plugin: page
     position: 1
     display_options:
-      title: 'Нормативно-правовые акты'
+      title: 'Федеральное законодательство'
       filters:
         status:
           id: status
@@ -322,6 +418,113 @@ display:
           operator: or
           value:
             2: 2
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: document_types
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: about/documents/federal
+      menu:
+        type: none
+        title: 'Федеральное законодательство'
+        description: ''
+        weight: -50
+        expanded: false
+        menu_name: main
+        parent: 'views_view:views.documents.page_1'
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_3:
+    id: page_3
+    display_title: 'Page: Региональное законодательство'
+    display_plugin: page
+    position: 1
+    display_options:
+      title: 'Региональное законодательство'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            document: document
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_doc_type_target_id:
+          id: field_doc_type_target_id
+          table: node__field_doc_type
+          field: field_doc_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
             3: 3
           group: 1
           exposed: false
@@ -368,7 +571,7 @@ display:
         filter_groups: false
       display_description: ''
       display_extenders: {  }
-      path: documents/regulations
+      path: about/documents/regional
       menu:
         type: none
         title: 'Федеральное законодательство'
@@ -476,7 +679,7 @@ display:
         filter_groups: false
       display_description: ''
       display_extenders: {  }
-      path: documents/standards
+      path: about/documents/standards
       menu:
         type: none
         title: 'Национальные стандарты (ГОСТ)'
@@ -497,11 +700,11 @@ display:
       tags: {  }
   page_5:
     id: page_5
-    display_title: 'Page: Антикоррупционная деятельность'
+    display_title: 'Page: Другие документы'
     display_plugin: page
     position: 1
     display_options:
-      title: 'Антикоррупционная деятельность'
+      title: 'Другие документы'
       filters:
         status:
           id: status
@@ -584,7 +787,115 @@ display:
         filter_groups: false
       display_description: ''
       display_extenders: {  }
-      path: monitoring/anticorruption
+      path: about/documents/others
+      menu:
+        type: none
+        title: 'Антикоррупционная деятельность'
+        description: ''
+        weight: -25
+        expanded: false
+        menu_name: main
+        parent: 'views_view:views.inspections.page_1'
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_6:
+    id: page_6
+    display_title: 'Page: Формы документов для слушателей'
+    display_plugin: page
+    position: 1
+    display_options:
+      title: 'Формы документов для слушателей'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            document: document
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_doc_type_target_id:
+          id: field_doc_type_target_id
+          table: node__field_doc_type
+          field: field_doc_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            76: 76
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: document_types
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: about/documents/for-students
       menu:
         type: none
         title: 'Антикоррупционная деятельность'

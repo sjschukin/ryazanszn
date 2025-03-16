@@ -18,4 +18,4 @@ label: 'Обратная связь с сайтом'
 reply: ''
 weight: 0
 message: 'Ваше сообщение отправлено.'
-redirect: /contacts
+redirect: /other/feedback

@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Образовательные программы'
+      title: 'Платные образовательные услуги'
       fields:
         field_course_group:
           id: field_course_group
@@ -198,7 +198,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: numeric
+          plugin_id: entity_target_id
           default_action: ignore
           exception:
             value: all
@@ -225,6 +225,7 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
+          target_entity_type_id: taxonomy_term
       filters:
         status:
           id: status
@@ -298,12 +299,13 @@ display:
         - 'config:field.storage.node.field_course_group'
   page_1:
     id: page_1
-    display_title: Page
+    display_title: 'Page: Платные образовательные услуги'
     display_plugin: page
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
-      path: about/educational-programs
+      path: services/paid-educational-services
     cache_metadata:
       max-age: -1
       contexts:

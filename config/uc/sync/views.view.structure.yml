@@ -334,6 +334,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      enabled: false
       fields: {  }
       sorts: {  }
       filters:
@@ -380,7 +381,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       display_extenders: {  }
-      path: about/structure
+      path: about/structure1
       menu:
         type: none
         title: Структура
