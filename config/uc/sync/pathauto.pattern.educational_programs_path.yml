@@ -7,12 +7,12 @@ dependencies:
 id: educational_programs_path
 label: 'Образовательные программы'
 type: 'canonical_entities:node'
-pattern: '/about/educational-program/[node:nid]'
+pattern: '/services/[node:nid]'
 selection_criteria:
-  23e2da97-ad9b-412c-80da-1418377c3992:
+  46c13396-2aa1-4cbd-b50e-bc4b64d53624:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 23e2da97-ad9b-412c-80da-1418377c3992
+    uuid: 46c13396-2aa1-4cbd-b50e-bc4b64d53624
     context_mapping:
       node: node
     bundles:

@@ -1,0 +1,29 @@
+uuid: ef766ec6-1e7e-456f-8395-b1d21f983add
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.educational_programs
+  module:
+    - system
+    - views
+  theme:
+    - blondytan2
+id: czn_educational_programs_block
+theme: blondytan2
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:educational_programs-block_2'
+settings:
+  id: 'views_block:educational_programs-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services/training-in-direction-of-employment-center

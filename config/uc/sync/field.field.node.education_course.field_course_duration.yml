@@ -1,0 +1,19 @@
+uuid: 442b3085-c001-416c-8b76-3db0822a4d3e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_duration
+    - node.type.education_course
+id: node.education_course.field_course_duration
+field_name: field_course_duration
+entity_type: node
+bundle: education_course
+label: 'Срок обучения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

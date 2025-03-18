@@ -1,0 +1,9 @@
+uuid: 473840a7-912d-4c8d-ad6e-bf6e6f0b008c
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Категории предоставляемых услуг'
+vid: educational_service_categories
+description: null
+weight: 0
+new_revision: false

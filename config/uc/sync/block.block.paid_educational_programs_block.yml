@@ -1,0 +1,29 @@
+uuid: fd55dfd7-7a0a-46ff-8c9e-5a8b8a7e8228
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.educational_programs
+  module:
+    - system
+    - views
+  theme:
+    - blondytan2
+id: paid_educational_programs_block
+theme: blondytan2
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:educational_programs-block_1'
+settings:
+  id: 'views_block:educational_programs-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services/paid-educational-services

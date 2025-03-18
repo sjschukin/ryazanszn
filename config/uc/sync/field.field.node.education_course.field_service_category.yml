@@ -1,0 +1,29 @@
+uuid: 707d22ee-5c57-45c4-ab9e-24037e24ffa8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_category
+    - node.type.education_course
+    - taxonomy.vocabulary.educational_service_categories
+id: node.education_course.field_service_category
+field_name: field_service_category
+entity_type: node
+bundle: education_course
+label: Категория
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      educational_service_categories: educational_service_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

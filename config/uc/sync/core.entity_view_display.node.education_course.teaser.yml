@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.education_course.field_conditions_admission
+    - field.field.node.education_course.field_course_duration
     - field.field.node.education_course.field_course_group
     - field.field.node.education_course.field_description
+    - field.field.node.education_course.field_min_educational_level
+    - field.field.node.education_course.field_service_category
     - node.type.education_course
   module:
     - user
@@ -20,6 +24,10 @@ content:
     weight: 100
     region: content
 hidden:
+  field_conditions_admission: true
+  field_course_duration: true
   field_course_group: true
   field_description: true
+  field_min_educational_level: true
+  field_service_category: true
   langcode: true

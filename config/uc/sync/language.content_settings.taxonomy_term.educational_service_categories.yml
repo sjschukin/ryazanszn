@@ -1,0 +1,11 @@
+uuid: 6ffd66c8-a89b-4806-8ba4-32d5900295ee
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.educational_service_categories
+id: taxonomy_term.educational_service_categories
+target_entity_type_id: taxonomy_term
+target_bundle: educational_service_categories
+default_langcode: site_default
+language_alterable: false

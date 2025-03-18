@@ -1,0 +1,19 @@
+uuid: bfd8e065-9615-4735-a7b8-69a1c05dfac5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_min_educational_level
+    - node.type.education_course
+id: node.education_course.field_min_educational_level
+field_name: field_min_educational_level
+entity_type: node
+bundle: education_course
+label: 'Минимальный уровень образования'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
