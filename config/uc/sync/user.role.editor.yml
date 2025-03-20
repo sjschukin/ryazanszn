@@ -13,7 +13,6 @@ dependencies:
     - node.type.news
     - node.type.page
     - node.type.photoalbum
-    - node.type.rewarding
     - taxonomy.vocabulary.branches
   module:
     - contextual
@@ -45,7 +44,6 @@ permissions:
   - 'create inspection content'
   - 'create news content'
   - 'create photoalbum content'
-  - 'create rewarding content'
   - 'delete any article content'
   - 'delete any document content'
   - 'delete any education_course content'
@@ -53,7 +51,6 @@ permissions:
   - 'delete any inspection content'
   - 'delete any news content'
   - 'delete any photoalbum content'
-  - 'delete any rewarding content'
   - 'delete article revisions'
   - 'delete document revisions'
   - 'delete education_course revisions'
@@ -68,10 +65,8 @@ permissions:
   - 'delete own inspection content'
   - 'delete own news content'
   - 'delete own photoalbum content'
-  - 'delete own rewarding content'
   - 'delete page revisions'
   - 'delete photoalbum revisions'
-  - 'delete rewarding revisions'
   - 'delete terms in branches'
   - 'edit any article content'
   - 'edit any document content'
@@ -81,7 +76,6 @@ permissions:
   - 'edit any news content'
   - 'edit any page content'
   - 'edit any photoalbum content'
-  - 'edit any rewarding content'
   - 'edit own article content'
   - 'edit own document content'
   - 'edit own education_course content'
@@ -90,7 +84,6 @@ permissions:
   - 'edit own news content'
   - 'edit own page content'
   - 'edit own photoalbum content'
-  - 'edit own rewarding content'
   - 'edit terms in branches'
   - 'revert article revisions'
   - 'revert document revisions'
@@ -100,7 +93,6 @@ permissions:
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert photoalbum revisions'
-  - 'revert rewarding revisions'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'view all revisions'
@@ -113,5 +105,4 @@ permissions:
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view photoalbum revisions'
-  - 'view rewarding revisions'
   - 'view the administration theme'
