@@ -1,0 +1,18 @@
+uuid: ef77bf9e-5c65-460a-868d-bb95647800e8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.graduate
+id: node.graduate.title
+field_name: title
+entity_type: node
+bundle: graduate
+label: Ф.И.О.
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

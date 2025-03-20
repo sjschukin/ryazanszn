@@ -1,0 +1,48 @@
+uuid: e74932ca-9368-4967-b27e-dd18e5172b77
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.graduate.field_emp_activity
+    - field.field.node.graduate.field_emp_jobtitle
+    - field.field.node.graduate.field_emp_photo
+    - field.field.node.graduate.field_sort
+    - image.style.square_mini
+    - node.type.graduate
+  module:
+    - image
+    - user
+id: node.graduate.teaser
+targetEntityType: node
+bundle: graduate
+mode: teaser
+content:
+  field_emp_jobtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_emp_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_mini
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_emp_activity: true
+  field_sort: true
+  langcode: true

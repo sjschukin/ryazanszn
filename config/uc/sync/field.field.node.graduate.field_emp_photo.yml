@@ -1,16 +1,16 @@
-uuid: 613569d1-60f2-4d6b-9323-aec977144dad
+uuid: 05b1b9f0-a192-46ea-80ec-ac5b055b6c7f
 langcode: ru
 status: true
 dependencies:
   config:
     - field.storage.node.field_emp_photo
-    - node.type.employee
+    - node.type.graduate
   module:
     - image
-id: node.employee.field_emp_photo
+id: node.graduate.field_emp_photo
 field_name: field_emp_photo
 entity_type: node
-bundle: employee
+bundle: graduate
 label: Фото
 description: ''
 required: false
@@ -20,7 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: employees
+  file_directory: graduates
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 800x600

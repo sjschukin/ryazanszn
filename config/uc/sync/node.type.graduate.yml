@@ -1,0 +1,17 @@
+uuid: 4b6b3984-df98-4531-8705-006f3c90150b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Выпускник
+type: graduate
+description: 'Отображает список выпускников с фотографиями.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

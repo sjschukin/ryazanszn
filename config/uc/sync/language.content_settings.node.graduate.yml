@@ -1,0 +1,11 @@
+uuid: ab376f8b-18fe-4a95-b4ae-5a04b96eab5e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.graduate
+id: node.graduate
+target_entity_type_id: node
+target_bundle: graduate
+default_langcode: site_default
+language_alterable: false

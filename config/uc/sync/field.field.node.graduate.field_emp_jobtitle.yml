@@ -1,0 +1,19 @@
+uuid: afa57ce4-36ee-4ef0-9812-e1645203c31c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emp_jobtitle
+    - node.type.graduate
+id: node.graduate.field_emp_jobtitle
+field_name: field_emp_jobtitle
+entity_type: node
+bundle: graduate
+label: Специальность
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

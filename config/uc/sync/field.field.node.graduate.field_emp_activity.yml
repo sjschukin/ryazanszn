@@ -1,17 +1,17 @@
-uuid: 4b3d7803-6454-4cd0-80d0-50f741fb5631
+uuid: 807648e9-7fd5-4d6d-b452-8eb4ed814b4a
 langcode: ru
 status: true
 dependencies:
   config:
     - field.storage.node.field_emp_activity
     - filter.format.basic_html
-    - node.type.employee
+    - node.type.graduate
   module:
     - text
-id: node.employee.field_emp_activity
+id: node.graduate.field_emp_activity
 field_name: field_emp_activity
 entity_type: node
-bundle: employee
+bundle: graduate
 label: Деятельность
 description: 'В данном поле можно указать биографию сотрудника, направления деятельности, его достижения и прочее.'
 required: false

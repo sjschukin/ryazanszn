@@ -1,0 +1,54 @@
+uuid: 5192ff07-b188-4c8a-a361-466c10f73183
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.graduate.field_emp_activity
+    - field.field.node.graduate.field_emp_jobtitle
+    - field.field.node.graduate.field_emp_photo
+    - field.field.node.graduate.field_sort
+    - image.style.square_150x150
+    - node.type.graduate
+  module:
+    - image
+    - text
+    - user
+id: node.graduate.default
+targetEntityType: node
+bundle: graduate
+mode: default
+content:
+  field_emp_activity:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_emp_jobtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_emp_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_150x150
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_sort: true
+  langcode: true
