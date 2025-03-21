@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.education_course.field_description
     - field.field.node.education_course.field_min_educational_level
     - field.field.node.education_course.field_service_category
+    - field.field.node.education_course.field_sort
     - node.type.education_course
   module:
     - text
@@ -61,9 +62,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_sort:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.education_course.field_description
     - field.field.node.education_course.field_min_educational_level
     - field.field.node.education_course.field_service_category
+    - field.field.node.education_course.field_sort
     - node.type.education_course
   module:
     - user
@@ -30,4 +31,5 @@ hidden:
   field_description: true
   field_min_educational_level: true
   field_service_category: true
+  field_sort: true
   langcode: true

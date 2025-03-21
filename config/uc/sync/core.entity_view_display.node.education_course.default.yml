@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.education_course.field_description
     - field.field.node.education_course.field_min_educational_level
     - field.field.node.education_course.field_service_category
+    - field.field.node.education_course.field_sort
     - node.type.education_course
   module:
     - text
@@ -18,12 +19,35 @@ targetEntityType: node
 bundle: education_course
 mode: default
 content:
+  field_conditions_admission:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_course_duration:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_description:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 4
+    region: content
+  field_min_educational_level:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
@@ -31,9 +55,7 @@ content:
     weight: 0
     region: content
 hidden:
-  field_conditions_admission: true
-  field_course_duration: true
   field_course_group: true
-  field_min_educational_level: true
   field_service_category: true
+  field_sort: true
   langcode: true

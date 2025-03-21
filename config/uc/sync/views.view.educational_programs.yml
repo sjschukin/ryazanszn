@@ -374,15 +374,13 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        weight:
-          id: weight
-          table: taxonomy_term_field_data
-          field: weight
-          relationship: field_course_group
+        field_sort_value:
+          id: field_sort_value
+          table: node__field_sort
+          field: field_sort_value
+          relationship: none
           group_type: group
           admin_label: ''
-          entity_type: taxonomy_term
-          entity_field: weight
           plugin_id: standard
           order: ASC
           expose:
@@ -475,11 +473,7 @@ display:
       style:
         type: views_bootstrap_table
         options:
-          grouping:
-            -
-              field: field_course_group
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           row_class: ''
           default_row_class: false
           override: 1
