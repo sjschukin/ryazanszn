@@ -18,8 +18,7 @@
     border-width: 1px 0 0 0;
 
     &.active {
-      font-weight: bold;
-      color: #18bc9c;
+      color: $color_link;
       background-color: #ffffff;
       z-index: 0;
     }
