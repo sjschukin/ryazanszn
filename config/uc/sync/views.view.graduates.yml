@@ -8,7 +8,6 @@ dependencies:
     - field.storage.node.field_emp_photo
     - image.style.square_150x150
     - node.type.graduate
-    - system.menu.main
   module:
     - image
     - node
@@ -419,11 +418,14 @@ display:
       display_extenders: {  }
       path: other/graduates
       menu:
-        type: normal
+        type: none
         title: 'Наши выпускники'
+        description: ''
         weight: -48
+        expanded: false
         menu_name: main
         parent: 'menu_link_content:fa03f345-f0b3-4b19-b3af-80e308169f67'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
