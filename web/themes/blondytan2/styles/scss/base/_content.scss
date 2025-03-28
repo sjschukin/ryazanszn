@@ -5,21 +5,32 @@
   padding-bottom: 21px;
 }
 
-.content img {
-  // background-color: #ecf0f1;
-  // border: 1px solid transparent;
-  // border-radius: 6px;
-  // padding: 15px;
-  margin: 0 15px 15px 0;
+.content {
+  img {
+    margin: 0 15px 15px 0;
+  }
+
+  figure {
+    img {
+      float: none;
+    }
+  }
+
+  figcaption {
+    font-style: italic;
+    margin-bottom: 15px;
+  }
 }
 
-.content figure img {
-  float: none;
-}
-
-.content figcaption {
-  font-style: italic;
-  margin-bottom: 15px;
+.region-content {
+  table {
+    thead {
+      th, tr {
+        vertical-align: top;
+        background-color: $color_light_gray;
+      }
+    }
+  }
 }
 
 .field-top-padding {
@@ -30,6 +41,8 @@
   display: block;
   margin: 0 auto;
 }
+
+
 
 /******* margins and paddings *******/
 
@@ -69,7 +82,7 @@
 
 .view-news {
   &.is-sticky {
-    background-color: #ecf0f1;
+    background-color: $color_light_gray;
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 15px;
@@ -80,7 +93,7 @@
     img {
       padding: 4px;
       background-color: #ffffff;
-      border: 1px solid #ecf0f1;
+      border: 1px solid $color_light_gray;
       border-radius: 4px;
       transition: all .2s ease-in-out;
       display: inline-block;
@@ -101,7 +114,7 @@
       img {
         padding: 4px;
         background-color: #ffffff;
-        border: 1px solid #ecf0f1;
+        border: 1px solid $color_light_gray;
         border-radius: 4px;
         transition: all .2s ease-in-out;
         display: inline-block;
@@ -258,7 +271,7 @@
   }
 
   .views-field:hover {
-    background-color: #ecf0f1;
+    background-color: $color_light_gray;
   }
 }
 
@@ -268,7 +281,7 @@
   position: fixed;
   bottom: 50%;
   right: 0;
-  background-color: #ecf0f1;
+  background-color: $color_light_gray;
 }
 
 /******* blind version panel *******/

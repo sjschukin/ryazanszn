@@ -120,14 +120,17 @@ body {
 .content img {
   margin: 0 15px 15px 0;
 }
-
 .content figure img {
   float: none;
 }
-
 .content figcaption {
   font-style: italic;
   margin-bottom: 15px;
+}
+
+.region-content table thead th, .region-content table thead tr {
+  vertical-align: top;
+  background-color: #ecf0f1;
 }
 
 .field-top-padding {
