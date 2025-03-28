@@ -10,8 +10,8 @@ dependencies:
     - node.type.education_course
     - taxonomy.vocabulary.educational_service_categories
   content:
-    - 'taxonomy_term:educational_service_categories:8f6e0fbf-82e2-488d-b882-dcfed888b3cc'
-    - 'taxonomy_term:educational_service_categories:d9a2b0a8-3321-44d9-81ac-7bb0a17bce38'
+    - 'taxonomy_term:educational_service_categories:8a42ae5e-f39a-4a45-9a12-5a5135396093'
+    - 'taxonomy_term:educational_service_categories:a4af7af3-d372-45d9-b20c-453dc67c3def'
   module:
     - node
     - taxonomy
@@ -107,7 +107,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: ''
+          label: 'Программы обучения'
           exclude: false
           alter:
             alter_text: false
