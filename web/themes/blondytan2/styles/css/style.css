@@ -744,6 +744,10 @@ body.path-frontpage {
   background-size: 100% 100%;
 }
 
+.chat-box {
+  bottom: 110px !important;
+}
+
 body {
   font-family: "Cuprum", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;

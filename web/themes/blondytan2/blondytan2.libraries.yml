@@ -13,9 +13,10 @@ social-navigator-library:
   js:
     js/social-navigator.js: {}
 chat-widget-library:
-  css:
-    theme:
-      styles/css/chat-widget.css: {}
   js:
-    js/chat-widget/chunk-vendors.js: {}
-    js/chat-widget/app.js: {}
+    https://new-cw.cc.gov.ru/js/chunk-vendors.js:
+      type: external
+      attributes: {async: true}
+    https://new-cw.cc.gov.ru/js/app.js:
+      type: external
+      attributes: {async: true}
