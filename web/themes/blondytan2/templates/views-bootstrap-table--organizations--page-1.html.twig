@@ -64,7 +64,7 @@
               ]
             %}
           {% endif %}
-          {% set fixed_width_class = (loop.index > loop.length - 2) ? 'col-xs-4' : '' %}
+          {% set fixed_width_class = (loop.index > loop.length - 1) ? 'col-xs-5' : '' %}
           <th{{ column.attributes.addClass(column_classes, fixed_width_class).setAttribute('scope', 'col') }}>
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
