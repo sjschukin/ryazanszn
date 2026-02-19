@@ -21,6 +21,7 @@ plugins:
     settings:
       title: 'Главное меню'
       show_disabled: false
+      menu_depth: 9
   'menu:account':
     base_plugin: menu
     enabled: false
@@ -28,6 +29,7 @@ plugins:
     settings:
       title: 'User account menu'
       show_disabled: false
+      menu_depth: 9
   'menu:admin':
     base_plugin: menu
     enabled: false
@@ -35,6 +37,7 @@ plugins:
     settings:
       title: Администрирование
       show_disabled: false
+      menu_depth: 9
   'menu:footer':
     base_plugin: menu
     enabled: false
@@ -42,6 +45,7 @@ plugins:
     settings:
       title: Подвал
       show_disabled: false
+      menu_depth: 9
   'menu:tools':
     base_plugin: menu
     enabled: false
@@ -49,6 +53,7 @@ plugins:
     settings:
       title: Tools
       show_disabled: false
+      menu_depth: 9
   'vocabulary:branches':
     base_plugin: vocabulary
     enabled: false

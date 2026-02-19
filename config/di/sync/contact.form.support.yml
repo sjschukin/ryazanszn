@@ -1,6 +1,6 @@
 uuid: d41e2274-ce38-48fe-967b-925e6c5f5f21
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
     - contact_storage

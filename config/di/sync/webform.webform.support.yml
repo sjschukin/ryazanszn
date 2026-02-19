@@ -1,4 +1,4 @@
-uuid: f9309f49-4d7c-4d9f-a024-2e737556965f
+uuid: 135da98b-bc6b-413a-a9a2-9d36cbbd9e1e
 langcode: ru
 status: open
 dependencies:
@@ -10,12 +10,12 @@ _core:
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: 'Обратная связь'
-description: '<p>Форма обратной связи</p>'
+id: support
+title: 'Техническая поддержка'
+description: '<p>Форма технической поддержки</p>'
 categories: {  }
 elements: |-
   name:
@@ -24,15 +24,15 @@ elements: |-
     '#required': true
     '#required_error': 'Поле обязательно для заполнения'
     '#default_value': '[current-user:display-name]'
-  phone_number:
-    '#type': textfield
-    '#title': Телефон
-    '#required': true
-    '#required_error': 'Поле обязательно для заполнения'
   email:
     '#type': email
     '#title': 'Адрес электронной почты'
     '#default_value': '[current-user:mail]'
+  topic:
+    '#type': textfield
+    '#title': 'Тема обращения'
+    '#required': true
+    '#required_error': 'Поле обязательно для заполнения'
   message:
     '#type': textarea
     '#title': Сообщение
@@ -57,7 +57,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /contacts/feedback
+  page_submit_path: /contacts/support
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
@@ -245,7 +245,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: s.j.schukin@yandex.ru
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
