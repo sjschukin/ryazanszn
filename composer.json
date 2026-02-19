@@ -54,7 +54,7 @@
         "drupal/views_tree": "^3.0",
         "drupal/webform": "^6.2",
         "drupal/xmlsitemap": "^2.0",
-        "drush/drush": "^12"
+        "drush/drush": "^13"
     },
     "conflict": {
         "drupal/drupal": "*"
